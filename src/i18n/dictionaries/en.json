@@ -1,0 +1,852 @@
+{
+  "seo": {
+    "site": {
+      "titleDefault": "Janar Kuusk — Developer · Designer · AI Engineer",
+      "titleTemplate": "%s — Janar Kuusk",
+      "description": "Janar Kuusk — Developer, Web Designer, and AI Engineer based in Tallinn, Estonia. Building digital monuments with architectural precision.",
+      "keywords": [
+        "developer",
+        "web designer",
+        "AI engineer",
+        "Tallinn",
+        "Estonia",
+        "Next.js",
+        "React"
+      ]
+    },
+    "pages": {
+      "home": {
+        "title": "Janar Kuusk — Developer · Designer · AI Engineer",
+        "description": "Building digital monuments with architectural precision. Developer, Web Designer, and AI Engineer based in Tallinn, Estonia."
+      },
+      "about": {
+        "title": "About",
+        "description": "Janar Kuusk — Developer, Web Designer, and AI Engineer based in Tallinn, Estonia. Building at the intersection of precision and creativity."
+      },
+      "services": {
+        "title": "Services",
+        "description": "Website Design, Web Applications, Mobile Development, and AI Engineering — Janar Kuusk builds digital structures with architectural precision."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Selected work by Janar Kuusk — web design, web applications, mobile development, and AI engineering projects."
+      },
+      "tools": {
+        "title": "AI Tools — Janar Kuusk",
+        "description": "Free interactive AI tools: an ROI calculator to model returns on an AI investment, and a 10-question AI readiness assessment."
+      },
+      "aiAssessment": {
+        "title": "AI Readiness Assessment — Janar Kuusk",
+        "description": "A 10-question AI readiness assessment scoring your organization across strategy, data, process, talent and governance — with a maturity tier and focused next steps."
+      },
+      "roiCalculator": {
+        "title": "AI ROI Calculator — Janar Kuusk",
+        "description": "Free interactive calculator estimating first-year ROI, net gain, and a five-year net-return projection from an AI investment, benchmarked by industry."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Get in touch with Janar Kuusk — Developer, Designer, and AI Engineer based in Tallinn, Estonia."
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "description": "How Janar Kuusk's portfolio site collects and uses data — contact form, AI tools, and third-party processors."
+      },
+      "blog": {
+        "title": "Blog",
+        "description": "Notes on web development, AI engineering, and building digital products."
+      }
+    }
+  },
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "services": "SERVICES",
+    "portfolio": "PORTFOLIO",
+    "blog": "BLOG",
+    "tools": "AI TOOLS",
+    "contact": "CONTACT",
+    "consultation": "CONSULTATION",
+    "getInTouch": "GET IN TOUCH ↗",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "copyright": "© 2026 JANAR KUUSK. BUILT WITH PRECISION.",
+    "privacyLink": "PRIVACY"
+  },
+  "marquee": {
+    "items": [
+      "WEBSITE DESIGN",
+      "WEB APPLICATIONS",
+      "MOBILE DEVELOPMENT",
+      "AI ENGINEERING",
+      "UX ARCHITECTURE",
+      "FULLSTACK DEVELOPMENT"
+    ]
+  },
+  "stats": {
+    "items": [
+      {
+        "suffix": "+",
+        "label": "YEARS BUILDING"
+      },
+      {
+        "suffix": "+",
+        "label": "PROJECTS SHIPPED"
+      },
+      {
+        "suffix": "",
+        "label": "DISCIPLINES"
+      },
+      {
+        "suffix": "",
+        "label": "ESTONIA, EU"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "developer": "DEVELOPER",
+      "designer": "DESIGNER",
+      "openForWork": "OPEN FOR FREELANCE WORKS.",
+      "bio": "Full Stack Developer & AI Engineer building production software at 6K CO OÜ, Estonia.",
+      "scheduleCall": "SCHEDULE CALL",
+      "location": "LOCATION",
+      "locationValue": "TALLINN, ESTONIA"
+    },
+    "featuredWork": {
+      "badge": "(02) FEATURED WORK",
+      "heading": "SELECTED ARTIFACTS",
+      "viewAll": "VIEW ALL"
+    },
+    "projects": [
+      {
+        "slug": "pocket-negotiator",
+        "title": "POCKET NEGOTIATOR",
+        "category": "MOBILE · AI",
+        "year": "2025"
+      },
+      {
+        "slug": "kuus-disain",
+        "title": "KUUS DISAIN",
+        "category": "WEB DESIGN",
+        "year": "2025"
+      }
+    ],
+    "featuredAi": {
+      "tag": "WEB · biopuhastid.com",
+      "title": "BIOPUHASTID",
+      "body": "Premium rebuild of the Kingspan biological wastewater treatment site for the Estonian market. A guided system calculator matches each property to the right cleaner — BioDisc, BioFicient, BioAir, BioTec Flo or Rainstore — with subsidy guidance and technical downloads.",
+      "cta": "VIEW PROJECT"
+    },
+    "capabilities": {
+      "badge": "(03) CAPABILITIES",
+      "headingLine1": "SYSTEMIC",
+      "headingLine2": "SOLUTIONS",
+      "intro": "Four disciplines, one architectural approach. Every system I build is designed for clarity, performance, and longevity.",
+      "items": [
+        {
+          "icon": "architecture",
+          "title": "WEBSITE DESIGN",
+          "body": "High-fidelity visual systems built on structural balance and technical clarity."
+        },
+        {
+          "icon": "developer_mode_tv",
+          "title": "WEB APPLICATIONS",
+          "body": "Scalable architectures that prioritise performance, security, and seamless integration."
+        },
+        {
+          "icon": "phone_iphone",
+          "title": "MOBILE DEVELOPMENT",
+          "body": "Native-feel cross-platform apps with tactile polish and impeccable performance."
+        },
+        {
+          "icon": "psychology",
+          "title": "AI ENGINEERING",
+          "body": "LLM integration, RAG pipelines, and autonomous AI agents built for production."
+        }
+      ],
+      "viewAllServices": "VIEW ALL SERVICES"
+    },
+    "cta": {
+      "badge": "(04) START THE PROJECT",
+      "heading": "READY TO BUILD?",
+      "bodyLine1": "Currently accepting select commissions.",
+      "bodyLine2": "Let's build something that lasts.",
+      "button": "START THE PROJECT",
+      "watermark": "CONTACT"
+    },
+    "testimonials": {
+      "badge": "(CLIENTS)",
+      "heading": "WHAT CLIENTS SAY",
+      "items": []
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "(ABOUT)",
+      "aiEngineer": "AI ENGINEER",
+      "bio1": "I build scalable web applications and AI-powered systems at the intersection of technical precision and business impact. Based in Estonia — working globally under 6K CO OÜ.",
+      "bio2": "From AI agent workflows to cross-platform mobile apps and enterprise ERP systems, every project follows the same principle: structure first, beauty follows.",
+      "cta": "LET'S WORK TOGETHER",
+      "locationBadge": "TALLINN, ESTONIA"
+    },
+    "philosophy": {
+      "badge": "(PHILOSOPHY)",
+      "quoteBefore": "THE BEST DIGITAL PRODUCTS ARE LIKE GOOD",
+      "quoteAccent": "ARCHITECTURE",
+      "quoteAfter": "— BUILT ON SOLID STRUCTURE, CAREFUL INTENTION, AND MATERIALS THAT AGE WITH DIGNITY."
+    },
+    "stack": {
+      "badge": "(TOOLS OF THE TRADE)",
+      "heading": "TECH STACK",
+      "categories": [
+        {
+          "category": "FRONTEND",
+          "tools": [
+            "REACT",
+            "NEXT.JS",
+            "TYPESCRIPT",
+            "TAILWIND CSS",
+            "WEBGL",
+            "THREE.JS"
+          ]
+        },
+        {
+          "category": "BACKEND",
+          "tools": [
+            "NODE.JS",
+            "PYTHON",
+            "POSTGRESQL",
+            "SUPABASE",
+            "PRISMA"
+          ]
+        },
+        {
+          "category": "AI / ML",
+          "tools": [
+            "CLAUDE API",
+            "OPENAI",
+            "GEMINI",
+            "LANGCHAIN",
+            "VERCEL AI SDK",
+            "RAG SYSTEMS"
+          ]
+        },
+        {
+          "category": "DESIGN",
+          "tools": [
+            "FIGMA",
+            "ADOBE SUITE",
+            "FRAMER",
+            "SPLINE"
+          ]
+        },
+        {
+          "category": "MOBILE",
+          "tools": [
+            "REACT NATIVE",
+            "EXPO",
+            "SWIFTUI",
+            "FIREBASE"
+          ]
+        }
+      ]
+    },
+    "process": {
+      "badge": "(METHODOLOGY)",
+      "heading": "HOW I WORK",
+      "steps": [
+        {
+          "n": "01",
+          "title": "DISCOVER",
+          "body": "Deep-diving into your goals, audience, and competitive landscape. Research, interviews, and synthesis — building the structural brief that guides every decision."
+        },
+        {
+          "n": "02",
+          "title": "ARCHITECT",
+          "body": "Translating brief into blueprint. Wireframes, system design, information architecture, and tech stack decisions — before a single line of production code is written."
+        },
+        {
+          "n": "03",
+          "title": "BUILD",
+          "body": "Engineering the product with precision. Clean, maintainable code and continuous iteration. Regular check-ins ensure alignment as the structure rises."
+        },
+        {
+          "n": "04",
+          "title": "REFINE",
+          "body": "Testing across devices, optimising performance, and polishing every detail. Launch is the beginning — post-launch monitoring keeps the system sharp."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "(LET'S BUILD)",
+      "headingLine1": "HAVE A PROJECT",
+      "headingLine2": "IN MIND?",
+      "body": "Currently accepting select commissions. Response within 24 hours.",
+      "button": "GET IN TOUCH",
+      "viewWork": "VIEW MY WORK"
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "(SERVICES)",
+      "headingLine1": "ARCHITECTING",
+      "headingLine2": "DIGITAL",
+      "headingLine3": "EXPERIENCES.",
+      "est": "EST. 2022",
+      "location": "TALLINN, ESTONIA"
+    },
+    "intro": "A synthesis of technical precision and aesthetic rigour. I build digital structures that are not only functional but emotionally resonant — designed to scale with the speed of modern ambition.",
+    "aiLlmBadge": "AI · LLM ENGINEERING",
+    "newServiceBadge": "NEW SERVICE",
+    "items": [
+      {
+        "n": "(01)",
+        "titleLine1": "WEBSITE",
+        "titleLine2": "DESIGN",
+        "body": "Beyond mere templates — I construct bespoke visual identities. Focusing on the intersection of aesthetics and UX, every pixel is placed with structural intent, ensuring your brand commands attention through silence and sophistication.",
+        "tools": [
+          "FIGMA",
+          "ADOBE SUITE",
+          "WEBGL",
+          "THREE.JS",
+          "FRAMER"
+        ],
+        "cta": "VIEW CASE STUDY"
+      },
+      {
+        "n": "(02)",
+        "titleLine1": "WEB APPLICATION",
+        "titleLine2": "BUILDING",
+        "body": "Performance is the foundation of reliability. I engineer high-scale applications using modern frameworks that prioritise speed, security, and seamless integration. My approach treats code as a structural blueprint for business growth.",
+        "tools": [
+          "NEXT.JS",
+          "TYPESCRIPT",
+          "NODE.JS",
+          "POSTGRESQL",
+          "SUPABASE"
+        ],
+        "cta": "TECHNICAL SPECS"
+      },
+      {
+        "n": "(03)",
+        "titleLine1": "MOBILE APP",
+        "titleLine2": "DEVELOPMENT",
+        "body": "Harnessing the power of mobility with a native-first philosophy. I design and develop cross-platform solutions that feel indistinguishable from system software — ensuring maximum reach without compromising on fluid animations or performance.",
+        "tools": [
+          "REACT NATIVE",
+          "EXPO",
+          "SWIFTUI",
+          "FIREBASE"
+        ],
+        "cta": null
+      },
+      {
+        "n": "(04)",
+        "titleLine1": "AI",
+        "titleLine2": "ENGINEERING",
+        "body": "I integrate large language models and AI agents directly into production software. From RAG pipelines to autonomous AI workflows, I build systems that are intelligent by design — not as an afterthought. Every AI feature I build is production-grade, observable, and built to last.",
+        "tools": [
+          "CLAUDE API",
+          "OPENAI",
+          "GEMINI",
+          "LANGCHAIN",
+          "PYTHON",
+          "VERCEL AI SDK",
+          "RAG",
+          "SUPABASE VECTOR"
+        ],
+        "cta": "DISCUSS PROJECT"
+      }
+    ],
+    "cta": {
+      "headingLine1": "READY TO BUILD",
+      "headingLine2": "SOMETHING MONUMENTAL?",
+      "button": "LET'S TALK"
+    },
+    "watermarkLine1": "BUILD",
+    "watermarkLine2": "SCALE"
+  },
+  "portfolio": {
+    "hero": {
+      "badge": "(01) PORTFOLIO",
+      "headingLine1": "SELECTED",
+      "headingLine2": "ARCHIVE.",
+      "intro": "A curated collection of technical explorations and digital architectures built with surgical precision."
+    },
+    "aiProjectBadge": "AI PROJECT",
+    "filters": [
+      {
+        "key": "all",
+        "label": "ALL"
+      },
+      {
+        "key": "design",
+        "label": "DESIGN"
+      },
+      {
+        "key": "development",
+        "label": "DEVELOPMENT"
+      },
+      {
+        "key": "ai",
+        "label": "AI"
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "AGENTFLOW",
+        "sub": "01 / AI · MULTI-AGENT SYSTEMS",
+        "body": "A visual drag-and-drop workflow designer for orchestrating multi-agent AI systems. Real-time execution monitoring, community collaboration, and an agent marketplace.",
+        "tags": [
+          "REACT 18",
+          "TYPESCRIPT",
+          "FASTAPI",
+          "SUPABASE",
+          "POSTGRESQL"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "POCKET NEGOTIATOR",
+        "sub": "02 / MOBILE · AI",
+        "body": "AI negotiation coaching app — rehearse deals against an AI opponent, prep with AI-generated strategy, and record, transcribe and score real meetings while tracking skill growth over time. Expo mobile app on a Supabase backend, with all AI routed through Edge Functions.",
+        "tags": [
+          "EXPO SDK 53",
+          "REACT NATIVE",
+          "TYPESCRIPT",
+          "SUPABASE",
+          "GEMINI AI",
+          "ASSEMBLYAI"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "AI-POWER ERP",
+        "sub": "03 / ENTERPRISE PLATFORM",
+        "body": "Modular ERP platform with AI-ready infrastructure, semantic search via pgvector, and a metadata-driven addon architecture.",
+        "tags": [
+          "PYTHON",
+          "FASTAPI",
+          "POSTGRESQL",
+          "PGVECTOR"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "BIOPUHASTID",
+        "sub": "04 / WEB DESIGN",
+        "body": "Premium rebuild of the Kingspan biological wastewater treatment site for the Estonian market. A guided system calculator matches each property to the right cleaner — BioDisc, BioFicient, BioAir, BioTec Flo or Rainstore — alongside subsidy guidance and technical downloads.",
+        "tags": [
+          "VITE",
+          "REACT 18",
+          "TYPESCRIPT",
+          "TAILWIND",
+          "FRAMER MOTION",
+          "I18NEXT"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "KUUS DISAIN",
+        "sub": "05 / WEB DESIGN",
+        "body": "Brand site for a Tartu microcement studio and official Luxury Concrete® reseller. A room Visualiser previews seamless mineral finishes in real interiors, backed by a product configurator and an AI studio assistant.",
+        "tags": [
+          "NEXT.JS",
+          "TYPESCRIPT",
+          "TAILWIND CSS",
+          "GOOGLE GENERATIVE AI"
+        ]
+      }
+    ],
+    "cta": {
+      "label": "READY TO BUILD?",
+      "headingLine1": "LET'S START A",
+      "headingAccent": "CONVERSATION.",
+      "button": "START PROJECT ↗"
+    }
+  },
+  "tools": {
+    "hero": {
+      "badge": "(TOOLS) FREE AI TOOLS",
+      "headingLine1": "PUT NUMBERS",
+      "headingLine2": "ON THE UPSIDE.",
+      "intro": "Two interactive tools to size an AI investment and gauge where you stand — no signup, results in seconds."
+    },
+    "items": [
+      {
+        "href": "/roi-calculator",
+        "tag": "CALCULATOR",
+        "title": "AI ROI CALCULATOR",
+        "body": "Model first-year ROI, net gain, and a five-year net-return projection from an AI investment — benchmarked against your industry. Live as you type.",
+        "icon": "trending_up"
+      },
+      {
+        "href": "/ai-assessment",
+        "tag": "ASSESSMENT",
+        "title": "AI READINESS ASSESSMENT",
+        "body": "Ten questions across strategy, data, process, talent and governance. Get a maturity tier, priority focus areas, and an AI action plan.",
+        "icon": "checklist"
+      }
+    ],
+    "openTool": "OPEN TOOL"
+  },
+  "aiAssessment": {
+    "badge": "(TOOL) AI READINESS ASSESSMENT",
+    "headingLine1": "HOW AI-READY",
+    "headingLine2": "ARE YOU?",
+    "intro": "Ten questions across strategy, data, process, talent and governance. Score each 1–5 to get a maturity tier and a focused action read.",
+    "progress": "PROGRESS",
+    "questions": [
+      {
+        "title": "Strategy & Leadership Alignment",
+        "explanation": "How aligned leadership is with AI strategy."
+      },
+      {
+        "title": "Data Quality & Infrastructure",
+        "explanation": "Data reliability, centralization, accessibility."
+      },
+      {
+        "title": "Process Automation & Workflow Maturity",
+        "explanation": "Workflow maturity & automation adoption."
+      },
+      {
+        "title": "Digital Skills & Talent",
+        "explanation": "Employee digital readiness & AI skill level."
+      },
+      {
+        "title": "Tech Stack & Integrations",
+        "explanation": "Tooling, integrations, cloud infrastructure."
+      },
+      {
+        "title": "AI Governance & Compliance",
+        "explanation": "Policies, privacy, security & AI risk control."
+      },
+      {
+        "title": "Customer Experience Automation",
+        "explanation": "Use of AI in customer journeys."
+      },
+      {
+        "title": "Productivity Tools (CRM/ERP)",
+        "explanation": "Tool sophistication & integration depth."
+      },
+      {
+        "title": "AI Experimentation Culture",
+        "explanation": "Willingness to test AI tools & innovate."
+      },
+      {
+        "title": "ROI Measurement & KPIs",
+        "explanation": "Ability to measure ROI on AI initiatives."
+      }
+    ],
+    "scaleHints": [
+      "Not at all",
+      "Early",
+      "Partial",
+      "Strong",
+      "Fully"
+    ],
+    "calculateScore": "CALCULATE SCORE",
+    "answerAllTemplate": "ANSWER ALL {count} TO CONTINUE",
+    "tiers": [
+      {
+        "key": "emerging",
+        "name": "EMERGING",
+        "min": 0,
+        "summary": "Your organization is at the beginning stage of AI readiness. It's crucial to start building foundational capabilities: improve data quality, establish a clear AI strategy, and invest in basic tools."
+      },
+      {
+        "key": "developing",
+        "name": "DEVELOPING",
+        "min": 40,
+        "summary": "Your organization is in the development phase. You have some AI capabilities but need standardization and better integration. Focus on process optimization and employee training."
+      },
+      {
+        "key": "established",
+        "name": "ESTABLISHED",
+        "min": 60,
+        "summary": "Your organization has a solid foundation for AI readiness. You have good data infrastructure and some AI applications. Now is the time to scale AI initiatives across the organization and focus on advanced use cases."
+      },
+      {
+        "key": "advanced",
+        "name": "ADVANCED",
+        "min": 75,
+        "summary": "Your organization is at an advanced AI readiness level. You have mature AI capabilities and a data-driven culture. Focus on optimization, advanced AI applications, and continuous innovation."
+      },
+      {
+        "key": "transformational",
+        "name": "TRANSFORMATIONAL",
+        "min": 90,
+        "summary": "Your organization is at a transformational level. You have fully integrated AI across all operations and are an industry leader in AI adoption. Continue innovating and share your experiences with other organizations."
+      }
+    ],
+    "maturityTier": "MATURITY TIER",
+    "priorityFocusAreas": "PRIORITY FOCUS AREAS",
+    "aiActionPlan": "AI ACTION PLAN",
+    "generating": "GENERATING…",
+    "getAiActionPlan": "GET AI ACTION PLAN ↗",
+    "errorSuffix": ". AI plan needs GEMINI_API_KEY set on the server.",
+    "emptyState": "Turn this score into a prioritized 90-day plan tailored to your weakest areas.",
+    "retake": "↺ RETAKE ASSESSMENT",
+    "scoreOutOf": "/ 100"
+  },
+  "roiCalculator": {
+    "badge": "(TOOL) AI ROI CALCULATOR",
+    "headingLine1": "ESTIMATE YOUR",
+    "headingLine2": "AI RETURN",
+    "intro": "Model first-year ROI, net gain, and a five-year net-return projection from an AI investment — then benchmark it against your industry. Live as you type.",
+    "industryLabel": "INDUSTRY",
+    "industries": [
+      {
+        "key": "retail",
+        "label": "RETAIL"
+      },
+      {
+        "key": "manufacturing",
+        "label": "MANUFACTURING"
+      },
+      {
+        "key": "healthcare",
+        "label": "HEALTHCARE"
+      },
+      {
+        "key": "finance",
+        "label": "FINANCE"
+      },
+      {
+        "key": "custom",
+        "label": "OTHER"
+      }
+    ],
+    "sections": {
+      "investment": "INVESTMENT",
+      "productivity": "PRODUCTIVITY",
+      "revenue": "REVENUE"
+    },
+    "fields": {
+      "initialSetup": "INITIAL SETUP",
+      "annualSubscription": "ANNUAL SUBSCRIPTION",
+      "employees": "EMPLOYEES",
+      "hourlyWage": "HOURLY WAGE",
+      "hoursPerWeek": "HOURS / WEEK ON TASK",
+      "timeSavings": "TIME SAVED",
+      "annualRevenue": "ANNUAL REVENUE",
+      "revenueIncrease": "REVENUE INCREASE"
+    },
+    "resetDefaults": "↺ RESET DEFAULTS",
+    "disclaimer": "Estimates only. Figures are modeled from the inputs above using a straight-line cost-savings + revenue-gain formula — actual results depend on execution, adoption speed, and market conditions. Treat this as a planning tool, not a guarantee.",
+    "metrics": {
+      "firstYearRoi": "FIRST-YEAR ROI",
+      "netGainYr1": "NET GAIN (YR 1)",
+      "totalAnnualGain": "TOTAL ANNUAL GAIN",
+      "costSavingsPerYr": "COST SAVINGS / YR",
+      "revenueGainPerYr": "REVENUE GAIN / YR"
+    },
+    "chartTitles": {
+      "cumulativeReturn": "CUMULATIVE NET RETURN & PAYBACK",
+      "projection": "5-YEAR NET RETURN PROJECTION",
+      "split": "COST SAVINGS VS REVENUE GAIN",
+      "benchmark": "VS INDUSTRY BENCHMARK"
+    },
+    "yearLabels": [
+      "START",
+      "YR 1",
+      "YR 2",
+      "YR 3",
+      "YR 4",
+      "YR 5"
+    ],
+    "yearLabelTemplate": "YR {n}",
+    "payback": {
+      "prefix": "PAYBACK:",
+      "beyond": "BEYOND 5 YRS",
+      "immediate": "IMMEDIATE",
+      "approxTemplate": "~{n} YR"
+    },
+    "benchmarkLabels": {
+      "roi": "ROI",
+      "timeSaved": "TIME SAVED",
+      "revenueIncrease": "REVENUE INCREASE"
+    },
+    "avgLabel": "avg",
+    "costSavedLine1": "COST",
+    "costSavedLine2": "SAVED",
+    "aiAnalysis": {
+      "title": "AI ANALYSIS",
+      "analysing": "ANALYSING…",
+      "rerun": "RE-RUN ANALYSIS ↗",
+      "getAnalysis": "GET AI ANALYSIS ↗",
+      "errorSuffix": " AI analysis needs GEMINI_API_KEY set on the server.",
+      "emptyState": "Generate a structured, four-perspective read of your numbers — financial, operational, growth and risk — with a verdict, risks and a recommended next step.",
+      "confidence": "CONFIDENCE"
+    },
+    "verdicts": {
+      "PROCEED": "PROCEED",
+      "PROCEED_WITH_CAUTION": "PROCEED WITH CAUTION",
+      "RECONSIDER": "RECONSIDER"
+    },
+    "lensLabels": {
+      "FINANCIAL": "Financial (CFO)",
+      "OPERATIONAL": "Operational (COO)",
+      "GROWTH": "Growth (CMO)",
+      "RISK": "Risk (Advisor)"
+    },
+    "risksMitigations": "RISKS & MITIGATIONS",
+    "strategicRecommendations": "STRATEGIC RECOMMENDATIONS",
+    "bookConsultation": "BOOK A CONSULTATION ↗",
+    "pdfReport": {
+      "title": "BRANDED PDF REPORT",
+      "body": "Full analysis, charts and recommendations as a shareable PDF — hand it to a co-founder or CFO.",
+      "emailPlaceholder": "EMAIL@COMPANY.COM",
+      "unlockButton": "UNLOCK & DOWNLOAD PDF ↓",
+      "preparing": "PREPARING…",
+      "downloadButton": "DOWNLOAD PDF REPORT ↓",
+      "generating": "GENERATING…",
+      "sentToTemplate": "SENT TO {email}"
+    },
+    "report": {
+      "brandSub": "DEVELOPER · DESIGNER · AI ENGINEER — TALLINN, ESTONIA",
+      "docType": "AI ROI ANALYSIS REPORT",
+      "sectionTitles": {
+        "investmentModel": "Investment Model",
+        "results": "Results",
+        "cumulativeReturn": "Cumulative Net Return & Payback",
+        "costSplit": "Cost Savings vs Revenue Gain",
+        "fourPerspective": "Four-Perspective Analysis",
+        "risksMitigations": "Risks & Mitigations",
+        "strategicRecommendations": "Strategic Recommendations"
+      },
+      "inputLabels": {
+        "industry": "Industry",
+        "initialSetup": "Initial Setup",
+        "annualSubscription": "Annual Subscription",
+        "employees": "Employees",
+        "hourlyWage": "Hourly Wage",
+        "hoursPerWeek": "Hours / Week On Task",
+        "timeSavings": "Time Saved",
+        "annualRevenue": "Annual Revenue",
+        "revenueIncrease": "Revenue Increase"
+      },
+      "metricLabels": {
+        "firstYearRoi": "First-Year ROI",
+        "netGainYr1": "Net Gain (Yr 1)",
+        "totalAnnualGain": "Total Annual Gain",
+        "costSavingsPerYr": "Cost Savings / Yr",
+        "revenueGainPerYr": "Revenue Gain / Yr"
+      },
+      "yearLabels": [
+        "START",
+        "YR 1",
+        "YR 2",
+        "YR 3",
+        "YR 4",
+        "YR 5"
+      ],
+      "payback": {
+        "prefix": "PAYBACK:",
+        "beyond": "BEYOND 5 YEARS",
+        "immediate": "IMMEDIATE",
+        "approxTemplate": "~{n} YEARS"
+      },
+      "ctaLabel": "BOOK A CONSULTATION",
+      "disclaimer": "Estimates only. Figures are modeled from the inputs supplied for this report using a straight-line cost-savings and revenue-gain formula, plus an AI-generated qualitative read of the scenario. Actual results depend on execution, adoption speed and market conditions — treat this as a planning tool, not a guarantee.",
+      "footerText": "JANAR KUUSK · info@janarkuuskpro.com · Tallinn, Estonia"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "( 05 ) INQUIRY",
+      "headingLine1": "LET'S BUILD",
+      "headingLine2": "SOMETHING",
+      "headingLine3": "EXTRAORDINARY."
+    },
+    "directEmail": "DIRECT EMAIL",
+    "network": "NETWORK",
+    "location": "LOCATION",
+    "locationValueLine1": "TALLINN,",
+    "locationValueLine2": "ESTONIA",
+    "responseTime": "RESPONSE TIME",
+    "responseTimeValue": "Within 24 hours",
+    "form": {
+      "prefillType": "AI ROI FOLLOW-UP",
+      "prefillIntro": "Following up on my AI ROI Calculator result",
+      "prefillIndustry": "Industry:",
+      "prefillRoi": "Projected first-year ROI:",
+      "prefillVerdict": "AI verdict:",
+      "prefillClosing": "I'd like to talk through the numbers and what implementation would look like.",
+      "prefillBadge": "RE: YOUR AI ROI CALCULATOR RESULT",
+      "nameLabel": "NAME",
+      "namePlaceholder": "YOUR FULL NAME",
+      "emailLabel": "EMAIL ADDRESS",
+      "emailPlaceholder": "EMAIL@EXAMPLE.COM",
+      "typeLabel": "PROJECT TYPE",
+      "typePlaceholder": "WEBSITE / APP / AI SYSTEM",
+      "messageLabel": "MESSAGE",
+      "messagePlaceholder": "DESCRIBE YOUR PROJECT VISION...",
+      "submitButton": "SEND INQUIRY",
+      "submitting": "SENDING…",
+      "errorMessage": "Something went wrong. Try again, or email info@janarkuuskpro.com directly.",
+      "successTitle": "MESSAGE SENT.",
+      "successBody": "Thank you — I'll be in touch within 24 hours."
+    }
+  },
+  "privacy": {
+    "badge": "(PRIVACY)",
+    "heading": "PRIVACY POLICY",
+    "lastUpdated": "Last updated: July 28, 2026",
+    "intro": "This page explains what data this site collects, why, and how it's used. Written in plain language — not a legal template.",
+    "sections": [
+      {
+        "title": "Who we are",
+        "body": "The data controller for this site and its tools (AI ROI Calculator, AI Readiness Assessment, contact form) is Janar Kuusk, Tallinn, Estonia. For data questions, contact: info@janarkuuskpro.com."
+      },
+      {
+        "title": "What we collect",
+        "body": "Contact form: name, email, project type, and message you enter yourself. AI ROI Calculator and AI Readiness Assessment: the numbers and answers you enter to generate a result — these are sent to Google Gemini AI to produce the analysis. PDF report download: your email address, to unlock the report. We don't collect payment details or create user accounts."
+      },
+      {
+        "title": "How we use it",
+        "body": "To respond to your messages and inquiries, to generate AI-based analysis from the data you enter, and (if you download a PDF report) to follow up about your project. We don't sell or share your data with third parties for marketing."
+      },
+      {
+        "title": "Third parties",
+        "body": "We use the following processors: Formspree (contact form handling), Google Gemini API (AI analysis — your input text is sent to Google for processing), Google Firebase/Firestore (storing PDF report requests), Resend (optional email notification when a new request arrives), and Vercel (hosting). Each has its own privacy policy and data-processing terms."
+      },
+      {
+        "title": "Data retention",
+        "body": "We keep contact-form and PDF-request data for as long as it's needed to respond to you, or until you ask us to delete it. There is currently no automatic deletion schedule."
+      },
+      {
+        "title": "Your rights (GDPR)",
+        "body": "You have the right to request access to, correction of, deletion of, restriction on, and portability of your data, and to object to its processing. To exercise these rights, email: info@janarkuuskpro.com."
+      },
+      {
+        "title": "Cookies & tracking",
+        "body": "This site currently uses no cookies or tracking tools (e.g. Google Analytics). If that changes, this page will be updated and a consent prompt added where required."
+      },
+      {
+        "title": "International transfers",
+        "body": "Some of the providers we use (Google, Vercel) may process data outside the European Union. These providers apply safeguards for international transfers (e.g. the European Commission's Standard Contractual Clauses)."
+      },
+      {
+        "title": "Changes to this policy",
+        "body": "We may update this policy from time to time. Material changes will be noted on this page."
+      },
+      {
+        "title": "Contact",
+        "body": "Questions about your data? Email: info@janarkuuskpro.com."
+      }
+    ]
+  },
+  "blog": {
+    "badge": "(BLOG)",
+    "heading": "NOTES",
+    "intro": "On building, architecture, and AI engineering.",
+    "emptyState": "First posts coming soon.",
+    "readMore": "READ MORE",
+    "backToBlog": "← BACK TO BLOG",
+    "publishedOn": "PUBLISHED"
+  }
+}

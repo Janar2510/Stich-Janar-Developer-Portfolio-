@@ -1,0 +1,50 @@
+---
+title: "Why I skipped the i18n libraries and wrote a 14-line loader"
+excerpt: "This site's Estonian version doesn't use next-intl or any i18n framework. Here's why, and the exact architecture."
+date: "2026-07-28"
+tags: ["Next.js", "i18n", "architecture"]
+---
+
+When I decided to make this portfolio bilingual — Estonian primary, English second — the reflex move was to reach for `next-intl` or something like it. Instead I wrote a 14-line dictionary loader and kept everything else plain TypeScript.
+
+## The decision
+
+Three things argued against a library:
+
+- The site has roughly 330 user-facing strings total. That's small — small enough that a plain `Record<Locale, Dictionary>` shape is simpler than learning a library's API.
+- Every page already uses `generateMetadata` and `generateStaticParams` — Next's own patterns. An extra abstraction layer on top wouldn't have added anything.
+- Type safety mattered. I wanted a missing translation key to be a TypeScript compile error, not a silent English fallback at runtime.
+
+## The architecture
+
+```
+src/i18n/config.ts            locales, defaultLocale, Locale type
+src/i18n/get-dictionary.ts    dynamic import() loader
+src/i18n/dictionaries/et.json Estonian — the type's source of truth
+src/i18n/dictionaries/en.json English
+src/proxy.ts                  "/" → 307 → "/et"
+src/app/[lang]/...            every route lives under this segment
+```
+
+The type derivation is the detail that matters most:
+
+```ts
+export type Dictionary = typeof import("./dictionaries/et.json");
+```
+
+The Estonian JSON is the source of truth. If the English dictionary is missing a key the Estonian one has, TypeScript throws an error exactly where that key gets used — not a vague "undefined" at runtime.
+
+## The trap I avoided
+
+The AI-analysis tool (ROI calculator) asks the Gemini API for structured JSON, one field of which is a "perspective name" — something like "Financial (CFO)". The first version let the model return that name directly and used it to pick an icon:
+
+```ts
+const LENS_ICON = {
+  "Financial (CFO)": "payments",
+  // ...
+};
+```
+
+That worked in English. The moment I asked the model to answer in Estonian, it came back with "Finants (CFO)" — a string the icon map didn't recognize, and every card silently fell back to a generic icon.
+
+The fix: the Gemini schema now demands a stable enum value (`FINANCIAL`, `OPERATIONAL`, `GROWTH`, `RISK`) that never changes regardless of language. The display label comes from the dictionary, keyed off that same enum. Two separate things — a machine-readable identifier and a human-readable label — that break exactly when conflated, and exactly when it matters most.

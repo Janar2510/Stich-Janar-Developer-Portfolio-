@@ -1,0 +1,24 @@
+# Janar Kuusk
+
+> Developer, designer, and AI engineer based in Tallinn, Estonia. Builds web applications, mobile apps, and production AI systems for clients across Estonia and the EU.
+
+Janar Kuusk is a full-stack developer and AI engineer specializing in Next.js/React web applications, React Native mobile apps, and applied AI features (LLM integration, RAG pipelines, autonomous agents). Site available in Estonian (primary, /et) and English (/en).
+
+## Services
+- Web design and web applications (Next.js, TypeScript, Tailwind)
+- Mobile development (React Native, Expo)
+- AI engineering — LLM integration, RAG, autonomous agents, AI-powered features
+
+## Free tools (built and hosted on this site)
+- [AI ROI Calculator](https://janarkuusk.com/et/roi-calculator) — estimates first-year ROI, net gain, and a five-year return projection from an AI investment, with an AI-generated four-perspective analysis (financial, operational, growth, risk) and a downloadable PDF report.
+- [AI Readiness Assessment](https://janarkuusk.com/et/ai-assessment) — a 10-question assessment scoring an organization's AI maturity across strategy, data, process, talent, and governance, with an AI-generated action plan.
+
+## Selected work
+- AgentFlow — visual workflow designer for multi-agent AI systems
+- Pocket Negotiator — AI negotiation coaching mobile app (Expo, Supabase, Gemini)
+- AI-Power ERP — modular ERP platform with AI-ready infrastructure and pgvector semantic search
+- Biopuhastid (biopuhastid.com) — biological wastewater treatment site with a product-selection calculator
+- Kuus Disain (kuusdisain.ee) — microcement studio brand site with an AI studio assistant
+
+## Contact
+https://janarkuusk.com/et/contact

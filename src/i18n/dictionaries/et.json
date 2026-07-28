@@ -1,0 +1,852 @@
+{
+  "seo": {
+    "site": {
+      "titleDefault": "Janar Kuusk — Arendaja · Disainer · AI Insener",
+      "titleTemplate": "%s — Janar Kuusk",
+      "description": "Janar Kuusk — Tallinnas tegutsev arendaja, veebidisainer ja AI insener. Ehitan digitaalseid monumente arhitektuurse täpsusega.",
+      "keywords": [
+        "arendaja",
+        "veebidisainer",
+        "AI insener",
+        "Tallinn",
+        "Eesti",
+        "Next.js",
+        "React"
+      ]
+    },
+    "pages": {
+      "home": {
+        "title": "Janar Kuusk — Arendaja · Disainer · AI Insener",
+        "description": "Ehitan digitaalseid monumente arhitektuurse täpsusega. Tallinnas tegutsev arendaja, veebidisainer ja AI insener."
+      },
+      "about": {
+        "title": "Minust",
+        "description": "Janar Kuusk — Tallinnas tegutsev arendaja, veebidisainer ja AI insener. Töötan täpsuse ja loovuse ristumiskohas."
+      },
+      "services": {
+        "title": "Teenused",
+        "description": "Veebidisain, veebirakendused, mobiiliarendus ja AI inseneria — Janar Kuusk ehitab digitaalseid struktuure arhitektuurse täpsusega."
+      },
+      "portfolio": {
+        "title": "Portfoolio",
+        "description": "Janar Kuuski valitud tööd — veebidisaini, veebirakenduste, mobiiliarenduse ja AI inseneria projektid."
+      },
+      "tools": {
+        "title": "AI tööriistad — Janar Kuusk",
+        "description": "Tasuta interaktiivsed AI tööriistad: ROI kalkulaator AI-investeeringu tasuvuse modelleerimiseks ja 10-küsimuseline AI valmiduse hindamine."
+      },
+      "aiAssessment": {
+        "title": "AI valmiduse hindamine — Janar Kuusk",
+        "description": "10-küsimuseline AI valmiduse hindamine, mis hindab sinu organisatsiooni strateegia, andmete, protsesside, talendi ja juhtimise lõikes — koos küpsustaseme ja fokuseeritud järgmiste sammudega."
+      },
+      "roiCalculator": {
+        "title": "AI ROI kalkulaator — Janar Kuusk",
+        "description": "Tasuta interaktiivne kalkulaator, mis hindab AI-investeeringu esimese aasta ROI-d, netokasumit ja viie aasta netotootluse prognoosi, võrreldes tööstusharu keskmisega."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "description": "Võta ühendust Janar Kuuskiga — Tallinnas tegutsev arendaja, disainer ja AI insener."
+      },
+      "privacy": {
+        "title": "Privaatsuspoliitika",
+        "description": "Kuidas Janar Kuusk portfoolio veebileht kogub ja kasutab andmeid — kontaktivorm, AI tööriistad ja kolmandad osapooled."
+      },
+      "blog": {
+        "title": "Blogi",
+        "description": "Märkmed veebiarenduse, AI inseneeria ja digitaalsete toodete ehitamise kohta."
+      }
+    }
+  },
+  "nav": {
+    "home": "AVALEHT",
+    "about": "MINUST",
+    "services": "TEENUSED",
+    "portfolio": "PORTFOOLIO",
+    "blog": "BLOGI",
+    "tools": "AI TÖÖRIISTAD",
+    "contact": "KONTAKT",
+    "consultation": "KONSULTATSIOON",
+    "getInTouch": "VÕTA ÜHENDUST ↗",
+    "openMenu": "Ava menüü",
+    "closeMenu": "Sulge menüü"
+  },
+  "footer": {
+    "copyright": "© 2026 JANAR KUUSK. EHITATUD TÄPSUSEGA.",
+    "privacyLink": "PRIVAATSUS"
+  },
+  "marquee": {
+    "items": [
+      "VEEBIDISAIN",
+      "VEEBIRAKENDUSED",
+      "MOBIILIARENDUS",
+      "AI INSENERIA",
+      "UX ARHITEKTUUR",
+      "FULLSTACK ARENDUS"
+    ]
+  },
+  "stats": {
+    "items": [
+      {
+        "suffix": "+",
+        "label": "AASTAT EHITAMIST"
+      },
+      {
+        "suffix": "+",
+        "label": "VALMINUD PROJEKTI"
+      },
+      {
+        "suffix": "",
+        "label": "VALDKONDA"
+      },
+      {
+        "suffix": "",
+        "label": "EESTI, EL"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "developer": "ARENDAJA",
+      "designer": "DISAINER",
+      "openForWork": "AVATUD VABAKUTSELISELE TÖÖLE.",
+      "bio": "Full Stack arendaja ja AI insener — ehitan päristarkvara ettevõttes 6K CO OÜ, Eestis.",
+      "scheduleCall": "BRONEERI KÕNE",
+      "location": "ASUKOHT",
+      "locationValue": "TALLINN, EESTI"
+    },
+    "featuredWork": {
+      "badge": "(02) ESILETÕSTETUD TÖÖD",
+      "heading": "VALITUD ARTEFAKTID",
+      "viewAll": "VAATA KÕIKI"
+    },
+    "projects": [
+      {
+        "slug": "pocket-negotiator",
+        "title": "POCKET NEGOTIATOR",
+        "category": "MOBIILNE · AI",
+        "year": "2025"
+      },
+      {
+        "slug": "kuus-disain",
+        "title": "KUUS DISAIN",
+        "category": "VEEBIDISAIN",
+        "year": "2025"
+      }
+    ],
+    "featuredAi": {
+      "tag": "WEB · biopuhastid.com",
+      "title": "BIOPUHASTID",
+      "body": "Kingspani bioloogilise reoveepuhastuse veebilehe premium-ülesehitus Eesti turule. Juhitud süsteemikalkulaator sobitab iga kinnistu õige puhastiga — BioDisc, BioFicient, BioAir, BioTec Flo või Rainstore — koos toetuste nõustamise ja tehniliste allalaadimistega.",
+      "cta": "VAATA PROJEKTI"
+    },
+    "capabilities": {
+      "badge": "(03) VÕIMEKUSED",
+      "headingLine1": "SÜSTEEMSED",
+      "headingLine2": "LAHENDUSED",
+      "intro": "Neli distsipliini, üks arhitektuurne lähenemine. Iga süsteem, mille ehitan, on loodud selguse, jõudluse ja pikaealisuse nimel.",
+      "items": [
+        {
+          "icon": "architecture",
+          "title": "VEEBIDISAIN",
+          "body": "Kõrge täpsusega visuaalsüsteemid, mis põhinevad struktuursel tasakaalul ja tehnilisel selgusel."
+        },
+        {
+          "icon": "developer_mode_tv",
+          "title": "VEEBIRAKENDUSED",
+          "body": "Skaleeritavad arhitektuurid, mis seavad esikohale jõudluse, turvalisuse ja sujuva integratsiooni."
+        },
+        {
+          "icon": "phone_iphone",
+          "title": "MOBIILIARENDUS",
+          "body": "Natiivse tunnetusega platvormideülesed rakendused, laitmatu viimistluse ja jõudlusega."
+        },
+        {
+          "icon": "psychology",
+          "title": "AI INSENERIA",
+          "body": "LLM-integratsioon, RAG-torujuhtmed ja tootmisvalmis autonoomsed AI-agendid."
+        }
+      ],
+      "viewAllServices": "VAATA KÕIKI TEENUSEID"
+    },
+    "cta": {
+      "badge": "(04) ALUSTA PROJEKTI",
+      "heading": "VALMIS EHITAMA?",
+      "bodyLine1": "Võtan hetkel vastu valitud tellimusi.",
+      "bodyLine2": "Ehitame midagi, mis peab vastu.",
+      "button": "ALUSTA PROJEKTI",
+      "watermark": "KONTAKT"
+    },
+    "testimonials": {
+      "badge": "(KLIENDID)",
+      "heading": "MIDA KLIENDID ÜTLEVAD",
+      "items": []
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "(MINUST)",
+      "aiEngineer": "AI INSENER",
+      "bio1": "Ehitan skaleeritavaid veebirakendusi ja AI-põhiseid süsteeme tehnilise täpsuse ja ärimõju ristumiskohas. Baseerun Eestis — töötan globaalselt ettevõtte 6K CO OÜ all.",
+      "bio2": "Alates AI-agentide töövoogudest kuni platvormideülese mobiilirakenduste ja ettevõtte ERP-süsteemideni — iga projekt järgib sama põhimõtet: kõigepealt struktuur, ilu järgneb.",
+      "cta": "TEEME KOOSTÖÖD",
+      "locationBadge": "TALLINN, EESTI"
+    },
+    "philosophy": {
+      "badge": "(FILOSOOFIA)",
+      "quoteBefore": "PARIMAD DIGITOOTED ON NAGU HEA",
+      "quoteAccent": "ARHITEKTUUR",
+      "quoteAfter": "— RAJATUD KINDLALE STRUKTUURILE, LÄBIMÕELDUSELE JA MATERJALIDELE, MIS VANANEVAD VÄÄRIKALT."
+    },
+    "stack": {
+      "badge": "(TÖÖRIISTAD)",
+      "heading": "TEHNOLOOGIAPINU",
+      "categories": [
+        {
+          "category": "ESIOTS",
+          "tools": [
+            "REACT",
+            "NEXT.JS",
+            "TYPESCRIPT",
+            "TAILWIND CSS",
+            "WEBGL",
+            "THREE.JS"
+          ]
+        },
+        {
+          "category": "TAGAOTS",
+          "tools": [
+            "NODE.JS",
+            "PYTHON",
+            "POSTGRESQL",
+            "SUPABASE",
+            "PRISMA"
+          ]
+        },
+        {
+          "category": "AI / MASINÕPE",
+          "tools": [
+            "CLAUDE API",
+            "OPENAI",
+            "GEMINI",
+            "LANGCHAIN",
+            "VERCEL AI SDK",
+            "RAG SYSTEMS"
+          ]
+        },
+        {
+          "category": "DISAIN",
+          "tools": [
+            "FIGMA",
+            "ADOBE SUITE",
+            "FRAMER",
+            "SPLINE"
+          ]
+        },
+        {
+          "category": "MOBIIL",
+          "tools": [
+            "REACT NATIVE",
+            "EXPO",
+            "SWIFTUI",
+            "FIREBASE"
+          ]
+        }
+      ]
+    },
+    "process": {
+      "badge": "(METOODIKA)",
+      "heading": "KUIDAS MA TÖÖTAN",
+      "steps": [
+        {
+          "n": "01",
+          "title": "AVASTAMINE",
+          "body": "Sukeldun sinu eesmärkidesse, sihtrühma ja konkurentsimaastikku. Uuringud, intervjuud ja süntees — ehitan struktuurse lähteülesande, mis juhib iga otsust."
+        },
+        {
+          "n": "02",
+          "title": "ARHITEKTUUR",
+          "body": "Tõlgin lähteülesande ehitusjooniseks. Traatraamid, süsteemi disain, infoarhitektuur ja tehnoloogiavalikud — enne kui esimenegi rida päriskoodi on kirjutatud."
+        },
+        {
+          "n": "03",
+          "title": "EHITAMINE",
+          "body": "Loon toodet täpsusega. Puhas, hooldatav kood ja pidev iteratsioon. Regulaarsed vahekohtumised tagavad, et kõik on kooskõlas, kui struktuur kerkib."
+        },
+        {
+          "n": "04",
+          "title": "VIIMISTLEMINE",
+          "body": "Testin kõigil seadmetel, optimeerin jõudlust ja lihvin iga detaili. Käivitus on alles algus — järelvalve hoiab süsteemi terava."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "(EHITAME KOOS)",
+      "headingLine1": "SUL ON PROJEKT",
+      "headingLine2": "MÕTTES?",
+      "body": "Võtan hetkel vastu valitud tellimusi. Vastan 24 tunni jooksul.",
+      "button": "VÕTA ÜHENDUST",
+      "viewWork": "VAATA MINU TÖID"
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "(TEENUSED)",
+      "headingLine1": "ARHITEKTUURNE",
+      "headingLine2": "DIGITAALNE",
+      "headingLine3": "KOGEMUS.",
+      "est": "ASUTATUD 2022",
+      "location": "TALLINN, EESTI"
+    },
+    "intro": "Tehnilise täpsuse ja esteetilise range vormi süntees. Ehitan digitaalseid struktuure, mis pole mitte ainult funktsionaalsed, vaid ka emotsionaalselt mõjuvad — loodud kasvama koos moodsa ambitsiooni kiirusega.",
+    "aiLlmBadge": "AI · LLM INSENERIA",
+    "newServiceBadge": "UUS TEENUS",
+    "items": [
+      {
+        "n": "(01)",
+        "titleLine1": "VEEBI",
+        "titleLine2": "DISAIN",
+        "body": "Kaugemale mallidest — loon eritellimusel visuaalseid identiteete. Keskendudes esteetika ja UX-i ristumiskohale, on iga piksel paigutatud struktuurse kavatsusega, tagades, et su bränd köidab tähelepanu vaikuse ja rafineerituse kaudu.",
+        "tools": [
+          "FIGMA",
+          "ADOBE SUITE",
+          "WEBGL",
+          "THREE.JS",
+          "FRAMER"
+        ],
+        "cta": "VAATA JUHTUMIUURINGUT"
+      },
+      {
+        "n": "(02)",
+        "titleLine1": "VEEBIRAKENDUSTE",
+        "titleLine2": "ARENDUS",
+        "body": "Jõudlus on usaldusväärsuse alus. Ehitan suuremahulisi rakendusi moodsate raamistikega, mis seavad esikohale kiiruse, turvalisuse ja sujuva integratsiooni. Minu lähenemine käsitleb koodi kui äri kasvu ehitusjoonist.",
+        "tools": [
+          "NEXT.JS",
+          "TYPESCRIPT",
+          "NODE.JS",
+          "POSTGRESQL",
+          "SUPABASE"
+        ],
+        "cta": "TEHNILISED ANDMED"
+      },
+      {
+        "n": "(03)",
+        "titleLine1": "MOBIILIRAKENDUSTE",
+        "titleLine2": "ARENDUS",
+        "body": "Rakendan mobiilsuse jõudu natiivsust esikohale seava filosoofiaga. Disainin ja arendan platvormideüleseid lahendusi, mis tunduvad eristamatud süsteemitarkvarast — tagades maksimaalse haarde ilma sujuvaid animatsioone või jõudlust ohverdamata.",
+        "tools": [
+          "REACT NATIVE",
+          "EXPO",
+          "SWIFTUI",
+          "FIREBASE"
+        ],
+        "cta": null
+      },
+      {
+        "n": "(04)",
+        "titleLine1": "AI",
+        "titleLine2": "INSENERIA",
+        "body": "Integreerin suuri keelemudeleid ja AI-agente otse päristarkvarasse. Alates RAG-torujuhtmetest kuni autonoomsete AI-töövoogudeni ehitan süsteeme, mis on nutikad juba disaini poolest — mitte hilisema lisandusena. Iga AI-funktsioon, mille ehitan, on tootmisvalmis, jälgitav ja pikaks ajaks ehitatud.",
+        "tools": [
+          "CLAUDE API",
+          "OPENAI",
+          "GEMINI",
+          "LANGCHAIN",
+          "PYTHON",
+          "VERCEL AI SDK",
+          "RAG",
+          "SUPABASE VECTOR"
+        ],
+        "cta": "ARUTAME PROJEKTI"
+      }
+    ],
+    "cta": {
+      "headingLine1": "VALMIS EHITAMA",
+      "headingLine2": "MIDAGI MONUMENTAALSET?",
+      "button": "RÄÄGIME"
+    },
+    "watermarkLine1": "EHITA",
+    "watermarkLine2": "SKALEERI"
+  },
+  "portfolio": {
+    "hero": {
+      "badge": "(01) PORTFOOLIO",
+      "headingLine1": "VALITUD",
+      "headingLine2": "ARHIIV.",
+      "intro": "Kureeritud kogumik tehnilisi lahendusi ja digitaalseid arhitektuure, ehitatud kirurgilise täpsusega."
+    },
+    "aiProjectBadge": "AI PROJEKT",
+    "filters": [
+      {
+        "key": "all",
+        "label": "KÕIK"
+      },
+      {
+        "key": "design",
+        "label": "DISAIN"
+      },
+      {
+        "key": "development",
+        "label": "ARENDUS"
+      },
+      {
+        "key": "ai",
+        "label": "AI"
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "AGENTFLOW",
+        "sub": "01 / AI · MITMEAGENDILISED SÜSTEEMID",
+        "body": "Visuaalne lohista-ja-aseta töövoo disainer mitme AI-agendiga süsteemide orkestreerimiseks. Reaalajas täitmise jälgimine, kogukonna koostöö ja agentide turuplats.",
+        "tags": [
+          "REACT 18",
+          "TYPESCRIPT",
+          "FASTAPI",
+          "SUPABASE",
+          "POSTGRESQL"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "POCKET NEGOTIATOR",
+        "sub": "02 / MOBIILNE · AI",
+        "body": "AI-põhine läbirääkimiste treeningrakendus — harjuta tehinguid AI-vastase vastu, valmistu AI-genereeritud strateegiaga ning salvesta, transkribeeri ja hinda päriskohtumisi, jälgides oskuste arengut aja jooksul. Expo mobiilirakendus Supabase taustasüsteemiga, kus kogu AI liigub läbi Edge Functions'ite.",
+        "tags": [
+          "EXPO SDK 53",
+          "REACT NATIVE",
+          "TYPESCRIPT",
+          "SUPABASE",
+          "GEMINI AI",
+          "ASSEMBLYAI"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "AI-POWER ERP",
+        "sub": "03 / ETTEVÕTTE PLATVORM",
+        "body": "Moodulipõhine ERP-platvorm AI-valmis taristuga, semantilise otsinguga pgvectori kaudu ja metaandmepõhise lisamoodulite arhitektuuriga.",
+        "tags": [
+          "PYTHON",
+          "FASTAPI",
+          "POSTGRESQL",
+          "PGVECTOR"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "BIOPUHASTID",
+        "sub": "04 / VEEBIDISAIN",
+        "body": "Kingspani bioloogilise reoveepuhastuse veebilehe premium-ülesehitus Eesti turule. Juhitud süsteemikalkulaator sobitab iga kinnistu õige puhastiga — BioDisc, BioFicient, BioAir, BioTec Flo või Rainstore — koos toetuste nõustamise ja tehniliste allalaadimistega.",
+        "tags": [
+          "VITE",
+          "REACT 18",
+          "TYPESCRIPT",
+          "TAILWIND",
+          "FRAMER MOTION",
+          "I18NEXT"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "KUUS DISAIN",
+        "sub": "05 / VEEBIDISAIN",
+        "body": "Brändiveeb Tartu mikrotsemendistuudiole ja Luxury Concrete® ametlikule edasimüüjale. Ruumivisualiseerija näitab vuugivabu mineraalseid viimistlusi päris interjöörides, toetatuna tootekonfiguraatori ja AI-stuudioabilisega.",
+        "tags": [
+          "NEXT.JS",
+          "TYPESCRIPT",
+          "TAILWIND CSS",
+          "GOOGLE GENERATIVE AI"
+        ]
+      }
+    ],
+    "cta": {
+      "label": "VALMIS EHITAMA?",
+      "headingLine1": "ALUSTAME",
+      "headingAccent": "VESTLUST.",
+      "button": "ALUSTA PROJEKTI ↗"
+    }
+  },
+  "tools": {
+    "hero": {
+      "badge": "(TÖÖRIISTAD) TASUTA AI TÖÖRIISTAD",
+      "headingLine1": "PANE KASU",
+      "headingLine2": "NUMBRITESSE.",
+      "intro": "Kaks interaktiivset tööriista AI-investeeringu suuruse hindamiseks ja oma taseme mõõtmiseks — registreerimiseta, tulemused sekunditega."
+    },
+    "items": [
+      {
+        "href": "/roi-calculator",
+        "tag": "KALKULAATOR",
+        "title": "AI ROI KALKULAATOR",
+        "body": "Modelleeri AI-investeeringu esimese aasta ROI, netokasumi ja viie aasta netotootluse prognoosi — võrreldes su tööstusharu keskmisega. Uueneb reaalajas, kui sisestad andmeid.",
+        "icon": "trending_up"
+      },
+      {
+        "href": "/ai-assessment",
+        "tag": "HINDAMINE",
+        "title": "AI VALMIDUSE HINDAMINE",
+        "body": "Kümme küsimust strateegia, andmete, protsesside, talendi ja juhtimise kohta. Saad küpsustaseme, prioriteetsed fookusvaldkonnad ja AI tegevuskava.",
+        "icon": "checklist"
+      }
+    ],
+    "openTool": "AVA TÖÖRIIST"
+  },
+  "aiAssessment": {
+    "badge": "(TÖÖRIIST) AI VALMIDUSE HINDAMINE",
+    "headingLine1": "KUI AI-VALMIS",
+    "headingLine2": "SA OLED?",
+    "intro": "Kümme küsimust strateegia, andmete, protsesside, talendi ja juhtimise kohta. Hinda igaüht skaalal 1–5, et saada küpsustase ja fokuseeritud tegevusülevaade.",
+    "progress": "EDENEMINE",
+    "questions": [
+      {
+        "title": "Strateegia ja juhtkonna vastavus",
+        "explanation": "Kui hästi on juhtkond AI strateegiaga kooskõlas."
+      },
+      {
+        "title": "Andmete kvaliteet ja taristu",
+        "explanation": "Andmete usaldusväärsus, tsentraliseeritus, ligipääsetavus."
+      },
+      {
+        "title": "Protsesside automatiseerimine ja töövoo küpsus",
+        "explanation": "Töövoo küpsus ja automatiseerimise kasutuselevõtt."
+      },
+      {
+        "title": "Digioskused ja talent",
+        "explanation": "Töötajate digivalmidus ja AI-oskuste tase."
+      },
+      {
+        "title": "Tehnoloogiapinu ja integratsioonid",
+        "explanation": "Tööriistad, integratsioonid, pilvetaristu."
+      },
+      {
+        "title": "AI juhtimine ja vastavus",
+        "explanation": "Reeglid, privaatsus, turvalisus ja AI riskijuhtimine."
+      },
+      {
+        "title": "Kliendikogemuse automatiseerimine",
+        "explanation": "AI kasutamine kliendi teekonnal."
+      },
+      {
+        "title": "Tootlikkuse tööriistad (CRM/ERP)",
+        "explanation": "Tööriistade küpsus ja integratsiooni sügavus."
+      },
+      {
+        "title": "AI katsetamise kultuur",
+        "explanation": "Valmisolek katsetada AI-tööriistu ja uuendada."
+      },
+      {
+        "title": "ROI mõõtmine ja KPI-d",
+        "explanation": "Võime mõõta AI algatuste tasuvust."
+      }
+    ],
+    "scaleHints": [
+      "Üldse mitte",
+      "Algusjärgus",
+      "Osaliselt",
+      "Tugevasti",
+      "Täielikult"
+    ],
+    "calculateScore": "ARVUTA SKOOR",
+    "answerAllTemplate": "VASTA KÕIGILE {count}, ET JÄTKATA",
+    "tiers": [
+      {
+        "key": "emerging",
+        "name": "ALGAJA",
+        "min": 0,
+        "summary": "Sinu organisatsioon on AI-valmiduse algusjärgus. Nüüd on aeg ehitada üles põhivõimekused: paranda andmekvaliteeti, sea selge AI strateegia ja investeeri baastööriistadesse."
+      },
+      {
+        "key": "developing",
+        "name": "ARENEV",
+        "min": 40,
+        "summary": "Sinu organisatsioon on arengufaasis. Mõned AI-võimekused on olemas, kuid vajad standardiseerimist ja paremat integratsiooni. Keskendu protsesside optimeerimisele ja töötajate koolitusele."
+      },
+      {
+        "key": "established",
+        "name": "VÄLJAKUJUNENUD",
+        "min": 60,
+        "summary": "Sinu organisatsioonil on tugev alus AI-valmiduseks. Andmetaristu on hea ja mõned AI-rakendused juba töös. Nüüd on aeg skaleerida AI-algatused kogu organisatsioonis ja keskenduda keerukamatele kasutusjuhtudele."
+      },
+      {
+        "key": "advanced",
+        "name": "EDASIJÕUDNUD",
+        "min": 75,
+        "summary": "Sinu organisatsioon on edasijõudnud AI-valmiduse tasemel. AI-võimekused on küpsed ja kultuur andmepõhine. Keskendu optimeerimisele, keerukamatele AI-rakendustele ja pidevale uuendamisele."
+      },
+      {
+        "key": "transformational",
+        "name": "TRANSFORMATIIVNE",
+        "min": 90,
+        "summary": "Sinu organisatsioon on transformatiivsel tasemel. AI on täielikult integreeritud kõikidesse tegevustesse ja oled valdkonna eestvedaja. Jätka uuendamist ja jaga oma kogemusi teiste organisatsioonidega."
+      }
+    ],
+    "maturityTier": "KÜPSUSTASE",
+    "priorityFocusAreas": "PRIORITEETSED FOOKUSVALDKONNAD",
+    "aiActionPlan": "AI TEGEVUSKAVA",
+    "generating": "GENEREERIN…",
+    "getAiActionPlan": "HANGI AI TEGEVUSKAVA ↗",
+    "errorSuffix": ". AI tegevuskava vajab serveris seadistatud GEMINI_API_KEY väärtust.",
+    "emptyState": "Muuda see skoor prioriteetseks 90-päevaseks plaaniks, mis on suunatud su nõrgimatele valdkondadele.",
+    "retake": "↺ TEE HINDAMINE UUESTI",
+    "scoreOutOf": "/ 100"
+  },
+  "roiCalculator": {
+    "badge": "(TÖÖRIIST) AI ROI KALKULAATOR",
+    "headingLine1": "HINDA OMA",
+    "headingLine2": "AI TOOTLUST",
+    "intro": "Modelleeri AI-investeeringu esimese aasta ROI, netokasumi ja viie aasta netotootluse prognoosi — seejärel võrdle oma tööstusharu keskmisega. Uueneb reaalajas, kui sisestad andmeid.",
+    "industryLabel": "TÖÖSTUSHARU",
+    "industries": [
+      {
+        "key": "retail",
+        "label": "JAEKAUBANDUS"
+      },
+      {
+        "key": "manufacturing",
+        "label": "TOOTMINE"
+      },
+      {
+        "key": "healthcare",
+        "label": "TERVISHOID"
+      },
+      {
+        "key": "finance",
+        "label": "FINANTS"
+      },
+      {
+        "key": "custom",
+        "label": "MUU"
+      }
+    ],
+    "sections": {
+      "investment": "INVESTEERING",
+      "productivity": "TOOTLIKKUS",
+      "revenue": "TULU"
+    },
+    "fields": {
+      "initialSetup": "ALGSEADISTUS",
+      "annualSubscription": "AASTANE TELLIMUS",
+      "employees": "TÖÖTAJAD",
+      "hourlyWage": "TUNNIPALK",
+      "hoursPerWeek": "TUNDI / NÄDALAS ÜLESANDEL",
+      "timeSavings": "AJASÄÄST",
+      "annualRevenue": "AASTANE KÄIVE",
+      "revenueIncrease": "TULU KASV"
+    },
+    "resetDefaults": "↺ LÄHTESTA VAIKEVÄÄRTUSED",
+    "disclaimer": "Ainult hinnangulised numbrid. Näitajad on modelleeritud ülaltoodud sisendite põhjal lineaarse kulusäästu + tulukasvu valemiga — tegelikud tulemused sõltuvad täitmisest, kasutuselevõtu kiirusest ja turutingimustest. Käsitle seda planeerimistööriistana, mitte garantiina.",
+    "metrics": {
+      "firstYearRoi": "ESIMESE AASTA ROI",
+      "netGainYr1": "NETOKASUM (1. A)",
+      "totalAnnualGain": "KOGU AASTANE KASUM",
+      "costSavingsPerYr": "KULUSÄÄST / AASTAS",
+      "revenueGainPerYr": "TULUKASV / AASTAS"
+    },
+    "chartTitles": {
+      "cumulativeReturn": "KUMULATIIVNE NETOTOOTLUS & TASUVUSAEG",
+      "projection": "5-AASTANE NETOTOOTLUSE PROGNOOS",
+      "split": "KULUSÄÄST VS TULUKASV",
+      "benchmark": "VÕRDLUS TÖÖSTUSHARU KESKMISEGA"
+    },
+    "yearLabels": [
+      "ALGUS",
+      "1. A",
+      "2. A",
+      "3. A",
+      "4. A",
+      "5. A"
+    ],
+    "yearLabelTemplate": "{n}. A",
+    "payback": {
+      "prefix": "TASUVUSAEG:",
+      "beyond": "ÜLE 5 AASTA",
+      "immediate": "KOHENE",
+      "approxTemplate": "~{n} A"
+    },
+    "benchmarkLabels": {
+      "roi": "ROI",
+      "timeSaved": "AJASÄÄST",
+      "revenueIncrease": "TULU KASV"
+    },
+    "avgLabel": "keskm",
+    "costSavedLine1": "KULU",
+    "costSavedLine2": "SÄÄST",
+    "aiAnalysis": {
+      "title": "AI ANALÜÜS",
+      "analysing": "ANALÜÜSIN…",
+      "rerun": "KORDA ANALÜÜSI ↗",
+      "getAnalysis": "HANGI AI ANALÜÜS ↗",
+      "errorSuffix": " AI analüüs vajab serveris seadistatud GEMINI_API_KEY väärtust.",
+      "emptyState": "Genereeri struktureeritud, nelja vaatenurgaga ülevaade su numbritest — finants, operatsioonid, kasv ja risk — koos hinnangu, riskide ja soovitatud järgmise sammuga.",
+      "confidence": "USALDUSVÄÄRSUS"
+    },
+    "verdicts": {
+      "PROCEED": "JÄTKA",
+      "PROCEED_WITH_CAUTION": "JÄTKA ETTEVAATUSEGA",
+      "RECONSIDER": "KAALU UUESTI"
+    },
+    "lensLabels": {
+      "FINANCIAL": "Finants (CFO)",
+      "OPERATIONAL": "Operatsioonid (COO)",
+      "GROWTH": "Kasv (CMO)",
+      "RISK": "Risk (nõustaja)"
+    },
+    "risksMitigations": "RISKID & LEEVENDUSED",
+    "strategicRecommendations": "STRATEEGILISED SOOVITUSED",
+    "bookConsultation": "BRONEERI KONSULTATSIOON ↗",
+    "pdfReport": {
+      "title": "BRÄNDITUD PDF-RAPORT",
+      "body": "Täisanalüüs, graafikud ja soovitused jagatava PDF-ina — anna see kaasasutajale või finantsjuhile.",
+      "emailPlaceholder": "E-POST@ETTEVOTE.EE",
+      "unlockButton": "AVA & LAADI PDF ALLA ↓",
+      "preparing": "VALMISTAN ETTE…",
+      "downloadButton": "LAADI PDF-RAPORT ALLA ↓",
+      "generating": "GENEREERIN…",
+      "sentToTemplate": "SAADETUD AADRESSILE {email}"
+    },
+    "report": {
+      "brandSub": "ARENDAJA · DISAINER · AI INSENER — TALLINN, EESTI",
+      "docType": "AI ROI ANALÜÜSI RAPORT",
+      "sectionTitles": {
+        "investmentModel": "Investeeringu mudel",
+        "results": "Tulemused",
+        "cumulativeReturn": "Kumulatiivne netotootlus ja tasuvusaeg",
+        "costSplit": "Kulusääst vs tulukasv",
+        "fourPerspective": "Nelja vaatenurga analüüs",
+        "risksMitigations": "Riskid ja leevendused",
+        "strategicRecommendations": "Strateegilised soovitused"
+      },
+      "inputLabels": {
+        "industry": "Tööstusharu",
+        "initialSetup": "Algseadistus",
+        "annualSubscription": "Aastane tellimus",
+        "employees": "Töötajad",
+        "hourlyWage": "Tunnipalk",
+        "hoursPerWeek": "Tundi / nädalas ülesandel",
+        "timeSavings": "Ajasääst",
+        "annualRevenue": "Aastane käive",
+        "revenueIncrease": "Tulu kasv"
+      },
+      "metricLabels": {
+        "firstYearRoi": "Esimese aasta ROI",
+        "netGainYr1": "Netokasum (1. a)",
+        "totalAnnualGain": "Kogu aastane kasum",
+        "costSavingsPerYr": "Kulusääst / aastas",
+        "revenueGainPerYr": "Tulukasv / aastas"
+      },
+      "yearLabels": [
+        "ALGUS",
+        "1. A",
+        "2. A",
+        "3. A",
+        "4. A",
+        "5. A"
+      ],
+      "payback": {
+        "prefix": "TASUVUSAEG:",
+        "beyond": "ÜLE 5 AASTA",
+        "immediate": "KOHENE",
+        "approxTemplate": "~{n} AASTAT"
+      },
+      "ctaLabel": "BRONEERI KONSULTATSIOON",
+      "disclaimer": "Ainult hinnangulised numbrid. Näitajad on modelleeritud selle raporti jaoks esitatud sisendite põhjal lineaarse kulusäästu ja tulukasvu valemiga, millele lisandub AI-genereeritud kvalitatiivne ülevaade stsenaariumist. Tegelikud tulemused sõltuvad täitmisest, kasutuselevõtu kiirusest ja turutingimustest — käsitle seda planeerimistööriistana, mitte garantiina.",
+      "footerText": "JANAR KUUSK · info@janarkuuskpro.com · Tallinn, Eesti"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "( 05 ) PÄRING",
+      "headingLine1": "EHITAME KOOS",
+      "headingLine2": "MIDAGI",
+      "headingLine3": "ERAKORDSET."
+    },
+    "directEmail": "OTSE E-POSTIGA",
+    "network": "VÕRGUSTIK",
+    "location": "ASUKOHT",
+    "locationValueLine1": "TALLINN,",
+    "locationValueLine2": "EESTI",
+    "responseTime": "VASTAMISAEG",
+    "responseTimeValue": "24 tunni jooksul",
+    "form": {
+      "prefillType": "AI ROI JÄRELKÜSIMUS",
+      "prefillIntro": "Järelküsimus minu AI ROI kalkulaatori tulemuse kohta",
+      "prefillIndustry": "Tööstusharu:",
+      "prefillRoi": "Prognoositud esimese aasta ROI:",
+      "prefillVerdict": "AI hinnang:",
+      "prefillClosing": "Sooviksin arutada numbreid ja seda, milline näeks välja juurutamine.",
+      "prefillBadge": "RE: SINU AI ROI KALKULAATORI TULEMUS",
+      "nameLabel": "NIMI",
+      "namePlaceholder": "SINU TÄISNIMI",
+      "emailLabel": "E-POSTI AADRESS",
+      "emailPlaceholder": "E-POST@NAIDE.EE",
+      "typeLabel": "PROJEKTI TÜÜP",
+      "typePlaceholder": "VEEBILEHT / RAKENDUS / AI SÜSTEEM",
+      "messageLabel": "SÕNUM",
+      "messagePlaceholder": "KIRJELDA OMA PROJEKTI VISIOONI...",
+      "submitButton": "SAADA PÄRING",
+      "submitting": "SAADAN…",
+      "errorMessage": "Midagi läks valesti. Proovi uuesti või kirjuta otse info@janarkuuskpro.com.",
+      "successTitle": "SÕNUM SAADETUD.",
+      "successBody": "Aitäh — võtan sinuga ühendust 24 tunni jooksul."
+    }
+  },
+  "privacy": {
+    "badge": "(PRIVAATSUS)",
+    "heading": "PRIVAATSUSPOLIITIKA",
+    "lastUpdated": "Viimati uuendatud: 28. juuli 2026",
+    "intro": "See lehekülg selgitab, milliseid andmeid see veebileht kogub, miks, ja kuidas neid kasutatakse. Kirjutatud lihtsas keeles — mitte juriidilise šabloonina.",
+    "sections": [
+      {
+        "title": "Kes me oleme",
+        "body": "Selle veebilehe ja siin pakutavate tööriistade (AI ROI kalkulaator, AI valmiduse hindamine, kontaktivorm) vastutav töötleja on Janar Kuusk, Tallinn, Eesti. Andmekaitseküsimustes võta ühendust: info@janarkuuskpro.com."
+      },
+      {
+        "title": "Mida me kogume",
+        "body": "Kontaktivorm: nimi, e-post, projekti tüüp ja sõnum, mille ise sisestad. AI ROI kalkulaator ja AI valmiduse hindamine: numbrid ja vastused, mille ise sisestad tulemuse arvutamiseks — need saadetakse Google Gemini AI-le analüüsi genereerimiseks. PDF-raporti allalaadimine: sinu e-posti aadress, et raport avada. Me ei kogu makseandmeid ega loo kasutajakontosid."
+      },
+      {
+        "title": "Kuidas me andmeid kasutame",
+        "body": "Sinu sõnumitele ja päringutele vastamiseks, AI-põhise analüüsi genereerimiseks su enda sisestatud andmete põhjal, ja (kui laadid alla PDF-raporti) sinuga ühenduse võtmiseks su projekti teemal. Me ei müü ega jaga sinu andmeid turunduse eesmärgil kolmandatele osapooltele."
+      },
+      {
+        "title": "Kolmandad osapooled",
+        "body": "Andmete töötlemiseks kasutame: Formspree (kontaktivormi haldamine), Google Gemini API (AI-analüüsi genereerimine — sisestatud tekst saadetakse Google'ile töötlemiseks), Google Firebase/Firestore (PDF-raporti päringute salvestamine), Resend (valikuline e-posti teavitus uue päringu kohta), ja Vercel (veebimajutus). Igaühel neist on oma privaatsuspoliitika ja andmetöötluse tingimused."
+      },
+      {
+        "title": "Andmete säilitamine",
+        "body": "Kontaktivormi ja PDF-päringute andmeid säilitame seni, kuni need on vajalikud sinu päringule vastamiseks, või kuni palud need kustutada. Automaatset kustutustähtaega hetkel kehtestatud ei ole."
+      },
+      {
+        "title": "Sinu õigused (GDPR)",
+        "body": "Sul on õigus taotleda ligipääsu enda andmetele, nende parandamist, kustutamist, töötlemise piiramist, andmete ülekantavust ja töötlemisele vastuväite esitamist. Selleks kirjuta: info@janarkuuskpro.com."
+      },
+      {
+        "title": "Küpsised ja jälgimine",
+        "body": "Hetkel see veebileht ei kasuta küpsiseid ega jälgimistööriistu (nt Google Analytics). Kui see muutub, uuendame seda lehekülge ja lisame vajadusel nõusoleku küsimise."
+      },
+      {
+        "title": "Rahvusvahelised andmeedastused",
+        "body": "Mõned meie kasutatavad teenusepakkujad (Google, Vercel) võivad töödelda andmeid väljaspool Euroopa Liitu. Need teenusepakkujad rakendavad rahvusvaheliseks andmeedastuseks ette nähtud kaitsemeetmeid (nt Euroopa Komisjoni standardsed lepingutingimused)."
+      },
+      {
+        "title": "Muudatused selles poliitikas",
+        "body": "Võime seda poliitikat aeg-ajalt uuendada. Olulistest muudatustest anname teada käesoleva lehekülje kaudu."
+      },
+      {
+        "title": "Kontakt",
+        "body": "Küsimuste korral oma andmete kohta kirjuta: info@janarkuuskpro.com."
+      }
+    ]
+  },
+  "blog": {
+    "badge": "(BLOGI)",
+    "heading": "MÄRKMED",
+    "intro": "Ehitamise, arhitektuuri ja AI inseneeria kohta.",
+    "emptyState": "Esimesed postitused tulemas.",
+    "readMore": "LOE EDASI",
+    "backToBlog": "← TAGASI BLOGI JUURDE",
+    "publishedOn": "AVALDATUD"
+  }
+}

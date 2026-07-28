@@ -1,0 +1,50 @@
+---
+title: "Miks jätsin i18n teegid kõrvale ja kirjutasin 14-realise laadija"
+excerpt: "Selle saidi eestikeelne versioon ei kasuta next-intl ega ühtki teist i18n raamistikku. Siin on põhjus ja täpne arhitektuur."
+date: "2026-07-28"
+tags: ["Next.js", "i18n", "arhitektuur"]
+---
+
+Kui otsustasin selle portfoolio muuta kakskeelseks — eesti keel esikohal, inglise keel teisena — oli esimene refleks paigaldada `next-intl` või mõni sarnane teek. Selle asemel kirjutasin 14-realise sõnastiku-laadija ja hoidsin kogu ülejäänu tavalise TypeScriptina.
+
+## Otsus
+
+Kolm asja rääkisid teegi vastu:
+
+- Saidil on kokku ~330 kasutajale nähtavat stringi. See on väike hulk — piisavalt väike, et tavaline `Record<Locale, Dictionary>` struktuur on lihtsam kui teegi API õppimine.
+- Iga leht juba kasutab `generateMetadata` ja `generateStaticParams` — Next'i enda mustreid. Täiendav abstraktsioonikiht nende peale poleks midagi lisanud.
+- Tüübiohutus oli oluline. Tahtsin, et võõrkeelde tõlkimisel puuduv võti annaks TypeScripti kompileerimisvea, mitte vaikimisi ingliskeelse teksti käitusajal.
+
+## Arhitektuur
+
+```
+src/i18n/config.ts            locales, defaultLocale, tüüp Locale
+src/i18n/get-dictionary.ts    dünaamiline import() laadija
+src/i18n/dictionaries/et.json Eesti — allikas, millest tüüp tuletatakse
+src/i18n/dictionaries/en.json Inglise
+src/proxy.ts                  "/" → 307 → "/et"
+src/app/[lang]/...            kõik lehed selle segmendi all
+```
+
+Tüübi tuletamine on kõige olulisem detail:
+
+```ts
+export type Dictionary = typeof import("./dictionaries/et.json");
+```
+
+Eesti JSON on tõe allikas. Kui inglise sõnastikust puudub võti, mida eesti oma sisaldab, annab TypeScript vea täpselt selles kohas, kus võtit kasutatakse — mitte hägust "undefined" käitusajal.
+
+## Lõks, mille vältisin
+
+AI-analüüsi tööriist (ROI kalkulaator) küsib Gemini API-lt struktureeritud JSON-i, kus üks väli on "vaatenurga nimi" — näiteks "Finants (CFO)". Esialgne versioon lasi mudelil see nimi otse tagastada ja kasutas seda ikooni valimiseks:
+
+```ts
+const LENS_ICON = {
+  "Financial (CFO)": "payments",
+  // ...
+};
+```
+
+See töötas inglise keeles. Niipea kui palusin mudelil vastata eesti keeles, tagastas see "Finants (CFO)" — string, mida ikoonikaart ei tundnud, ja iga kaart kukkus tagasi geneerilise ikooni peale.
+
+Parandus: Gemini schema nõuab nüüd stabiilset enum-väärtust (`FINANCIAL`, `OPERATIONAL`, `GROWTH`, `RISK`), mis ei muutu kunagi, olenemata keelest. Kuvatav nimi tuleb sõnastikust, võtmega samast enumist. Kaks eraldi asja — masinloetav identifikaator ja inimloetav silt — mis segamini aetuna lagunevad täpselt siis, kui neid kõige rohkem vaja on.
