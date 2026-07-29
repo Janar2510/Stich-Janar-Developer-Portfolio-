@@ -179,7 +179,14 @@
     "testimonials": {
       "badge": "(KLIENDID)",
       "heading": "MIDA KLIENDID ÜTLEVAD",
-      "items": []
+      "items": [
+        {
+          "quote": "Tulin Janari juurde ühe näidislehe ja hulga ähmaste arvamustega. Ta ehitas poe Shopify Hydrogeni peale ja tulemus on suurepärane, just selline, nagu olen alati soovinud, et ehteid ka päriselt vaadatakse. Eesti ja inglise keel said mõlemad korralikult tehtud, ja kui palusin muudatusi, tegi ta need ilma pikema aruteluta.",
+          "name": "Loore",
+          "role": "Loorea Jewellery asutaja",
+          "image": "/images/testimonials/loore.jpg"
+        }
+      ]
     }
   },
   "about": {

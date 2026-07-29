@@ -1,0 +1,9 @@
+# vercel deploy uploads the local directory directly and does NOT respect
+# .gitignore — without this file, unrelated/sensitive local content gets
+# shipped to Vercel's build servers on every `vercel --prod`.
+
+.claude/
+OmniRoute/
+.gstack/
+public/My picture/
+*.log

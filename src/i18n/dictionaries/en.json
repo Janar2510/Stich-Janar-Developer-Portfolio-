@@ -179,7 +179,14 @@
     "testimonials": {
       "badge": "(CLIENTS)",
       "heading": "WHAT CLIENTS SAY",
-      "items": []
+      "items": [
+        {
+          "quote": "I came to Janar with a reference site and a lot of vague opinions. He built the store on Shopify Hydrogen and the result is exactly what I have always wanted, where people actually look at the jewellery. Estonian and English both got done properly, and when I asked for changes he did them without making it a discussion.",
+          "name": "Loore",
+          "role": "Founder, Loorea Jewellery",
+          "image": "/images/testimonials/loore.jpg"
+        }
+      ]
     }
   },
   "about": {
