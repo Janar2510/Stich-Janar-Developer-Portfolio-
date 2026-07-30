@@ -42,14 +42,14 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[110vh] md:h-screen overflow-hidden bg-[#0D0D0D]"
+      className="relative h-svh md:h-screen overflow-hidden bg-[#0D0D0D]"
     >
       {/* ── BACKGROUND VIDEO ────────────────── */}
       <HeroVideoBg />
 
       {/* ── NAME — Sits behind portrait ───────── */}
       <motion.div
-        className="absolute inset-x-0 z-[5] top-[15%] flex justify-center text-center px-4"
+        className="absolute inset-x-0 z-[5] top-[16%] md:top-[15%] flex justify-center text-center px-4"
         style={{ y: nameY, opacity: nameOp }}
       >
         <motion.h1
@@ -61,7 +61,7 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
       </motion.div>
 
       {/* ── ROLE WORDS — Split sides ──────────── */}
-      <div className="absolute inset-x-0 z-[10] top-[42%] -translate-y-1/2 flex items-center justify-between px-7 md:px-20 lg:px-28 pointer-events-none">
+      <div className="absolute inset-x-0 z-[10] top-[32%] md:top-[42%] -translate-y-1/2 flex items-center justify-between px-7 md:px-20 lg:px-28 pointer-events-none">
         <motion.div
           style={{ x: leftX }}
           {...clip(0.25)}
@@ -80,12 +80,12 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
 
       {/* ── PORTRAIT — Centered ───────────────── */}
       <motion.div
-        className="pointer-events-none absolute bottom-0 left-1/2 z-[20] -translate-x-1/2"
-        style={{
-          y: portraitY,
-          height: "94%",
-          width: "auto",
-        }}
+        // The portrait PNG is 3:4. On mobile the container must declare that
+        // ratio: `w-auto` on an absolutely-positioned box wrapping an image
+        // capped at max-width:100% is circular, and the figure collapses to a
+        // sliver. Desktop keeps the original auto sizing.
+        className="pointer-events-none absolute bottom-0 left-1/2 z-[20] -translate-x-1/2 h-[80%] aspect-[3/4] md:h-[94%] md:aspect-auto md:w-auto"
+        style={{ y: portraitY }}
         {...fade(0.1)}
       >
         <Image
@@ -106,6 +106,17 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
         />
       </motion.div>
 
+      {/* ── SCRIM — Keeps the bottom copy legible where the portrait sits
+             behind it. Only needed on mobile; desktop has the room to put
+             the text clear of the figure. ───────── */}
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[25] h-[46%] md:hidden"
+        style={{
+          background:
+            "linear-gradient(to top, #0D0D0D 32%, rgba(13,13,13,0.93) 60%, transparent 100%)",
+        }}
+      />
+
       {/* ── BOTTOM UI ─────────────────────────── */}
       <div className="absolute inset-x-0 bottom-0 z-[30] flex flex-col md:flex-row items-start md:items-end justify-between px-7 md:px-12 pb-10 gap-10">
         {/* Left: pill + bio + button */}
@@ -121,7 +132,7 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
             <span className="lbl text-[#EDEDED]/70 text-[10px]">{dict.openForWork}</span>
           </motion.div>
 
-          <motion.p className="mb-8 text-[15px] md:text-[17px] leading-relaxed text-[#EDEDED]/60 font-light" {...fade(0.7)}>
+          <motion.p className="mb-8 text-[15px] md:text-[17px] leading-relaxed text-[#EDEDED]/80 md:text-[#EDEDED]/60 font-light" {...fade(0.7)}>
             {dict.bio}
           </motion.p>
 
