@@ -137,7 +137,7 @@ export default async function About({ params }: { params: Promise<{ lang: string
                   <div className="lbl text-accent mb-6">{category}</div>
                   <div className="flex flex-col gap-3">
                     {tools.map((tool) => (
-                      <span key={tool} className="ghost lbl text-zinc-400 px-3 py-2 hover:text-accent transition-colors inline-block">
+                      <span key={tool} className="ghost lbl text-zinc-400 px-3 py-2 hover:text-accent transition-colors inline-block break-words">
                         {tool}
                       </span>
                     ))}
@@ -161,14 +161,16 @@ export default async function About({ params }: { params: Promise<{ lang: string
           <div>
             {t.process.steps.map(({ n, title, body }, i) => (
               <Reveal key={n} delay={i * 0.08}>
-                <div className="process-step grid md:grid-cols-12 gap-6 py-12">
-                  <div className="md:col-span-1">
+                {/* 12 columns wait for lg here too: at 768 the gaps leave the title
+                    column at 158px, too narrow for "VIIMISTLEMINE". */}
+                <div className="process-step grid grid-cols-1 lg:grid-cols-12 gap-6 py-12">
+                  <div className="lg:col-span-1">
                     <span className="font-manrope font-black text-3xl text-zinc-800">{n}</span>
                   </div>
-                  <div className="md:col-span-3">
+                  <div className="lg:col-span-3">
                     <h3 className="font-manrope font-bold text-2xl text-white uppercase tracking-tight">{title}</h3>
                   </div>
-                  <div className="md:col-span-8">
+                  <div className="lg:col-span-8">
                     <p className="text-zinc-500 leading-relaxed">{body}</p>
                   </div>
                 </div>

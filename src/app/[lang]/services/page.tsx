@@ -46,9 +46,11 @@ export default async function Services({ params }: { params: Promise<{ lang: str
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-8">
           <div className="flex flex-col md:flex-row justify-between items-end gap-12">
-            <div className="max-w-3xl">
+            {/* max-w-4xl, and 8xl held back to xl: "DIGITAALKOGEMUS" needs
+                863px at 96px and was clipped by 95px inside max-w-3xl. */}
+            <div className="max-w-4xl">
               <span className="lbl text-accent block mb-6 hi">{t.hero.badge}</span>
-              <h1 className="font-manrope font-bold text-5xl md:text-7xl lg:text-8xl uppercase tracking-tight text-white leading-none hi-mask">
+              <h1 className="font-manrope font-bold text-[8vw] sm:text-6xl md:text-7xl xl:text-8xl uppercase tracking-tight text-white leading-none hi-mask">
                 {/* Line 3 is optional — Estonian uses a two-line heading, so an
                     unconditional <br /> would leave a blank line under it. */}
                 {t.hero.headingLine1}<br />{t.hero.headingLine2}
@@ -81,18 +83,21 @@ export default async function Services({ params }: { params: Promise<{ lang: str
           return (
             <div key={n}>
               <Reveal>
-                {/* gap-x must be 0 below md: 12 columns with a 32px gap force a
-                    352px minimum, wider than the 311px available at 375. */}
-                <div className={`grid grid-cols-12 gap-y-8 gap-x-0 md:gap-x-8 service-block ${imageRight ? "" : "flex-row-reverse"}`}>
+                {/* The 12-column grid waits for lg. At 768 its eleven 32px
+                    gaps eat 352 of the 704px available, leaving columns too
+                    narrow for Estonian compounds like MOBIILIRAKENDUSTE. */}
+                <div className={`grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-x-8 service-block ${imageRight ? "" : "flex-row-reverse"}`}>
                   {/* Number */}
-                  <div className="col-span-12 md:col-span-1 order-1">
+                  <div className="lg:col-span-1 order-1">
                     <span className={`font-manrope font-black text-2xl ${accent ? "text-accent" : "text-zinc-800"}`}>{n}</span>
                   </div>
 
                   {/* Text — always on right side of number, or left of image depending on imageRight */}
-                  <div className={`col-span-12 md:col-span-5 flex flex-col justify-center ${imageRight ? "order-2" : "order-3"}`}>
+                  <div className={`lg:col-span-5 flex flex-col justify-center ${imageRight ? "order-2" : "order-3"}`}>
                     {accent && <div className="lbl text-accent mb-4">{t.aiLlmBadge}</div>}
-                    <h2 className="font-manrope font-bold text-4xl md:text-5xl text-white uppercase tracking-tight mb-8 whitespace-pre-line">
+                    {/* 5xl only from xl: "MOBIILIRAKENDUSTE" needs 466px at
+                        48px and the col-span-5 column is 381px until then. */}
+                    <h2 className="font-manrope font-bold text-[7vw] sm:text-3xl md:text-4xl xl:text-5xl text-white uppercase tracking-tight mb-8 whitespace-pre-line">
                       {titleLine1}
                       <br />
                       {titleLine2}
@@ -106,7 +111,7 @@ export default async function Services({ params }: { params: Promise<{ lang: str
                   </div>
 
                   {/* Image */}
-                  <div className={`col-span-12 md:col-span-6 relative overflow-hidden h-[480px] ${imageRight ? "order-3" : "order-2"}`}>
+                  <div className={`lg:col-span-6 relative overflow-hidden h-[480px] ${imageRight ? "order-3" : "order-2"}`}>
                     {accent && (
                       <div className="absolute top-8 left-8 z-10">
                         <span className="ai-badge lbl px-4 py-2">{t.newServiceBadge}</span>

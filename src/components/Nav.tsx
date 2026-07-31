@@ -54,7 +54,7 @@ export default function Nav({ lang, dict }: NavProps) {
               key={href}
               href={href}
               onClick={() => setOpen(false)}
-              className={`font-manrope font-black text-5xl tracking-tight transition-colors hover:text-accent ${
+              className={`font-manrope font-black text-[13vw] sm:text-5xl tracking-tight transition-colors hover:text-accent ${
                 pathname === href ? "text-white" : "text-zinc-600"
               }`}
             >

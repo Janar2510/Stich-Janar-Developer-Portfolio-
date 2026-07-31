@@ -116,7 +116,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 </div>
                 <div className="p-10 md:p-16 flex flex-col justify-center">
                   <div className="lbl text-accent mb-4">{t.featuredAi.tag}</div>
-                  <h3 className="font-manrope font-black text-3xl md:text-4xl text-white uppercase tracking-tight mb-6 leading-tight">
+                  <h3 className="font-manrope font-black text-2xl sm:text-3xl xl:text-4xl text-white uppercase tracking-tight mb-6 leading-tight">
                     {t.featuredAi.title}
                   </h3>
                   <p className="text-zinc-400 leading-relaxed mb-8">
@@ -146,7 +146,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           <div className="grid md:grid-cols-12 gap-8 mb-20">
             <Reveal className="md:col-span-5">
               <div className="lbl text-accent mb-4">{t.capabilities.badge}</div>
-              <h2 className="font-manrope font-bold text-4xl md:text-5xl uppercase tracking-tight text-white leading-tight">
+              <h2 className="font-manrope font-bold text-3xl sm:text-4xl xl:text-5xl uppercase tracking-tight text-white leading-tight">
                 {t.capabilities.headingLine1}<br />{t.capabilities.headingLine2}
               </h2>
             </Reveal>

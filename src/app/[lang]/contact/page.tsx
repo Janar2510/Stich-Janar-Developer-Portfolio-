@@ -40,7 +40,9 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
       {/* ── HERO ──────────────────────────────── */}
       <section className="pt-20 pb-20">
         <span className="lbl text-accent block mb-8 hi">{t.hero.badge}</span>
-        <h1 className="font-manrope font-black text-5xl md:text-7xl uppercase tracking-tight text-white leading-tight hi-mask">
+        {/* vw below sm. English "EXTRAORDINARY." is the constraint here, not
+            Estonian: 14 characters needing 305px in a 256px viewport at 320. */}
+        <h1 className="font-manrope font-black text-[9vw] sm:text-5xl md:text-7xl uppercase tracking-tight text-white leading-tight hi-mask">
           {t.hero.headingLine1}<br />{t.hero.headingLine2}<br />{t.hero.headingLine3}
         </h1>
         <div className="w-16 h-1 bg-accent mt-8 hi-d2" />
@@ -54,11 +56,14 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
         {/* Left — contact details */}
         <Reveal className="lg:col-span-5 flex flex-col gap-10">
 
-          <div className="ghost hover:border-accent transition-colors p-10 flex flex-col gap-3">
-            <span className="lbl text-zinc-600">{t.directEmail}</span>
+          <div className="ghost hover:border-accent transition-colors p-6 sm:p-10 flex flex-col gap-3">
+            <span className="lbl text-zinc-500">{t.directEmail}</span>
             <a
               href="mailto:info@janarkuuskpro.com"
-              className="font-manrope font-bold text-2xl md:text-3xl text-white hover:text-accent transition-colors tracking-tight"
+              // The address is one unbreakable 22-character token, so it has to
+              // scale rather than wrap: at text-3xl it needed 347px inside a
+              // 290px card, and at 320 the p-10 padding left only 176px.
+              className="font-manrope font-bold text-[5.5vw] sm:text-2xl xl:text-3xl text-white hover:text-accent transition-colors tracking-tight"
             >
               info@janarkuuskpro.com
             </a>
