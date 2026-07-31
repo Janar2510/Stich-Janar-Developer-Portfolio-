@@ -43,7 +43,7 @@ const PERSON_SCHEMA = {
   name: "Janar Kuusk",
   jobTitle: "Developer, Designer, AI Engineer",
   url: BASE_URL,
-  address: { "@type": "PostalAddress", addressLocality: "Tallinn", addressCountry: "EE" },
+  address: { "@type": "PostalAddress", addressLocality: "Tartu", addressCountry: "EE" },
   sameAs: ["https://www.linkedin.com/in/janar-kuusk-15528b1a0", "https://github.com/Janar2510"],
 };
 

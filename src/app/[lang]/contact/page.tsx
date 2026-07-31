@@ -87,7 +87,7 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
             <Image
               className="object-cover grayscale hover:grayscale-0 transition-[filter] duration-700"
               src="/images/contact-tech.jpg"
-              alt="Tallinn"
+              alt="Tartu"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
             />

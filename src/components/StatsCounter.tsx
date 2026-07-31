@@ -11,10 +11,10 @@ interface StatsSectionProps {
   items: StatItem[];
 }
 
-// Numeric values + the one text-only stat (Tallinn) stay code-side — only
+// Numeric values + the one text-only stat (Tartu) stay code-side — only
 // the label/suffix copy is localized.
 const VALUES = [3, 20, 4, 0];
-const TEXT_OVERRIDE: Record<number, string> = { 3: "TALLINN" };
+const TEXT_OVERRIDE: Record<number, string> = { 3: "TARTU" };
 
 const DURATION = 1600;
 const easeOutQuart = (t: number) => 1 - Math.pow(1 - t, 4);

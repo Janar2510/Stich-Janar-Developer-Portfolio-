@@ -3,12 +3,12 @@
     "site": {
       "titleDefault": "Janar Kuusk — Developer · Designer · AI Engineer",
       "titleTemplate": "%s — Janar Kuusk",
-      "description": "Janar Kuusk — Developer, Web Designer, and AI Engineer based in Tallinn, Estonia. Building digital monuments with architectural precision.",
+      "description": "Janar Kuusk — Developer, Web Designer, and AI Engineer based in Tartu, Estonia. Building digital monuments with architectural precision.",
       "keywords": [
         "developer",
         "web designer",
         "AI engineer",
-        "Tallinn",
+        "Tartu",
         "Estonia",
         "Next.js",
         "React"
@@ -17,11 +17,11 @@
     "pages": {
       "home": {
         "title": "Janar Kuusk — Developer · Designer · AI Engineer",
-        "description": "Building digital monuments with architectural precision. Developer, Web Designer, and AI Engineer based in Tallinn, Estonia."
+        "description": "Building digital monuments with architectural precision. Developer, Web Designer, and AI Engineer based in Tartu, Estonia."
       },
       "about": {
         "title": "About",
-        "description": "Janar Kuusk — Developer, Web Designer, and AI Engineer based in Tallinn, Estonia. Building at the intersection of precision and creativity."
+        "description": "Janar Kuusk — Developer, Web Designer, and AI Engineer based in Tartu, Estonia. Building at the intersection of precision and creativity."
       },
       "services": {
         "title": "Services",
@@ -45,7 +45,7 @@
       },
       "contact": {
         "title": "Contact",
-        "description": "Get in touch with Janar Kuusk — Developer, Designer, and AI Engineer based in Tallinn, Estonia."
+        "description": "Get in touch with Janar Kuusk — Developer, Designer, and AI Engineer based in Tartu, Estonia."
       },
       "privacy": {
         "title": "Privacy Policy",
@@ -112,7 +112,7 @@
       "bio": "Full Stack Developer & AI Engineer building production software at 6K CO OÜ, Estonia.",
       "scheduleCall": "SCHEDULE CALL",
       "location": "LOCATION",
-      "locationValue": "TALLINN, ESTONIA"
+      "locationValue": "TARTU, ESTONIA"
     },
     "featuredWork": {
       "badge": "(02) FEATURED WORK",
@@ -196,7 +196,7 @@
       "bio1": "I build scalable web applications and AI-powered systems at the intersection of technical precision and business impact. Based in Estonia — working globally under 6K CO OÜ.",
       "bio2": "From AI agent workflows to cross-platform mobile apps and enterprise ERP systems, every project follows the same principle: structure first, beauty follows.",
       "cta": "LET'S WORK TOGETHER",
-      "locationBadge": "TALLINN, ESTONIA"
+      "locationBadge": "TARTU, ESTONIA"
     },
     "philosophy": {
       "badge": "(PHILOSOPHY)",
@@ -302,7 +302,7 @@
       "headingLine2": "DIGITAL",
       "headingLine3": "EXPERIENCES.",
       "est": "EST. 2022",
-      "location": "TALLINN, ESTONIA"
+      "location": "TARTU, ESTONIA"
     },
     "intro": "A synthesis of technical precision and aesthetic rigour. I build digital structures that are not only functional but emotionally resonant — designed to scale with the speed of modern ambition.",
     "aiLlmBadge": "AI · LLM ENGINEERING",
@@ -714,7 +714,7 @@
       "sentToTemplate": "SENT TO {email}"
     },
     "report": {
-      "brandSub": "DEVELOPER · DESIGNER · AI ENGINEER — TALLINN, ESTONIA",
+      "brandSub": "DEVELOPER · DESIGNER · AI ENGINEER — TARTU, ESTONIA",
       "docType": "AI ROI ANALYSIS REPORT",
       "sectionTitles": {
         "investmentModel": "Investment Model",
@@ -759,7 +759,7 @@
       },
       "ctaLabel": "BOOK A CONSULTATION",
       "disclaimer": "Estimates only. Figures are modeled from the inputs supplied for this report using a straight-line cost-savings and revenue-gain formula, plus an AI-generated qualitative read of the scenario. Actual results depend on execution, adoption speed and market conditions — treat this as a planning tool, not a guarantee.",
-      "footerText": "JANAR KUUSK · info@janarkuuskpro.com · Tallinn, Estonia"
+      "footerText": "JANAR KUUSK · info@janarkuuskpro.com · Tartu, Estonia"
     }
   },
   "contact": {
@@ -772,7 +772,7 @@
     "directEmail": "DIRECT EMAIL",
     "network": "NETWORK",
     "location": "LOCATION",
-    "locationValueLine1": "TALLINN,",
+    "locationValueLine1": "TARTU,",
     "locationValueLine2": "ESTONIA",
     "responseTime": "RESPONSE TIME",
     "responseTimeValue": "Within 24 hours",
@@ -807,7 +807,7 @@
     "sections": [
       {
         "title": "Who we are",
-        "body": "The data controller for this site and its tools (AI ROI Calculator, AI Readiness Assessment, contact form) is Janar Kuusk, Tallinn, Estonia. For data questions, contact: info@janarkuuskpro.com."
+        "body": "The data controller for this site and its tools (AI ROI Calculator, AI Readiness Assessment, contact form) is Janar Kuusk, Tartu, Estonia. For data questions, contact: info@janarkuuskpro.com."
       },
       {
         "title": "What we collect",

@@ -49,7 +49,10 @@ export default async function Services({ params }: { params: Promise<{ lang: str
             <div className="max-w-3xl">
               <span className="lbl text-accent block mb-6 hi">{t.hero.badge}</span>
               <h1 className="font-manrope font-bold text-5xl md:text-7xl lg:text-8xl uppercase tracking-tight text-white leading-none hi-mask">
-                {t.hero.headingLine1}<br />{t.hero.headingLine2}<br />{t.hero.headingLine3}
+                {/* Line 3 is optional — Estonian uses a two-line heading, so an
+                    unconditional <br /> would leave a blank line under it. */}
+                {t.hero.headingLine1}<br />{t.hero.headingLine2}
+                {t.hero.headingLine3 && <><br />{t.hero.headingLine3}</>}
               </h1>
             </div>
             <div className="text-right hidden lg:block hi-d2">
@@ -78,7 +81,9 @@ export default async function Services({ params }: { params: Promise<{ lang: str
           return (
             <div key={n}>
               <Reveal>
-                <div className={`grid grid-cols-12 gap-8 service-block ${imageRight ? "" : "flex-row-reverse"}`}>
+                {/* gap-x must be 0 below md: 12 columns with a 32px gap force a
+                    352px minimum, wider than the 311px available at 375. */}
+                <div className={`grid grid-cols-12 gap-y-8 gap-x-0 md:gap-x-8 service-block ${imageRight ? "" : "flex-row-reverse"}`}>
                   {/* Number */}
                   <div className="col-span-12 md:col-span-1 order-1">
                     <span className={`font-manrope font-black text-2xl ${accent ? "text-accent" : "text-zinc-800"}`}>{n}</span>
@@ -140,7 +145,9 @@ export default async function Services({ params }: { params: Promise<{ lang: str
       {/* ── CTA ───────────────────────────────── */}
       <section className="bg-zinc-950 py-40 border-b border-zinc-900 overflow-hidden relative">
         <Reveal className="max-w-[1440px] mx-auto px-8 relative z-10 flex flex-col items-center text-center">
-          <h2 className="font-manrope font-bold text-5xl md:text-6xl uppercase tracking-tight text-white mb-14">
+          {/* Scale with the viewport below sm: "MONUMENTAALSET?" is one long
+              unbreakable word and was clipped at a fixed text-5xl. */}
+          <h2 className="font-manrope font-bold text-[8vw] sm:text-5xl md:text-6xl uppercase tracking-tight text-white mb-14 break-words">
             {t.cta.headingLine1}<br />{t.cta.headingLine2}
           </h2>
           <Link

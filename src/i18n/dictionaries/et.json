@@ -3,12 +3,12 @@
     "site": {
       "titleDefault": "Janar Kuusk — Arendaja · Disainer · AI Insener",
       "titleTemplate": "%s — Janar Kuusk",
-      "description": "Janar Kuusk — Tallinnas tegutsev arendaja, veebidisainer ja AI insener. Ehitan digitaalseid monumente arhitektuurse täpsusega.",
+      "description": "Janar Kuusk — Tartus tegutsev arendaja, veebidisainer ja AI insener. Ehitan digitaalseid monumente arhitektuurse täpsusega.",
       "keywords": [
         "arendaja",
         "veebidisainer",
         "AI insener",
-        "Tallinn",
+        "Tartu",
         "Eesti",
         "Next.js",
         "React"
@@ -17,11 +17,11 @@
     "pages": {
       "home": {
         "title": "Janar Kuusk — Arendaja · Disainer · AI Insener",
-        "description": "Ehitan digitaalseid monumente arhitektuurse täpsusega. Tallinnas tegutsev arendaja, veebidisainer ja AI insener."
+        "description": "Ehitan digitaalseid monumente arhitektuurse täpsusega. Tartus tegutsev arendaja, veebidisainer ja AI insener."
       },
       "about": {
         "title": "Minust",
-        "description": "Janar Kuusk — Tallinnas tegutsev arendaja, veebidisainer ja AI insener. Töötan täpsuse ja loovuse ristumiskohas."
+        "description": "Janar Kuusk — Tartus tegutsev arendaja, veebidisainer ja AI insener. Töötan täpsuse ja loovuse ristumiskohas."
       },
       "services": {
         "title": "Teenused",
@@ -45,7 +45,7 @@
       },
       "contact": {
         "title": "Kontakt",
-        "description": "Võta ühendust Janar Kuuskiga — Tallinnas tegutsev arendaja, disainer ja AI insener."
+        "description": "Võta ühendust Janar Kuuskiga — Tartus tegutsev arendaja, disainer ja AI insener."
       },
       "privacy": {
         "title": "Privaatsuspoliitika",
@@ -112,7 +112,7 @@
       "bio": "Full Stack arendaja ja AI insener — ehitan päristarkvara ettevõttes 6K CO OÜ, Eestis.",
       "scheduleCall": "BRONEERI KÕNE",
       "location": "ASUKOHT",
-      "locationValue": "TALLINN, EESTI"
+      "locationValue": "TARTU, EESTI"
     },
     "featuredWork": {
       "badge": "(02) ESILETÕSTETUD TÖÖD",
@@ -193,10 +193,10 @@
     "hero": {
       "badge": "(MINUST)",
       "aiEngineer": "AI INSENER",
-      "bio1": "Ehitan skaleeritavaid veebirakendusi ja AI-põhiseid süsteeme tehnilise täpsuse ja ärimõju ristumiskohas. Baseerun Eestis — töötan globaalselt ettevõtte 6K CO OÜ all.",
-      "bio2": "Alates AI-agentide töövoogudest kuni platvormideülese mobiilirakenduste ja ettevõtte ERP-süsteemideni — iga projekt järgib sama põhimõtet: kõigepealt struktuur, ilu järgneb.",
+      "bio1": "Arendan toimivaid veebirakendusi ja AI-põhiseid süsteeme, mis ei ole lihtsalt ilusad koodirida-kogumid, vaid toovad ärile päriselt kasu. Tegutsen Eestist ettevõtte 6K CO OÜ all, kuid panen süsteeme tööle üle maailma.",
+      "bio2": "Olgu tegu AI-agentide automatiseerimise, mobiilirakenduse või mahuka ERP-süsteemiga – minu jaoks on esikohal alati töökindel arhitektuur ja loogiline struktuur. Disain on selle loomulik pikendus.",
       "cta": "TEEME KOOSTÖÖD",
-      "locationBadge": "TALLINN, EESTI"
+      "locationBadge": "TARTU, EESTI"
     },
     "philosophy": {
       "badge": "(FILOSOOFIA)",
@@ -206,7 +206,7 @@
     },
     "stack": {
       "badge": "(TÖÖRIISTAD)",
-      "heading": "TEHNOLOOGIAPINU",
+      "heading": "TEHNOLOOGIA MIDA KASUTAN",
       "categories": [
         {
           "category": "ESIOTS",
@@ -299,12 +299,12 @@
     "hero": {
       "badge": "(TEENUSED)",
       "headingLine1": "ARHITEKTUURNE",
-      "headingLine2": "DIGITAALNE",
-      "headingLine3": "KOGEMUS.",
+      "headingLine2": "DIGITAALKOGEMUS",
+      "headingLine3": "",
       "est": "ASUTATUD 2022",
-      "location": "TALLINN, EESTI"
+      "location": "TARTU, EESTI"
     },
-    "intro": "Tehnilise täpsuse ja esteetilise range vormi süntees. Ehitan digitaalseid struktuure, mis pole mitte ainult funktsionaalsed, vaid ka emotsionaalselt mõjuvad — loodud kasvama koos moodsa ambitsiooni kiirusega.",
+    "intro": "Tehniline täpsus kohtub puhta disainiga. Ehitan digitaalseid süsteeme ja platvorme, mis on töökindlad, visuaalselt viimistletud ja suudavad pidada sammu kiirelt kasvavate äridega.",
     "aiLlmBadge": "AI · LLM INSENERIA",
     "newServiceBadge": "UUS TEENUS",
     "items": [
@@ -714,7 +714,7 @@
       "sentToTemplate": "SAADETUD AADRESSILE {email}"
     },
     "report": {
-      "brandSub": "ARENDAJA · DISAINER · AI INSENER — TALLINN, EESTI",
+      "brandSub": "ARENDAJA · DISAINER · AI INSENER — TARTU, EESTI",
       "docType": "AI ROI ANALÜÜSI RAPORT",
       "sectionTitles": {
         "investmentModel": "Investeeringu mudel",
@@ -759,7 +759,7 @@
       },
       "ctaLabel": "BRONEERI KONSULTATSIOON",
       "disclaimer": "Ainult hinnangulised numbrid. Näitajad on modelleeritud selle raporti jaoks esitatud sisendite põhjal lineaarse kulusäästu ja tulukasvu valemiga, millele lisandub AI-genereeritud kvalitatiivne ülevaade stsenaariumist. Tegelikud tulemused sõltuvad täitmisest, kasutuselevõtu kiirusest ja turutingimustest — käsitle seda planeerimistööriistana, mitte garantiina.",
-      "footerText": "JANAR KUUSK · info@janarkuuskpro.com · Tallinn, Eesti"
+      "footerText": "JANAR KUUSK · info@janarkuuskpro.com · Tartu, Eesti"
     }
   },
   "contact": {
@@ -772,7 +772,7 @@
     "directEmail": "OTSE E-POSTIGA",
     "network": "VÕRGUSTIK",
     "location": "ASUKOHT",
-    "locationValueLine1": "TALLINN,",
+    "locationValueLine1": "TARTU,",
     "locationValueLine2": "EESTI",
     "responseTime": "VASTAMISAEG",
     "responseTimeValue": "24 tunni jooksul",
@@ -807,7 +807,7 @@
     "sections": [
       {
         "title": "Kes me oleme",
-        "body": "Selle veebilehe ja siin pakutavate tööriistade (AI ROI kalkulaator, AI valmiduse hindamine, kontaktivorm) vastutav töötleja on Janar Kuusk, Tallinn, Eesti. Andmekaitseküsimustes võta ühendust: info@janarkuuskpro.com."
+        "body": "Selle veebilehe ja siin pakutavate tööriistade (AI ROI kalkulaator, AI valmiduse hindamine, kontaktivorm) vastutav töötleja on Janar Kuusk, Tartu, Eesti. Andmekaitseküsimustes võta ühendust: info@janarkuuskpro.com."
       },
       {
         "title": "Mida me kogume",

@@ -96,7 +96,11 @@ export default async function About({ params }: { params: Promise<{ lang: string
         </div>
       </section>
 
-      <div className="arch-line mx-8" />
+      {/* px-8 on a wrapper, not mx-8 on the rule itself: .arch-line sets
+          width:100%, so a horizontal margin pushed it past the viewport. */}
+      <div className="px-8">
+        <div className="arch-line" />
+      </div>
 
       {/* ── PHILOSOPHY ────────────────────────── */}
       <section className="py-40 px-8 bg-zinc-950">

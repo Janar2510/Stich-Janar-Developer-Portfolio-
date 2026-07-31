@@ -44,7 +44,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
             <div>
               <span className="lbl text-accent block mb-6 hi">{t.hero.badge}</span>
-              <h1 className="font-manrope font-black text-[13vw] sm:text-6xl md:text-8xl uppercase tracking-tight text-white leading-none hi-mask">
+              <h1 className="font-manrope font-black text-[11vw] sm:text-6xl md:text-8xl uppercase tracking-tight text-white leading-none hi-mask">
                 {t.hero.headingLine1}<br />{t.hero.headingLine2}
               </h1>
             </div>
