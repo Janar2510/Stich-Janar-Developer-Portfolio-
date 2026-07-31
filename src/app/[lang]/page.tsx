@@ -105,9 +105,12 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             {/* Featured AI project — full width */}
             <Reveal className="md:col-span-2">
               <div className="ghost hover:border-accent transition-colors duration-500 grid md:grid-cols-2 group proj-card">
-                <div className="w-full aspect-video md:aspect-auto overflow-hidden relative min-h-[300px]">
+                {/* object-contain, not cover: this is a composed 1200x630
+                    mockup and the column is ~1.48:1, so cover was shearing the
+                    Kingspan branding off the left edge. */}
+                <div className="w-full aspect-video md:aspect-auto overflow-hidden relative min-h-[300px] bg-black">
                   <Image
-                    className="proj-img object-cover"
+                    className="proj-img object-contain"
                     src="/images/project-biopuhastid.jpg"
                     alt={t.featuredAi.title}
                     fill

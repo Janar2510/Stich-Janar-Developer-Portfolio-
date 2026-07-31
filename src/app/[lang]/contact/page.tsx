@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import HeroVideoBg from "@/components/HeroVideoBg";
 import ContactForm from "./ContactForm";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { locales, defaultLocale, isLocale, type Locale } from "@/i18n/config";
@@ -35,18 +36,27 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
   const t = dict.contact;
 
   return (
-    <div className="pt-32 max-w-[1440px] mx-auto px-8">
+    <div>
 
       {/* ── HERO ──────────────────────────────── */}
-      <section className="pt-20 pb-20">
-        <span className="lbl text-accent block mb-8 hi">{t.hero.badge}</span>
-        {/* vw below sm. English "EXTRAORDINARY." is the constraint here, not
-            Estonian: 14 characters needing 305px in a 256px viewport at 320. */}
-        <h1 className="font-manrope font-black text-[9vw] sm:text-5xl md:text-7xl uppercase tracking-tight text-white leading-tight hi-mask">
-          {t.hero.headingLine1}<br />{t.hero.headingLine2}<br />{t.hero.headingLine3}
-        </h1>
-        <div className="w-16 h-1 bg-accent mt-8 hi-d2" />
+      {/* Full-bleed so HeroVideoBg spans the viewport, matching every other
+          page hero. The old markup nested this inside the padded container,
+          which left contact as the one hero with a dead black background. */}
+      <section className="relative overflow-hidden bg-[#0D0D0D] pt-36 pb-20 md:pt-48 md:pb-28">
+        <HeroVideoBg />
+
+        <div className="relative z-10 max-w-[1440px] mx-auto px-8">
+          <span className="lbl text-accent block mb-8 hi">{t.hero.badge}</span>
+          {/* vw below sm. English "EXTRAORDINARY." is the constraint here, not
+              Estonian: 14 characters needing 305px in a 256px viewport at 320. */}
+          <h1 className="font-manrope font-black text-[9vw] sm:text-5xl md:text-7xl uppercase tracking-tight text-white leading-tight hi-mask">
+            {t.hero.headingLine1}<br />{t.hero.headingLine2}<br />{t.hero.headingLine3}
+          </h1>
+          <div className="w-16 h-1 bg-accent mt-8 hi-d2" />
+        </div>
       </section>
+
+      <div className="max-w-[1440px] mx-auto px-8 pt-20">
 
       {/* ── MAIN GRID ─────────────────────────── */}
       {/* gap-24 only from xl: at lg the 11 gaps between 12 columns need 1056px
@@ -110,7 +120,9 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
 
       </section>
 
-      <div className="arch-line" />
+        <div className="arch-line" />
+
+      </div>
 
     </div>
   );
