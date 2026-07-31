@@ -165,7 +165,7 @@ export default function PortfolioGrid({ projects, filters, aiProjectBadge }: Por
                   <div>
                     <span className="lbl text-zinc-600 mb-2 block">{p.sub}</span>
                     <h3 className="font-manrope font-bold text-2xl lg:text-3xl text-white uppercase tracking-tight">{p.title}</h3>
-                    {p.body && <p className="text-zinc-600 mt-3 text-sm leading-relaxed max-w-xs">{p.body}</p>}
+                    {p.body && <p className="text-zinc-400 mt-3 text-sm leading-relaxed max-w-xs">{p.body}</p>}
                     {p.link && (
                       <a
                         href={p.link}

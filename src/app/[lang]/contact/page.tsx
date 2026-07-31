@@ -47,7 +47,9 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
       </section>
 
       {/* ── MAIN GRID ─────────────────────────── */}
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start pb-40">
+      {/* gap-24 only from xl: at lg the 11 gaps between 12 columns need 1056px
+          of the 960px available in a 1024px viewport, and the grid overflows. */}
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 xl:gap-24 items-start pb-40">
 
         {/* Left — contact details */}
         <Reveal className="lg:col-span-5 flex flex-col gap-10">

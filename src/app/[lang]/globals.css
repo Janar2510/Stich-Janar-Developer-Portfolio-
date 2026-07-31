@@ -261,8 +261,10 @@ body {
   padding: 0;
   text-transform: uppercase;
 }
+/* #3f3f46 measured 1.86:1 against the #0D0D0D surface. Placeholders carry
+   the field's only label here, so they need the 4.5:1 body-text floor. */
 .form-field input::placeholder,
-.form-field textarea::placeholder { color: #3f3f46; }
+.form-field textarea::placeholder { color: #7b7b80; }
 .form-field textarea { resize: none; }
 
 /* ─────────────────────────────────────────

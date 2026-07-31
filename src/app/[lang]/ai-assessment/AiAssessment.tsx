@@ -206,7 +206,7 @@ export default function AiAssessment({ lang, dict }: AiAssessmentProps) {
                     </motion.div>
                   )}
                   {!ai.text && !ai.error && !ai.loading && (
-                    <p className="text-zinc-600 text-sm mt-4 leading-relaxed">
+                    <p className="text-zinc-400 text-sm mt-4 leading-relaxed">
                       {dict.emptyState}
                     </p>
                   )}

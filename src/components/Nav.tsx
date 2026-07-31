@@ -39,7 +39,7 @@ export default function Nav({ lang, dict }: NavProps) {
       {/* Mobile overlay */}
       <div
         id="mob-menu"
-        className={`mob-menu-overlay fixed inset-0 bg-black z-[60] flex flex-col justify-center px-8 md:hidden ${open ? "open" : ""}`}
+        className={`mob-menu-overlay fixed inset-0 bg-black z-[60] flex flex-col justify-center px-8 lg:hidden ${open ? "open" : ""}`}
       >
         <button
           onClick={() => setOpen(false)}
@@ -93,7 +93,7 @@ export default function Nav({ lang, dict }: NavProps) {
           </Link>
 
           {/* Desktop links */}
-          <div className="hidden md:flex gap-10">
+          <div className="hidden lg:flex gap-10">
             {links.map(({ href, label }) => (
               <Link
                 key={href}
@@ -110,7 +110,7 @@ export default function Nav({ lang, dict }: NavProps) {
           </div>
 
           <div className="flex items-center gap-6">
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-3">
               {locales.map((locale) => (
                 <Link
                   key={locale}
@@ -125,13 +125,13 @@ export default function Nav({ lang, dict }: NavProps) {
             </div>
             <Link
               href={`/${lang}/contact`}
-              className="press hidden md:inline-block bg-accent text-white px-6 py-3 lbl hover:bg-white hover:text-black transition-colors"
+              className="press hidden lg:inline-block bg-accent text-white px-6 py-3 lbl hover:bg-white hover:text-black transition-colors"
             >
               {dict.consultation}
             </Link>
             <button
               onClick={() => setOpen(true)}
-              className="press md:hidden text-white p-1"
+              className="press lg:hidden text-white p-1"
               aria-label={dict.openMenu}
             >
               <span className="material-symbols-outlined">menu</span>

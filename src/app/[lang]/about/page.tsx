@@ -60,7 +60,7 @@ export default async function About({ params }: { params: Promise<{ lang: string
               <p className="text-zinc-400 leading-relaxed mb-6">
                 {t.hero.bio1}
               </p>
-              <p className="text-zinc-600 leading-relaxed text-sm">
+              <p className="text-zinc-400 leading-relaxed text-sm">
                 {t.hero.bio2}
               </p>
               <div className="mt-10">
