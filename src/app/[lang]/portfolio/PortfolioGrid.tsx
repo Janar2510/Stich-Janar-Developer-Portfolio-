@@ -33,7 +33,7 @@ const PROJECT_META: Record<number, ProjectMeta> = {
   1: { category: "ai", image: "/images/project-neural-core.jpg", featured: true, span: 12, ai: true },
   2: { category: "ai", image: "/images/project-axis-mobile.jpg", featured: false, span: 7, ai: false },
   3: { category: "development", image: "/images/project-steel-data.jpg", featured: false, span: 5, ai: false },
-  4: { category: "design", image: "/images/project-biopuhastid.jpg", featured: false, span: 7, ai: false, link: "https://biopuhastid.com" },
+  4: { category: "design", image: "/images/project-biopuhastid-2.jpg", featured: false, span: 7, ai: false, link: "https://biopuhastid.com" },
   5: { category: "design", image: "/images/project-kuusdisain.jpg", featured: false, span: 5, ai: false, link: "https://www.kuusdisain.ee" },
 };
 
