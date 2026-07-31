@@ -25,7 +25,7 @@ export default function HeroVideoBg({ className = "" }: { className?: string }) 
           muted
           playsInline
           onError={() => setVideoFailed(true)}
-          className="w-full h-full opacity-60 md:opacity-80 object-cover"
+          className="w-full h-full opacity-75 md:opacity-80 object-cover"
           style={{ "--media-object-fit": "cover" } as React.CSSProperties & { [key: `--${string}`]: string }}
         />
       )}

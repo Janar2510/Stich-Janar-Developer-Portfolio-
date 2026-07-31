@@ -84,7 +84,7 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
         // ratio: `w-auto` on an absolutely-positioned box wrapping an image
         // capped at max-width:100% is circular, and the figure collapses to a
         // sliver. Desktop keeps the original auto sizing.
-        className="pointer-events-none absolute bottom-0 left-1/2 z-[20] -translate-x-1/2 h-[80%] aspect-[3/4] md:h-[94%] md:aspect-auto md:w-auto"
+        className="pointer-events-none absolute bottom-[9%] left-1/2 z-[20] -translate-x-1/2 h-[72%] aspect-[3/4] md:bottom-0 md:h-[94%] md:aspect-auto md:w-auto"
         style={{ y: portraitY }}
         {...fade(0.1)}
       >
@@ -110,10 +110,10 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
              behind it. Only needed on mobile; desktop has the room to put
              the text clear of the figure. ───────── */}
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-[25] h-[46%] md:hidden"
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[25] h-[34%] md:hidden"
         style={{
           background:
-            "linear-gradient(to top, #0D0D0D 32%, rgba(13,13,13,0.93) 60%, transparent 100%)",
+            "linear-gradient(to top, #0D0D0D 42%, rgba(13,13,13,0.9) 72%, transparent 100%)",
         }}
       />
 
