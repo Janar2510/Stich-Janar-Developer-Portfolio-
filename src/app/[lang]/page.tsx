@@ -7,9 +7,8 @@ import StatsSection from "@/components/StatsCounter";
 import HeroSection from "@/components/HeroSection";
 import Testimonials from "@/components/Testimonials";
 import { getDictionary } from "@/i18n/get-dictionary";
-import { locales, defaultLocale, isLocale, type Locale } from "@/i18n/config";
-
-const BASE_URL = "https://janarkuusk.com";
+import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
+import { localeUrl, languageAlternates } from "@/lib/site";
 
 const PROJECT_IMAGES: Record<string, string> = {
   "pocket-negotiator": "/images/project-axis-mobile.jpg",
@@ -30,8 +29,8 @@ export async function generateMetadata({
     title: { absolute: seo.title },
     description: seo.description,
     alternates: {
-      canonical: `${BASE_URL}/${lang}`,
-      languages: Object.fromEntries(locales.map((l) => [l, `${BASE_URL}/${l}`])),
+      canonical: localeUrl(lang),
+      languages: languageAlternates(),
     },
   };
 }

@@ -5,10 +5,9 @@ import Reveal from "@/components/Reveal";
 import MdxContent from "@/components/MdxContent";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { locales, defaultLocale, isLocale, type Locale } from "@/i18n/config";
+import { SITE_URL, localeUrl, languageAlternates } from "@/lib/site";
 import { getAllPostSlugs, getPostBySlug } from "@/lib/blog";
 import { formatDate } from "@/lib/format";
-
-const BASE_URL = "https://janarkuusk.com";
 
 export async function generateStaticParams() {
   const slugs = getAllPostSlugs();
@@ -29,15 +28,15 @@ export async function generateMetadata({
     title: post.frontmatter.title,
     description: post.frontmatter.excerpt,
     alternates: {
-      canonical: `${BASE_URL}/${lang}/blog/${slug}`,
-      languages: Object.fromEntries(locales.map((l) => [l, `${BASE_URL}/${l}/blog/${slug}`])),
+      canonical: localeUrl(lang, `/blog/${slug}`),
+      languages: languageAlternates(`/blog/${slug}`),
     },
     openGraph: {
       type: "article",
       title: post.frontmatter.title,
       description: post.frontmatter.excerpt,
       publishedTime: post.frontmatter.date,
-      url: `${BASE_URL}/${lang}/blog/${slug}`,
+      url: localeUrl(lang, `/blog/${slug}`),
     },
   };
 }
@@ -60,8 +59,8 @@ export default async function BlogPost({
     headline: post.frontmatter.title,
     description: post.frontmatter.excerpt,
     datePublished: post.frontmatter.date,
-    author: { "@type": "Person", name: "Janar Kuusk", url: BASE_URL },
-    url: `${BASE_URL}/${lang}/blog/${slug}`,
+    author: { "@type": "Person", name: "Janar Kuusk", url: SITE_URL },
+    url: localeUrl(lang, `/blog/${slug}`),
   };
 
   return (

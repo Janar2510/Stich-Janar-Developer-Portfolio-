@@ -4,9 +4,8 @@ import Link from "next/link";
 import Reveal, { StaggerReveal, StaggerItem } from "@/components/Reveal";
 import StatsSection from "@/components/StatsCounter";
 import { getDictionary } from "@/i18n/get-dictionary";
-import { locales, defaultLocale, isLocale, type Locale } from "@/i18n/config";
-
-const BASE_URL = "https://janarkuusk.com";
+import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
+import { localeUrl, languageAlternates } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -22,8 +21,8 @@ export async function generateMetadata({
     title: seo.title,
     description: seo.description,
     alternates: {
-      canonical: `${BASE_URL}/${lang}/about`,
-      languages: Object.fromEntries(locales.map((l) => [l, `${BASE_URL}/${l}/about`])),
+      canonical: localeUrl(lang, "/about"),
+      languages: languageAlternates("/about"),
     },
   };
 }

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Cursor from "@/components/Cursor";
 import Analytics from "@/components/Analytics";
 import { locales, defaultLocale, isLocale, type Locale } from "@/i18n/config";
+import { SITE_URL, localeUrl, languageAlternates } from "@/lib/site";
 import { getDictionary } from "@/i18n/get-dictionary";
 
 const manrope = Manrope({
@@ -33,7 +34,6 @@ const eurostileExtended = localFont({
   variable: "--font-eurostile-ext",
 });
 
-const BASE_URL = "https://janarkuusk.com";
 const OG_LOCALES: Record<Locale, string> = { et: "et_EE", en: "en_US" };
 
 // Person schema — one static block, locale-independent (facts, not copy).
@@ -42,7 +42,7 @@ const PERSON_SCHEMA = {
   "@type": "Person",
   name: "Janar Kuusk",
   jobTitle: "Developer, Designer, AI Engineer",
-  url: BASE_URL,
+  url: SITE_URL,
   address: { "@type": "PostalAddress", addressLocality: "Tartu", addressCountry: "EE" },
   sameAs: ["https://www.linkedin.com/in/janar-kuusk-15528b1a0", "https://github.com/Janar2510"],
 };
@@ -62,7 +62,7 @@ export async function generateMetadata({
   const seo = dict.seo.site;
 
   return {
-    metadataBase: new URL(BASE_URL),
+    metadataBase: new URL(SITE_URL),
     title: {
       default: seo.titleDefault,
       template: seo.titleTemplate,
@@ -76,14 +76,11 @@ export async function generateMetadata({
       type: "website",
       locale: OG_LOCALES[lang] ?? OG_LOCALES[defaultLocale],
       siteName: "Janar Kuusk",
-      url: `${BASE_URL}/${lang}`,
+      url: localeUrl(lang),
     },
     alternates: {
-      canonical: `${BASE_URL}/${lang}`,
-      languages: {
-        ...Object.fromEntries(locales.map((locale) => [locale, `${BASE_URL}/${locale}`])),
-        "x-default": `${BASE_URL}/${defaultLocale}`,
-      },
+      canonical: localeUrl(lang),
+      languages: languageAlternates(),
     },
   };
 }
@@ -106,10 +103,8 @@ export default async function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
-        {locales.map((locale) => (
-          <link key={locale} rel="alternate" hrefLang={locale} href={`${BASE_URL}/${locale}`} />
-        ))}
-        <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/${defaultLocale}`} />
+        {/* hreflang comes from generateMetadata's alternates.languages — emitting
+            it here too produced duplicate tags on every page. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }}

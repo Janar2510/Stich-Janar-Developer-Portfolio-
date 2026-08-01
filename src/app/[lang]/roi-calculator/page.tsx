@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import RoiCalculator from "./RoiCalculator";
 import { getDictionary } from "@/i18n/get-dictionary";
-import { locales, defaultLocale, isLocale, type Locale } from "@/i18n/config";
-
-const BASE_URL = "https://janarkuusk.com";
+import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
+import { localeUrl, languageAlternates } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -19,8 +18,8 @@ export async function generateMetadata({
     title: seo.title,
     description: seo.description,
     alternates: {
-      canonical: `${BASE_URL}/${lang}/roi-calculator`,
-      languages: Object.fromEntries(locales.map((l) => [l, `${BASE_URL}/${l}/roi-calculator`])),
+      canonical: localeUrl(lang, "/roi-calculator"),
+      languages: languageAlternates("/roi-calculator"),
     },
   };
 }

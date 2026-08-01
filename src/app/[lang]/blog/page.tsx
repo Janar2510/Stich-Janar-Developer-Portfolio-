@@ -3,11 +3,10 @@ import Link from "next/link";
 import Reveal, { StaggerReveal, StaggerItem } from "@/components/Reveal";
 import HeroVideoBg from "@/components/HeroVideoBg";
 import { getDictionary } from "@/i18n/get-dictionary";
-import { locales, defaultLocale, isLocale, type Locale } from "@/i18n/config";
+import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
+import { localeUrl, languageAlternates } from "@/lib/site";
 import { getAllPosts } from "@/lib/blog";
 import { formatDate } from "@/lib/format";
-
-const BASE_URL = "https://janarkuusk.com";
 
 export async function generateMetadata({
   params,
@@ -23,8 +22,8 @@ export async function generateMetadata({
     title: seo.title,
     description: seo.description,
     alternates: {
-      canonical: `${BASE_URL}/${lang}/blog`,
-      languages: Object.fromEntries(locales.map((l) => [l, `${BASE_URL}/${l}/blog`])),
+      canonical: localeUrl(lang, "/blog"),
+      languages: languageAlternates("/blog"),
     },
   };
 }
