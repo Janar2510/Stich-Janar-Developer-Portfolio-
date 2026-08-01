@@ -1,0 +1,37 @@
+{
+  "captured": "2026-08-01",
+  "note": "Pre-fix baseline for sc-domain:janarkuuskpro.com, taken before the canonical-domain fix (PR #1) was deployed. Re-run get_search_analytics with the same parameters in 14 and 28 days to measure the effect.",
+  "property": "sc-domain:janarkuuskpro.com",
+  "date_range": { "start": "2026-07-04", "end": "2026-08-01", "days": 28 },
+  "totals": { "clicks": 5, "impressions": 43, "pages_with_impressions": 3 },
+  "by_page": [
+    { "page": "https://www.janarkuuskpro.com/", "clicks": 5, "impressions": 38, "ctr": 0.1316, "position": 3.8 },
+    { "page": "https://www.janarkuuskpro.com/en/ai-assessment", "clicks": 0, "impressions": 1, "ctr": 0, "position": 11 },
+    { "page": "https://www.janarkuuskpro.com/testimonials", "clicks": 0, "impressions": 4, "ctr": 0, "position": 5.2, "note": "stale URL, now returns 307, not in sitemap" }
+  ],
+  "by_query": [
+    { "query": "janar kuusk", "page": "https://www.janarkuuskpro.com/", "clicks": 2, "impressions": 13, "ctr": 0.1538, "position": 2.2 },
+    { "query": "janar", "page": "https://www.janarkuuskpro.com/", "clicks": 0, "impressions": 1, "ctr": 0, "position": 3 },
+    { "query": "janar kuus", "page": "https://www.janarkuuskpro.com/", "clicks": 0, "impressions": 1, "ctr": 0, "position": 24 }
+  ],
+  "query_observation": "Every impression comes from a branded name query. Zero non-branded queries in 28 days — the site does not surface for any service, skill, or topic term.",
+  "sitemap_before": {
+    "path": "https://www.janarkuuskpro.com/sitemap.xml",
+    "last_downloaded": "2025-12-26 17:12",
+    "status": "Valid",
+    "submitted_urls": 11,
+    "indexed_urls": 3,
+    "errors": 0,
+    "warnings": 0,
+    "note": "All 11 <loc> values pointed at https://janarkuusk.com, a domain that does not resolve."
+  },
+  "indexing_check_before": {
+    "urls_checked": 6,
+    "indexed": 6,
+    "not_indexed": 0,
+    "canonical_issues": 6,
+    "robots_blocked": 0,
+    "fetch_issues": 0,
+    "detail": "Google chose its own canonical over the declared one on all 6 URLs, e.g. chose https://www.janarkuuskpro.com/et instead of user-declared https://janarkuusk.com/et."
+  }
+}
