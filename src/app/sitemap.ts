@@ -1,31 +1,46 @@
 import type { MetadataRoute } from "next";
-import { locales, defaultLocale } from "@/i18n/config";
+import { locales } from "@/i18n/config";
+import { languageAlternates, localeUrl } from "@/lib/site";
 import { getAllPostSlugs } from "@/lib/blog";
-
-const BASE_URL = "https://janarkuusk.com";
 
 const routes = ["", "/about", "/services", "/portfolio", "/tools", "/roi-calculator", "/ai-assessment", "/contact", "/privacy", "/blog"];
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const staticEntries: MetadataRoute.Sitemap = routes.map((route) => ({
-    url: `${BASE_URL}/${defaultLocale}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === "" ? "weekly" : route === "/privacy" ? "yearly" : "monthly",
-    priority: route === "" ? 1 : route === "/privacy" ? 0.3 : 0.7,
-    alternates: {
-      languages: Object.fromEntries(locales.map((l) => [l, `${BASE_URL}/${l}${route}`])),
-    },
-  }));
+function priorityFor(route: string): number {
+  if (route === "") return 1;
+  if (route === "/privacy") return 0.3;
+  return 0.7;
+}
 
-  const postEntries: MetadataRoute.Sitemap = getAllPostSlugs().map((slug) => ({
-    url: `${BASE_URL}/${defaultLocale}/blog/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.6,
-    alternates: {
-      languages: Object.fromEntries(locales.map((l) => [l, `${BASE_URL}/${l}/blog/${slug}`])),
-    },
-  }));
+function changeFrequencyFor(route: string): "weekly" | "monthly" | "yearly" {
+  if (route === "") return "weekly";
+  if (route === "/privacy") return "yearly";
+  return "monthly";
+}
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
+
+  // Every language version gets its own <url> entry carrying the full alternate
+  // set — listing only the default locale hides the other locale from Google.
+  const staticEntries: MetadataRoute.Sitemap = routes.flatMap((route) =>
+    locales.map((lang) => ({
+      url: localeUrl(lang, route),
+      lastModified,
+      changeFrequency: changeFrequencyFor(route),
+      priority: priorityFor(route),
+      alternates: { languages: languageAlternates(route) },
+    })),
+  );
+
+  const postEntries: MetadataRoute.Sitemap = getAllPostSlugs().flatMap((slug) =>
+    locales.map((lang) => ({
+      url: localeUrl(lang, `/blog/${slug}`),
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      alternates: { languages: languageAlternates(`/blog/${slug}`) },
+    })),
+  );
 
   return [...staticEntries, ...postEntries];
 }
