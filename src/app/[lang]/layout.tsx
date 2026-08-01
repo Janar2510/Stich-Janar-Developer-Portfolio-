@@ -8,6 +8,7 @@ import Cursor from "@/components/Cursor";
 import Analytics from "@/components/Analytics";
 import { locales, defaultLocale, isLocale, type Locale } from "@/i18n/config";
 import { SITE_URL, localeUrl, languageAlternates } from "@/lib/site";
+import { buildSiteSchema } from "@/lib/schema";
 import { getDictionary } from "@/i18n/get-dictionary";
 
 const manrope = Manrope({
@@ -35,17 +36,6 @@ const eurostileExtended = localFont({
 });
 
 const OG_LOCALES: Record<Locale, string> = { et: "et_EE", en: "en_US" };
-
-// Person schema — one static block, locale-independent (facts, not copy).
-const PERSON_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Janar Kuusk",
-  jobTitle: "Developer, Designer, AI Engineer",
-  url: SITE_URL,
-  address: { "@type": "PostalAddress", addressLocality: "Tartu", addressCountry: "EE" },
-  sameAs: ["https://www.linkedin.com/in/janar-kuusk-15528b1a0", "https://github.com/Janar2510"],
-};
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -107,7 +97,7 @@ export default async function RootLayout({
             it here too produced duplicate tags on every page. */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildSiteSchema(lang, dict)) }}
         />
       </head>
       <body className="bg-black text-[#e2e2e2] overflow-x-hidden">
