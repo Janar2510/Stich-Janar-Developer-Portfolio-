@@ -312,6 +312,7 @@
         "n": "(01)",
         "titleLine1": "WEBSITE",
         "titleLine2": "DESIGN",
+        "schemaName": "Website Design",
         "body": "Beyond mere templates — I construct bespoke visual identities. Focusing on the intersection of aesthetics and UX, every pixel is placed with structural intent, ensuring your brand commands attention through silence and sophistication.",
         "tools": [
           "FIGMA",
@@ -326,6 +327,7 @@
         "n": "(02)",
         "titleLine1": "WEB APPLICATION",
         "titleLine2": "BUILDING",
+        "schemaName": "Web Application Development",
         "body": "Performance is the foundation of reliability. I engineer high-scale applications using modern frameworks that prioritise speed, security, and seamless integration. My approach treats code as a structural blueprint for business growth.",
         "tools": [
           "NEXT.JS",
@@ -340,6 +342,7 @@
         "n": "(03)",
         "titleLine1": "MOBILE APP",
         "titleLine2": "DEVELOPMENT",
+        "schemaName": "Mobile App Development",
         "body": "Harnessing the power of mobility with a native-first philosophy. I design and develop cross-platform solutions that feel indistinguishable from system software — ensuring maximum reach without compromising on fluid animations or performance.",
         "tools": [
           "REACT NATIVE",
@@ -353,6 +356,7 @@
         "n": "(04)",
         "titleLine1": "AI",
         "titleLine2": "ENGINEERING",
+        "schemaName": "AI Engineering",
         "body": "I integrate large language models and AI agents directly into production software. From RAG pipelines to autonomous AI workflows, I build systems that are intelligent by design — not as an afterthought. Every AI feature I build is production-grade, observable, and built to last.",
         "tools": [
           "CLAUDE API",

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -88,8 +89,15 @@ export default function Nav({ lang, dict }: NavProps) {
       {/* Desktop nav */}
       <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-xl border-b border-zinc-900">
         <div className="flex justify-between items-center w-full px-8 py-5 max-w-[1440px] mx-auto">
-          <Link href={`/${lang}`} className="font-manrope font-black text-xl tracking-tighter text-white">
-            JANAR KUUSK
+          <Link href={`/${lang}`} aria-label="Janar Kuusk" className="shrink-0">
+            <Image
+              src="/images/Logo/wordmark.png"
+              alt="Janar Kuusk"
+              width={364}
+              height={102}
+              priority
+              className="h-8 w-auto sm:h-10"
+            />
           </Link>
 
           {/* Desktop links */}

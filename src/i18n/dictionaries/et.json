@@ -312,6 +312,7 @@
         "n": "(01)",
         "titleLine1": "VEEBI",
         "titleLine2": "DISAIN",
+        "schemaName": "Veebidisain",
         "body": "Kaugemale mallidest — loon eritellimusel visuaalseid identiteete. Keskendudes esteetika ja UX-i ristumiskohale, on iga piksel paigutatud struktuurse kavatsusega, tagades, et su bränd köidab tähelepanu vaikuse ja rafineerituse kaudu.",
         "tools": [
           "FIGMA",
@@ -326,6 +327,7 @@
         "n": "(02)",
         "titleLine1": "VEEBIRAKENDUSTE",
         "titleLine2": "ARENDUS",
+        "schemaName": "Veebirakenduste arendus",
         "body": "Jõudlus on usaldusväärsuse alus. Ehitan suuremahulisi rakendusi moodsate raamistikega, mis seavad esikohale kiiruse, turvalisuse ja sujuva integratsiooni. Minu lähenemine käsitleb koodi kui äri kasvu ehitusjoonist.",
         "tools": [
           "NEXT.JS",
@@ -340,6 +342,7 @@
         "n": "(03)",
         "titleLine1": "MOBIILIRAKENDUSTE",
         "titleLine2": "ARENDUS",
+        "schemaName": "Mobiilirakenduste arendus",
         "body": "Rakendan mobiilsuse jõudu natiivsust esikohale seava filosoofiaga. Disainin ja arendan platvormideüleseid lahendusi, mis tunduvad eristamatud süsteemitarkvarast — tagades maksimaalse haarde ilma sujuvaid animatsioone või jõudlust ohverdamata.",
         "tools": [
           "REACT NATIVE",
@@ -353,6 +356,7 @@
         "n": "(04)",
         "titleLine1": "AI",
         "titleLine2": "INSENERIA",
+        "schemaName": "AI inseneritöö",
         "body": "Integreerin suuri keelemudeleid ja AI-agente otse päristarkvarasse. Alates RAG-torujuhtmetest kuni autonoomsete AI-töövoogudeni ehitan süsteeme, mis on nutikad juba disaini poolest — mitte hilisema lisandusena. Iga AI-funktsioon, mille ehitan, on tootmisvalmis, jälgitav ja pikaks ajaks ehitatud.",
         "tools": [
           "CLAUDE API",
