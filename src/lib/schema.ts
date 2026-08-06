@@ -77,6 +77,7 @@ export function buildSiteSchema(lang: Locale, dict: Dictionary) {
     email: EMAIL,
     telephone: TELEPHONE,
     image: `${SITE_URL}/janar-hero.png`,
+    logo: `${SITE_URL}/images/Logo/wordmark.png`,
     address: ADDRESS,
     areaServed: AREA_SERVED,
     availableLanguage: ["et", "en"],

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
@@ -16,8 +17,14 @@ export default function Footer({ lang, dict }: FooterProps) {
   return (
     <footer className="border-t border-zinc-900 bg-black">
       <div className="max-w-[1440px] mx-auto px-8 py-20 flex flex-col md:flex-row justify-between items-center gap-8">
-        <Link href={`/${lang}`} className="font-manrope font-black text-lg text-white">
-          JANAR KUUSK
+        <Link href={`/${lang}`} aria-label="Janar Kuusk" className="shrink-0">
+          <Image
+            src="/images/Logo/wordmark.png"
+            alt="Janar Kuusk"
+            width={364}
+            height={102}
+            className="h-8 w-auto"
+          />
         </Link>
         <div className="flex gap-10">
           {socials.map(({ label, href }) => (
