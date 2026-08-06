@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal, { StaggerReveal, StaggerItem } from "@/components/Reveal";
 import StatsSection from "@/components/StatsCounter";
+import PhilosophyQuote from "@/components/PhilosophyQuote";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
 import { localeUrl, languageAlternates } from "@/lib/site";
@@ -106,13 +107,11 @@ export default async function About({ params }: { params: Promise<{ lang: string
         <div className="max-w-[1440px] mx-auto">
           <Reveal>
             <div className="lbl text-zinc-700 mb-12">{t.philosophy.badge}</div>
-            <blockquote
-              className="text-zinc-200 max-w-5xl"
-              style={{ fontFamily: "var(--manrope,'Manrope',sans-serif)", fontSize: "clamp(28px,4.5vw,64px)", fontWeight: 700, lineHeight: 1.1, letterSpacing: "-0.03em", textTransform: "uppercase" }}
-            >
-              &quot;{t.philosophy.quoteBefore}{" "}
-              <span className="text-accent">{t.philosophy.quoteAccent}</span> {t.philosophy.quoteAfter}&quot;
-            </blockquote>
+            <PhilosophyQuote
+              before={t.philosophy.quoteBefore}
+              accent={t.philosophy.quoteAccent}
+              after={t.philosophy.quoteAfter}
+            />
           </Reveal>
         </div>
       </section>
