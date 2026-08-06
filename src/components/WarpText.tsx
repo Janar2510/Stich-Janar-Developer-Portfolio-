@@ -147,6 +147,12 @@ export interface WarpTextProps {
   refraction?: number;
   /** Soft ripple on the pointer lens. */
   ripple?: boolean;
+  /**
+   * Drive the effect from hover alone. The text sits still and undistorted until
+   * a pointer enters, then warps under the cursor and settles back on leave.
+   * Default upstream behaviour animates continuously on its own.
+   */
+  hoverOnly?: boolean;
   fontSize?: CssLength;
   fontWeight?: CssLength;
   fontFamily?: string;
@@ -179,6 +185,7 @@ interface RasterProps {
   pointerStrength: number;
   refraction: number;
   ripple: boolean;
+  hoverOnly: boolean;
 }
 
 const getFontValue = (value: CssLength) => (typeof value === "number" ? `${value}px` : value);
@@ -395,6 +402,7 @@ export default function WarpText({
   pointerStrength = 0.38,
   refraction = 0.018,
   ripple = true,
+  hoverOnly = false,
   fontSize = "clamp(3rem, 10vw, 9rem)",
   fontWeight = 800,
   fontFamily = "inherit",
@@ -423,6 +431,7 @@ export default function WarpText({
     pointerStrength,
     refraction,
     ripple,
+    hoverOnly,
   });
   const contextRef = useRef<{ program: WarpProgram; rasterize: () => void } | null>(null);
 
@@ -445,6 +454,7 @@ export default function WarpText({
       pointerStrength,
       refraction,
       ripple,
+      hoverOnly,
     };
 
     if (contextRef.current) {
@@ -469,6 +479,7 @@ export default function WarpText({
     pointerStrength,
     refraction,
     ripple,
+    hoverOnly,
   ]);
 
   useEffect(() => {
@@ -594,10 +605,14 @@ export default function WarpText({
       pointer.tx = (event.clientX - rect.left) / rect.width;
       pointer.ty = 1 - (event.clientY - rect.top) / rect.height;
       pointer.activeTarget = 1;
+      // In hover-only mode the loop parks itself when idle, so entering has to
+      // wake it back up.
+      startLoop();
     };
 
     const onPointerLeave = () => {
       pointer.activeTarget = 0;
+      startLoop();
     };
 
     const onContextLost = (event: Event) => {
@@ -610,25 +625,55 @@ export default function WarpText({
     const loop = (now: number) => {
       if (disposed || contextLost) return;
 
+      const hoverOnly = propsRef.current.hoverOnly;
       const elapsed = (now - startTime) * 0.001;
+
+      // Hover-only leaves the lens where the pointer left it and lets it fade,
+      // instead of sending it wandering on its own idle path.
       const idleX = 0.5 + Math.sin(elapsed * 0.33) * 0.12;
       const idleY = 0.5 + Math.cos(elapsed * 0.27) * 0.1;
-      const targetX = pointer.activeTarget > 0 ? pointer.tx : idleX;
-      const targetY = pointer.activeTarget > 0 ? pointer.ty : idleY;
-      const damping = pointer.activeTarget > 0 ? 0.12 : 0.035;
+      const hovering = pointer.activeTarget > 0;
+      const targetX = hovering ? pointer.tx : hoverOnly ? pointer.x : idleX;
+      const targetY = hovering ? pointer.ty : hoverOnly ? pointer.y : idleY;
+      const damping = hovering ? 0.12 : 0.035;
+
+      // Resting activity: upstream never fully settles, so a lens is always
+      // faintly on. Hover-only decays all the way to nothing.
+      const restingActive = hoverOnly ? 0 : 0.18;
 
       pointer.x += (targetX - pointer.x) * damping;
       pointer.y += (targetY - pointer.y) * damping;
-      pointer.active += ((pointer.activeTarget > 0 ? 1 : 0.18) - pointer.active) * 0.06;
+      pointer.active += ((hovering ? 1 : restingActive) - pointer.active) * 0.06;
 
       const pointerUniform = program.uniforms.uPointer.value as Float32Array;
       pointerUniform[0] = pointer.x;
       pointerUniform[1] = pointer.y;
       program.uniforms.uPointerActive.value = reduceMotion ? pointer.active * 0.35 : pointer.active;
       program.uniforms.uTime.value = reduceMotion ? 0 : elapsed;
+      // Ambient undulation rides on the hover amount, so at rest the text is
+      // completely undistorted rather than quietly breathing.
+      program.uniforms.uMotion.value = reduceMotion ? 0 : hoverOnly ? pointer.active : 1;
 
       renderOnce();
+
+      // Once settled there is nothing left to draw. Park the loop and let
+      // pointerenter restart it, rather than burning frames on a static image.
+      if (hoverOnly && !hovering && pointer.active < 0.002) {
+        pointer.active = 0;
+        program.uniforms.uPointerActive.value = 0;
+        program.uniforms.uMotion.value = 0;
+        renderOnce();
+        raf = 0;
+        return;
+      }
+
       raf = requestAnimationFrame(loop);
+    };
+
+    const startLoop = () => {
+      if (!raf && !disposed && !contextLost && visible && pageVisible) {
+        raf = requestAnimationFrame(loop);
+      }
     };
 
     const onVisibility = () => {

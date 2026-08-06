@@ -44,6 +44,7 @@ export default function PhilosophyQuote({ before, accent, after }: PhilosophyQuo
         pointerStrength={0.3}
         refraction={0.016}
         ripple
+        hoverOnly
         decorative
         className="h-[340px] sm:h-[380px] lg:h-[420px]"
       />
