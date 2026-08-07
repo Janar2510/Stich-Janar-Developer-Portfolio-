@@ -12,6 +12,12 @@
   --color-surface-high: #1c1c1c;
   --color-outline:      #262626;
 
+  /* Semantic state colours — values match src/lib/colors.ts SEMANTIC_COLORS,
+     which is the copy react-pdf reads (it can't consume these custom properties). */
+  --color-danger:  #fb7185;
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+
   /* Motion — one signature curve, one press curve */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-press:    cubic-bezier(0.23, 1, 0.32, 1);

@@ -31,7 +31,7 @@ export default function Footer({ lang, dict }: FooterProps) {
           <Link
             key={key}
             href={`/${lang}${href}`}
-            className="lbl text-zinc-600 hover:text-accent transition-colors"
+            className="lbl text-zinc-400 hover:text-accent transition-colors"
           >
             {dict.serviceLinks[key]}
           </Link>
@@ -54,19 +54,19 @@ export default function Footer({ lang, dict }: FooterProps) {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="lbl text-zinc-600 hover:text-accent underline underline-offset-8 decoration-1 transition-colors"
+              className="lbl text-zinc-400 hover:text-accent underline underline-offset-8 decoration-1 transition-colors"
             >
               {label}
             </a>
           ))}
           <Link
             href={`/${lang}/privacy`}
-            className="lbl text-zinc-600 hover:text-accent underline underline-offset-8 decoration-1 transition-colors"
+            className="lbl text-zinc-400 hover:text-accent underline underline-offset-8 decoration-1 transition-colors"
           >
             {dict.privacyLink}
           </Link>
         </div>
-        <span className="lbl text-zinc-700">{dict.copyright}</span>
+        <span className="lbl text-zinc-500">{dict.copyright}</span>
       </div>
     </footer>
   );

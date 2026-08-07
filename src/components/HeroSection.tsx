@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef } from "react"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import HeroVideoBg from "@/components/HeroVideoBg"
@@ -27,6 +27,11 @@ interface HeroSectionProps {
 
 export default function HeroSection({ lang, dict }: HeroSectionProps) {
   const sectionRef = useRef<HTMLElement>(null)
+  // MotionConfig's reducedMotion="user" (set globally in template.tsx) only disables
+  // transform animations driven through initial/animate/variants. These four values
+  // are raw MotionValues bound straight to scroll, which bypasses that system
+  // entirely, so reduced-motion has to be checked and applied by hand here.
+  const reducedMotion = useReducedMotion()
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -50,7 +55,7 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
       {/* ── NAME — Sits behind portrait ───────── */}
       <motion.div
         className="absolute inset-x-0 z-[5] top-[16%] md:top-[15%] flex justify-center text-center px-4"
-        style={{ y: nameY, opacity: nameOp }}
+        style={{ y: reducedMotion ? 0 : nameY, opacity: reducedMotion ? 1 : nameOp }}
       >
         <motion.h1
           className="hero-name text-[#EDEDED] tracking-[-0.04em]"
@@ -63,7 +68,7 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
       {/* ── ROLE WORDS — Split sides ──────────── */}
       <div className="absolute inset-x-0 z-[10] top-[32%] md:top-[42%] -translate-y-1/2 flex items-center justify-between px-7 md:px-20 lg:px-28 pointer-events-none">
         <motion.div
-          style={{ x: leftX }}
+          style={{ x: reducedMotion ? "0%" : leftX }}
           {...clip(0.25)}
         >
           <span className="hero-role block text-[#EDEDED]/40">{dict.developer}</span>
@@ -71,7 +76,7 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
 
         <motion.div
           className="text-right"
-          style={{ x: rightX }}
+          style={{ x: reducedMotion ? "0%" : rightX }}
           {...clip(0.4)}
         >
           <span className="hero-role block text-[#EDEDED]/40 text-right">{dict.designer}</span>
@@ -85,7 +90,7 @@ export default function HeroSection({ lang, dict }: HeroSectionProps) {
         // capped at max-width:100% is circular, and the figure collapses to a
         // sliver. Desktop keeps the original auto sizing.
         className="pointer-events-none absolute bottom-[9%] left-1/2 z-[20] -translate-x-1/2 h-[72%] aspect-[3/4] md:bottom-0 md:h-[94%] md:aspect-auto md:w-auto"
-        style={{ y: portraitY }}
+        style={{ y: reducedMotion ? 0 : portraitY }}
         {...fade(0.1)}
       >
         <Image

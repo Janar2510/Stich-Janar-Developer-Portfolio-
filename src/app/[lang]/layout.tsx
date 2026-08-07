@@ -101,9 +101,15 @@ export default async function RootLayout({
         />
       </head>
       <body className="bg-black text-[#e2e2e2] overflow-x-hidden">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:bg-accent focus:text-white focus:px-6 focus:py-3 focus:lbl"
+        >
+          {dict.a11y.skipToContent}
+        </a>
         <Cursor />
         <Nav lang={lang} dict={dict.nav} />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <Footer lang={lang} dict={dict.footer} />
         <Analytics />
       </body>

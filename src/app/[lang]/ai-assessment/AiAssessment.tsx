@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "@/components/Reveal";
+import SkeletonBlock from "@/components/SkeletonBlock";
 import { trackEvent } from "@/components/Analytics";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
@@ -195,8 +196,20 @@ export default function AiAssessment({ lang, dict }: AiAssessmentProps) {
                   </button>
                 </div>
                 <AnimatePresence mode="wait">
+                  {ai.loading && (
+                    <motion.div
+                      key="loading"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      className="mt-6 space-y-3"
+                    >
+                      <SkeletonBlock className="h-4 w-full" />
+                      <SkeletonBlock className="h-4 w-5/6" />
+                      <SkeletonBlock className="h-4 w-4/6" />
+                    </motion.div>
+                  )}
                   {ai.error && (
-                    <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-zinc-500 text-sm mt-4 leading-relaxed">
+                    <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-danger text-sm mt-4 leading-relaxed">
                       {ai.error}{dict.errorSuffix}
                     </motion.p>
                   )}

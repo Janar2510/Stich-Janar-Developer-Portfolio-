@@ -46,10 +46,10 @@ export default async function About({ params }: { params: Promise<{ lang: string
 
           {/* Name + identity */}
           <div className="md:col-span-5">
-            <div className="text-white hi-mask" style={{ fontFamily: "var(--manrope,'Manrope',sans-serif)", fontSize: "clamp(48px,7vw,110px)", fontWeight: 800, lineHeight: 0.9, letterSpacing: "-0.04em", textTransform: "uppercase" }}>
+            <h1 className="text-white hi-mask" style={{ fontFamily: "var(--manrope,'Manrope',sans-serif)", fontSize: "clamp(48px,7vw,110px)", fontWeight: 800, lineHeight: 0.9, letterSpacing: "-0.04em", textTransform: "uppercase" }}>
               JANAR<br />
               <span className="text-stroke">KUUSK.</span>
-            </div>
+            </h1>
             <div className="mt-10 space-y-3 hi-d2">
               <div className="font-manrope font-medium text-accent tracking-widest" style={{ fontSize: "clamp(14px,1.8vw,22px)", textTransform: "uppercase" }}>{developer}</div>
               <div className="font-manrope font-medium text-zinc-400 tracking-widest" style={{ fontSize: "clamp(14px,1.8vw,22px)", textTransform: "uppercase" }}>{designer}</div>

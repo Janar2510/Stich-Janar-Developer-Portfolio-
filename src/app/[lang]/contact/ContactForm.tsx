@@ -101,18 +101,19 @@ export default function ContactForm({ dict }: { dict: FormDict }) {
           )}
 
           <div className="form-field pb-6">
-            <label className="lbl text-zinc-600 block mb-4">{dict.nameLabel}</label>
-            <input type="text" name="name" placeholder={dict.namePlaceholder} required autoComplete="name" />
+            <label htmlFor="contact-name" className="lbl text-zinc-400 block mb-4">{dict.nameLabel}</label>
+            <input id="contact-name" type="text" name="name" placeholder={dict.namePlaceholder} required autoComplete="name" />
           </div>
 
           <div className="form-field pb-6">
-            <label className="lbl text-zinc-600 block mb-4">{dict.emailLabel}</label>
-            <input type="email" name="email" placeholder={dict.emailPlaceholder} required autoComplete="email" />
+            <label htmlFor="contact-email" className="lbl text-zinc-400 block mb-4">{dict.emailLabel}</label>
+            <input id="contact-email" type="email" name="email" placeholder={dict.emailPlaceholder} required autoComplete="email" />
           </div>
 
           <div className="form-field pb-6">
-            <label className="lbl text-zinc-600 block mb-4">{dict.typeLabel}</label>
+            <label htmlFor="contact-type" className="lbl text-zinc-400 block mb-4">{dict.typeLabel}</label>
             <input
+              id="contact-type"
               key={prefill ? "type-prefilled" : "type-empty"}
               type="text"
               name="type"
@@ -122,8 +123,9 @@ export default function ContactForm({ dict }: { dict: FormDict }) {
           </div>
 
           <div className="form-field pb-6">
-            <label className="lbl text-zinc-600 block mb-4">{dict.messageLabel}</label>
+            <label htmlFor="contact-message" className="lbl text-zinc-400 block mb-4">{dict.messageLabel}</label>
             <textarea
+              id="contact-message"
               key={prefill ? "message-prefilled" : "message-empty"}
               name="message"
               placeholder={dict.messagePlaceholder}
@@ -134,7 +136,7 @@ export default function ContactForm({ dict }: { dict: FormDict }) {
           </div>
 
           {state === "error" && (
-            <p className="text-zinc-500 text-sm leading-relaxed -mt-8">{dict.errorMessage}</p>
+            <p className="text-danger text-sm leading-relaxed -mt-8">{dict.errorMessage}</p>
           )}
 
           <div className="flex justify-end mt-4">
