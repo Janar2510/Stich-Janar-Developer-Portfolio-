@@ -78,7 +78,8 @@ export default async function Services({ params }: { params: Promise<{ lang: str
           const imageRight = idx % 2 === 0;
           const accent = idx === 3;
           const image = SERVICE_IMAGES[idx];
-          const title = `${titleLine1} ${titleLine2}`;
+          // titleLine2 is optional: some names are a single compound word.
+          const title = [titleLine1, titleLine2].filter(Boolean).join(" ");
           return (
             <div key={n}>
               <Reveal>
@@ -98,8 +99,12 @@ export default async function Services({ params }: { params: Promise<{ lang: str
                         48px and the col-span-5 column is 381px until then. */}
                     <h2 className="font-manrope font-bold text-[7vw] sm:text-3xl md:text-4xl xl:text-5xl text-white uppercase tracking-tight mb-8 whitespace-pre-line">
                       {titleLine1}
-                      <br />
-                      {titleLine2}
+                      {titleLine2 && (
+                        <>
+                          <br />
+                          {titleLine2}
+                        </>
+                      )}
                     </h2>
                     <p className="text-zinc-400 leading-relaxed mb-10">{body}</p>
                     <div className="flex flex-wrap gap-3">
