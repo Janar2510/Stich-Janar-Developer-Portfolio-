@@ -1,35 +1,36 @@
 {
   "seo": {
     "site": {
-      "titleDefault": "Janar Kuusk — Arendaja · Disainer · AI Insener",
+      "titleDefault": "Janar Kuusk — Kodulehed, veebirakendused ja AI arendus Tartus",
       "titleTemplate": "%s — Janar Kuusk",
-      "description": "Janar Kuusk — Tartus tegutsev arendaja, veebidisainer ja AI insener. Ehitan digitaalseid monumente arhitektuurse täpsusega.",
+      "description": "Kodulehe tegemine, veebirakenduste ja mobiilirakenduste arendus ning AI lahendused. Arendaja Tartus, töötan üle Eesti. Kodulehed alates 500 €.",
       "keywords": [
-        "arendaja",
-        "veebidisainer",
-        "AI insener",
+        "kodulehe tegemine",
+        "kodulehe valmistamine",
+        "veebiarendus",
+        "veebirakendused",
+        "mobiilirakenduse arendus",
+        "AI arendus",
         "Tartu",
-        "Eesti",
-        "Next.js",
-        "React"
+        "Eesti"
       ]
     },
     "pages": {
       "home": {
-        "title": "Janar Kuusk — Arendaja · Disainer · AI Insener",
-        "description": "Ehitan digitaalseid monumente arhitektuurse täpsusega. Tartus tegutsev arendaja, veebidisainer ja AI insener."
+        "title": "Janar Kuusk — Kodulehed, veebirakendused ja AI arendus Tartus",
+        "description": "Kodulehe tegemine, veebirakendused ja AI lahendused ettevõtetele. Arendaja Tartus, töötan üle Eesti. Kodulehed alates 500 €."
       },
       "about": {
         "title": "Minust",
         "description": "Janar Kuusk — Tartus tegutsev arendaja, veebidisainer ja AI insener. Töötan täpsuse ja loovuse ristumiskohas."
       },
       "services": {
-        "title": "Teenused",
-        "description": "Veebidisain, veebirakendused, mobiiliarendus ja AI inseneria — Janar Kuusk ehitab digitaalseid struktuure arhitektuurse täpsusega."
+        "title": "Kodulehe tegemine, veebirakendused ja AI arendus",
+        "description": "Kodulehe tegemine alates 500 €, veebirakendused, mobiilirakendused ja AI lahendused ettevõtetele. Selge protsess ja üks arendaja algusest lõpuni — Tartus ja üle Eesti."
       },
       "portfolio": {
         "title": "Portfoolio",
-        "description": "Janar Kuuski valitud tööd — veebidisaini, veebirakenduste, mobiiliarenduse ja AI inseneria projektid."
+        "description": "Valik valminud töid — kodulehed, e-poed, veebirakendused ja AI projektid Eesti ettevõtetele."
       },
       "tools": {
         "title": "AI tööriistad — Janar Kuusk",
@@ -45,7 +46,7 @@
       },
       "contact": {
         "title": "Kontakt",
-        "description": "Võta ühendust Janar Kuuskiga — Tartus tegutsev arendaja, disainer ja AI insener."
+        "description": "Küsi pakkumist kodulehe, rakenduse või AI projekti jaoks. Vastan 24 tunni jooksul. info@janarkuuskpro.com, +372 5610 3001."
       },
       "privacy": {
         "title": "Privaatsuspoliitika",
