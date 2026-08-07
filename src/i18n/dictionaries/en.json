@@ -1,35 +1,35 @@
 {
   "seo": {
     "site": {
-      "titleDefault": "Janar Kuusk — Developer · Designer · AI Engineer",
+      "titleDefault": "Janar Kuusk — Web Developer & AI Engineer in Estonia",
       "titleTemplate": "%s — Janar Kuusk",
-      "description": "Janar Kuusk — Developer, Web Designer, and AI Engineer based in Tartu, Estonia. Building digital monuments with architectural precision.",
+      "description": "Custom websites, web applications, mobile apps and production AI systems. Estonian developer working with clients across the EU and US. Websites from €500.",
       "keywords": [
-        "developer",
-        "web designer",
+        "web developer Estonia",
+        "web development",
+        "Next.js developer",
+        "mobile app development",
         "AI engineer",
         "Tartu",
-        "Estonia",
-        "Next.js",
-        "React"
+        "Estonia"
       ]
     },
     "pages": {
       "home": {
-        "title": "Janar Kuusk — Developer · Designer · AI Engineer",
-        "description": "Building digital monuments with architectural precision. Developer, Web Designer, and AI Engineer based in Tartu, Estonia."
+        "title": "Janar Kuusk — Web Developer & AI Engineer in Estonia",
+        "description": "Custom websites, web apps and AI systems for businesses. Based in Tartu, Estonia, working across the EU and US. Websites from €500."
       },
       "about": {
         "title": "About",
         "description": "Janar Kuusk — Developer, Web Designer, and AI Engineer based in Tartu, Estonia. Building at the intersection of precision and creativity."
       },
       "services": {
-        "title": "Services",
-        "description": "Website Design, Web Applications, Mobile Development, and AI Engineering — Janar Kuusk builds digital structures with architectural precision."
+        "title": "Web Development, Mobile Apps & AI Services",
+        "description": "Custom websites from €500, web applications, mobile apps and production AI systems. Clear process and one developer end to end — Estonia, EU and US."
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "Selected work by Janar Kuusk — web design, web applications, mobile development, and AI engineering projects."
+        "description": "Selected work — websites, e-commerce, web applications and AI projects for real businesses."
       },
       "tools": {
         "title": "AI Tools — Janar Kuusk",
@@ -45,7 +45,7 @@
       },
       "contact": {
         "title": "Contact",
-        "description": "Get in touch with Janar Kuusk — Developer, Designer, and AI Engineer based in Tartu, Estonia."
+        "description": "Ask for a quote for a website, app or AI project. Replies within 24 hours. info@janarkuuskpro.com, +372 5610 3001."
       },
       "privacy": {
         "title": "Privacy Policy",
