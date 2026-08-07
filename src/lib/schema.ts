@@ -10,7 +10,7 @@ import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { SITE_URL, localeUrl } from "@/lib/site";
 
-const BUSINESS_ID = `${SITE_URL}/#business`;
+export const BUSINESS_ID = `${SITE_URL}/#business`;
 const PERSON_ID = `${SITE_URL}/#janar-kuusk`;
 
 const EMAIL = "info@janarkuuskpro.com";
@@ -38,7 +38,7 @@ const OPENING_HOURS = {
   closes: "17:00",
 } as const;
 
-const AREA_SERVED = [
+export const AREA_SERVED = [
   { "@type": "Country", name: "Estonia" },
   { "@type": "Place", name: "European Union" },
   { "@type": "Country", name: "United States" },

@@ -9,6 +9,9 @@ import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
 import { localeUrl, languageAlternates } from "@/lib/site";
 
 const SERVICE_IMAGES = ["/images/service-design.jpg", "/images/service-webapp.jpg", "/images/service-mobile.jpg", "/images/service-ai.jpg"];
+// Aligned with dict.services.items order — index 0 is web design, etc. Each item's
+// CTA now points at its dedicated landing page instead of straight to contact.
+const SERVICE_SLUGS = ["kodulehe-tegemine", "veebirakendused", "mobiilirakendused", "ai-arendus"];
 
 export async function generateMetadata({
   params,
@@ -132,7 +135,7 @@ export default async function Services({ params }: { params: Promise<{ lang: str
                     {cta && (
                       <div className={`absolute bottom-8 ${imageRight ? "left-8" : "right-8"}`}>
                         <Link
-                          href={`/${lang}/contact`}
+                          href={`/${lang}/services/${SERVICE_SLUGS[idx]}`}
                           className="press ghost bg-black/50 backdrop-blur-md text-white px-6 py-3 lbl flex items-center gap-3 hover:bg-accent hover:border-accent"
                         >
                           {cta} <span className="material-symbols-outlined text-base">north_east</span>
