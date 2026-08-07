@@ -1,4 +1,7 @@
 {
+  "a11y": {
+    "skipToContent": "SKIP TO CONTENT"
+  },
   "seo": {
     "site": {
       "titleDefault": "Janar Kuusk — Web Developer & AI Engineer in Estonia",

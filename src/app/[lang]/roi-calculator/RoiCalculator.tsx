@@ -4,6 +4,7 @@ import { useMemo, useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Reveal, { StaggerReveal, StaggerItem } from "@/components/Reveal";
+import SkeletonBlock from "@/components/SkeletonBlock";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { ProjectionChart, BenchmarkBar, CumulativeReturnChart, SplitDonut, fmtCurrency, fmtPct } from "./charts";
@@ -40,19 +41,19 @@ type Inputs = RoiInputs;
 //    dictionary so it localizes with the rest of the UI. ──
 const VERDICT_STYLES: Record<Verdict, { badge: string; bar: string; text: string }> = {
   PROCEED: {
-    badge: "border-emerald-500/40 bg-emerald-500/[0.06]",
-    bar: "bg-emerald-400",
-    text: "text-emerald-400",
+    badge: "border-success/40 bg-success/[0.06]",
+    bar: "bg-success",
+    text: "text-success",
   },
   PROCEED_WITH_CAUTION: {
-    badge: "border-amber-500/40 bg-amber-500/[0.06]",
-    bar: "bg-amber-400",
-    text: "text-amber-400",
+    badge: "border-warning/40 bg-warning/[0.06]",
+    bar: "bg-warning",
+    text: "text-warning",
   },
   RECONSIDER: {
-    badge: "border-rose-500/40 bg-rose-500/[0.06]",
-    bar: "bg-rose-400",
-    text: "text-rose-400",
+    badge: "border-danger/40 bg-danger/[0.06]",
+    bar: "bg-danger",
+    text: "text-danger",
   },
 };
 
@@ -116,15 +117,15 @@ function Metric({ label, value, big = false, positive }: { label: string; value:
 // ── Skeleton loading state (replaces the spinner) ──
 function AnalysisSkeleton() {
   return (
-    <div className="space-y-6 animate-pulse">
-      <div className="h-32 bg-surface-high" />
+    <div className="space-y-6">
+      <SkeletonBlock className="h-32" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {[0, 1, 2, 3].map((i) => (
-          <div key={i} className="h-44 bg-surface-high" />
+          <SkeletonBlock key={i} className="h-44" />
         ))}
       </div>
-      <div className="h-40 bg-surface-high" />
-      <div className="h-40 bg-surface-high" />
+      <SkeletonBlock className="h-40" />
+      <SkeletonBlock className="h-40" />
     </div>
   );
 }
@@ -405,7 +406,7 @@ export default function RoiCalculator({ lang, dict }: RoiCalculatorProps) {
                   )}
 
                   {!ai.loading && ai.error && (
-                    <motion.p key="error" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-zinc-500 text-sm mt-4 leading-relaxed">
+                    <motion.p key="error" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-danger text-sm mt-4 leading-relaxed">
                       {ai.error}
                       {ai.status === 503 && dict.aiAnalysis.errorSuffix}
                     </motion.p>
@@ -543,6 +544,7 @@ export default function RoiCalculator({ lang, dict }: RoiCalculatorProps) {
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder={dict.pdfReport.emailPlaceholder}
+                          aria-label={dict.pdfReport.emailPlaceholder}
                           className="ghost flex-1 px-4 py-3 bg-surface-mid text-white font-manrope font-bold text-sm placeholder:text-zinc-700 outline-none focus:border-accent transition-colors"
                         />
                         <button
@@ -569,7 +571,7 @@ export default function RoiCalculator({ lang, dict }: RoiCalculatorProps) {
                     )}
                   </AnimatePresence>
 
-                  {pdf.error && <p className="text-zinc-500 text-sm mt-4 leading-relaxed">{pdf.error}</p>}
+                  {pdf.error && <p className="text-danger text-sm mt-4 leading-relaxed">{pdf.error}</p>}
                 </div>
               </Reveal>
             )}

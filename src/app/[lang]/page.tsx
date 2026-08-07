@@ -164,7 +164,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               <StaggerItem key={title}>
                 <div className="p-12 bg-black hover:bg-zinc-950 transition-colors group h-full">
                   <span className="material-symbols-outlined text-4xl text-accent mb-8 block">{icon}</span>
-                  <h4 className="font-manrope font-bold text-xl uppercase text-white mb-4">{title}</h4>
+                  <h3 className="font-manrope font-bold text-xl uppercase text-white mb-4">{title}</h3>
                   <p className="text-zinc-500 leading-relaxed text-sm">{body}</p>
                   <div className="arch-line mt-8 group-hover:bg-accent transition-colors duration-300" />
                 </div>

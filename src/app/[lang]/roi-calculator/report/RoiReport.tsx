@@ -3,6 +3,7 @@ import type { RoiAnalysis, RoiInputs, RoiResults, Verdict } from "../types";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { formatCurrency, formatDate } from "@/lib/format";
+import { SEMANTIC_COLORS } from "@/lib/colors";
 
 type RoiDict = Dictionary["roiCalculator"];
 
@@ -24,9 +25,9 @@ const FAINT = "#5c5c5c";
 const RING_TRACK = "#3f3f46";
 
 const VERDICT_COLOR: Record<Verdict, string> = {
-  PROCEED: "#34d399",
-  PROCEED_WITH_CAUTION: "#fbbf24",
-  RECONSIDER: "#fb7185",
+  PROCEED: SEMANTIC_COLORS.success,
+  PROCEED_WITH_CAUTION: SEMANTIC_COLORS.warning,
+  RECONSIDER: SEMANTIC_COLORS.danger,
 };
 const fmtPct = (v: number) => (Number.isFinite(v) ? `${v.toFixed(1)}%` : "∞");
 

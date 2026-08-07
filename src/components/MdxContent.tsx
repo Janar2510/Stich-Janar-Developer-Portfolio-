@@ -6,10 +6,16 @@ import type { AnchorHTMLAttributes, HTMLAttributes } from "react";
 // prose treatment used elsewhere (about/privacy pages): font-manrope
 // headings, zinc-toned body text, accent links.
 const components = {
+  // The next three elements render their real content via `{...props}` spreading
+  // `children` in from MDXRemote at runtime — jsx-a11y's content-has-children
+  // rules only see the JSX statically and can't trace a spread prop, so they
+  // flag these as empty even though every rendered heading/link has text.
   h2: (props: HTMLAttributes<HTMLHeadingElement>) => (
+    // eslint-disable-next-line jsx-a11y/heading-has-content
     <h2 className="font-manrope font-bold text-2xl md:text-3xl text-white uppercase tracking-tight mt-16 mb-6" {...props} />
   ),
   h3: (props: HTMLAttributes<HTMLHeadingElement>) => (
+    // eslint-disable-next-line jsx-a11y/heading-has-content
     <h3 className="font-manrope font-bold text-xl md:text-2xl text-white uppercase tracking-tight mt-12 mb-4" {...props} />
   ),
   p: (props: HTMLAttributes<HTMLParagraphElement>) => (
@@ -18,6 +24,7 @@ const components = {
   a: ({ href = "", ...props }: AnchorHTMLAttributes<HTMLAnchorElement>) => {
     const isExternal = /^https?:\/\//.test(href);
     return isExternal ? (
+      // eslint-disable-next-line jsx-a11y/anchor-has-content
       <a href={href} target="_blank" rel="noopener noreferrer" className="text-accent underline underline-offset-4 hover:text-white transition-colors" {...props} />
     ) : (
       <Link href={href} className="text-accent underline underline-offset-4 hover:text-white transition-colors" {...props} />
