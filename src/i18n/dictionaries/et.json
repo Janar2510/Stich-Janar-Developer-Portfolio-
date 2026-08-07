@@ -310,10 +310,10 @@
     "items": [
       {
         "n": "(01)",
-        "titleLine1": "VEEBI",
-        "titleLine2": "DISAIN",
+        "titleLine1": "VEEBIDISAIN",
+        "titleLine2": "",
         "schemaName": "Veebidisain",
-        "body": "Kaugemale mallidest — loon eritellimusel visuaalseid identiteete. Keskendudes esteetika ja UX-i ristumiskohale, on iga piksel paigutatud struktuurse kavatsusega, tagades, et su bränd köidab tähelepanu vaikuse ja rafineerituse kaudu.",
+        "body": "Unusta valmisšabloonid — loon eritellimusel visuaalseid identiteete. Ühendan eesmärgipärase disaini ja mugava kasutajakogemuse (UX), kus iga detail on läbi mõeldud. Tulemuseks on maitsekas ja enesekindel bränd, mis jääb silma ilma üleliigse mürata.",
         "tools": [
           "FIGMA",
           "ADOBE SUITE",
