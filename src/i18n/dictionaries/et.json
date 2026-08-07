@@ -267,22 +267,22 @@
         {
           "n": "01",
           "title": "AVASTAMINE",
-          "body": "Sukeldun sinu eesmärkidesse, sihtrühma ja konkurentsimaastikku. Uuringud, intervjuud ja süntees — ehitan struktuurse lähteülesande, mis juhib iga otsust."
+          "body": "Esmalt viin end kurssi sinu eesmärkide, sihtrühma ja turul toimuvaga. Teen vajalikud eeltööd ja intervjuud ning panen paika selge lähteülesande, mis on aluseks kõigile edasistele otsustele."
         },
         {
           "n": "02",
           "title": "ARHITEKTUUR",
-          "body": "Tõlgin lähteülesande ehitusjooniseks. Traatraamid, süsteemi disain, infoarhitektuur ja tehnoloogiavalikud — enne kui esimenegi rida päriskoodi on kirjutatud."
+          "body": "Muudan ideed konkreetseks plaaniks. Panen paika infoarhitektuuri, süsteemi disaini ja sobivad tehnoloogiad ning joonistan prototüübid (wireframe'id) ammu enne seda, kui koodirida kirja saab."
         },
         {
           "n": "03",
           "title": "EHITAMINE",
-          "body": "Loon toodet täpsusega. Puhas, hooldatav kood ja pidev iteratsioon. Regulaarsed vahekohtumised tagavad, et kõik on kooskõlas, kui struktuur kerkib."
+          "body": "Kirjutan puhast ja kergesti hooldatavat koodi. Töö käib samm-sammult ning hoiame sind pidevalt protsessiga kursis, et lõpptulemus vastaks täpselt ootustele."
         },
         {
           "n": "04",
-          "title": "VIIMISTLEMINE",
-          "body": "Testin kõigil seadmetel, optimeerin jõudlust ja lihvin iga detaili. Käivitus on alles algus — järelvalve hoiab süsteemi terava."
+          "title": "VIIMISTLUS JA KÄIVITUS",
+          "body": "Testin lahendust eri seadmetel, optimeerin kiiruse ja lihvin viimasedki detailid. Toote avalikustamine on alles algus — hoian ka edaspidi süsteemil silma peal, et kõik töötaks laitmatult."
         }
       ]
     },
