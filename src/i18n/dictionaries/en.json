@@ -72,7 +72,14 @@
   },
   "footer": {
     "copyright": "© 2026 JANAR KUUSK. BUILT WITH PRECISION.",
-    "privacyLink": "PRIVACY"
+    "privacyLink": "PRIVACY",
+    "serviceLinks": {
+      "kodulehed": "WEBSITES",
+      "veebirakendused": "WEB APPS",
+      "mobiilirakendused": "MOBILE APPS",
+      "aiArendus": "AI DEVELOPMENT",
+      "allServices": "ALL SERVICES"
+    }
   },
   "marquee": {
     "items": [
@@ -321,7 +328,7 @@
           "THREE.JS",
           "FRAMER"
         ],
-        "cta": "VIEW CASE STUDY"
+        "cta": "LEARN MORE"
       },
       {
         "n": "(02)",
@@ -336,7 +343,7 @@
           "POSTGRESQL",
           "SUPABASE"
         ],
-        "cta": "TECHNICAL SPECS"
+        "cta": "LEARN MORE"
       },
       {
         "n": "(03)",
@@ -350,7 +357,7 @@
           "SWIFTUI",
           "FIREBASE"
         ],
-        "cta": null
+        "cta": "LEARN MORE"
       },
       {
         "n": "(04)",
@@ -368,7 +375,7 @@
           "RAG",
           "SUPABASE VECTOR"
         ],
-        "cta": "DISCUSS PROJECT"
+        "cta": "LEARN MORE"
       }
     ],
     "cta": {
@@ -859,5 +866,235 @@
     "readMore": "READ MORE",
     "backToBlog": "← BACK TO BLOG",
     "publishedOn": "PUBLISHED"
+  },
+  "servicePages": {
+    "kodulehe-tegemine": {
+      "seo": {
+        "title": "Website Design & Development — From €500",
+        "description": "Website design and development in Tartu, Estonia, working across the EU and US. Custom build from €500, fast and built for search."
+      },
+      "hero": {
+        "badge": "(SERVICE)",
+        "heading": "WEBSITE DESIGN & DEVELOPMENT",
+        "sub": "A custom website built for your business — not a template with your logo dropped in."
+      },
+      "intro": "A website is often the first contact someone has with your business. I build sites that load fast, look right on any screen size, and are structured so Google can actually find them. You focus on your business — I handle the technical side.",
+      "sections": [
+        {
+          "heading": "Custom, not templated",
+          "body": "Every website is built around your business, content, and goals. Design starts from a blank page, not a theme you have to bend to fit. The result looks like your brand, not the same layout a thousand other sites are using."
+        },
+        {
+          "heading": "A clear process from start to finish",
+          "body": "I start by understanding your goals and audience, then map out structure and design before writing a single line of code. The build happens in stages, and you stay in the loop throughout. Before launch, everything gets tested and polished."
+        },
+        {
+          "heading": "What affects the price",
+          "body": "Price depends on the number of pages, functionality, and whether content or photography needs producing too. A simple one-page site sits at the lower end of the range; a multi-page business site with custom features sits higher. You always get a firm quote before work starts."
+        },
+        {
+          "heading": "Built for speed and findability",
+          "body": "I build with Next.js, which gives fast load times and a strong foundation for search engines. The site works smoothly on phones and desktops, and is built with SEO in mind from the start — not bolted on afterward."
+        }
+      ],
+      "priceNote": "Websites start from €500. The final price depends on scope and functionality — you'll get an exact quote after a short conversation about what you need.",
+      "faq": [
+        {
+          "q": "How much does a website cost?",
+          "a": "Prices start from €500 for a simpler one-page site. A multi-page site, e-commerce functionality, or custom features costs more. You'll always get a firm quote before work begins."
+        },
+        {
+          "q": "How long does building a website take?",
+          "a": "A simpler site can be ready in a couple of weeks. A larger project takes a month or more, depending on content and functionality."
+        },
+        {
+          "q": "Can I edit the content myself afterward?",
+          "a": "Yes. Most sites are built so you can update the main text and images yourself without needing me. For bigger changes, I'm always available to help."
+        },
+        {
+          "q": "What happens after the site launches?",
+          "a": "Launch is just the beginning. I offer monitoring and maintenance to keep the site fast, secure, and up to date after it goes live."
+        },
+        {
+          "q": "Does the site work well on phones?",
+          "a": "Yes. Every site is built mobile-first from the start, not adapted afterward. I test everything on real devices before launch."
+        }
+      ],
+      "cta": {
+        "heading": "READY TO GET YOUR WEBSITE BUILT?",
+        "button": "ASK FOR A QUOTE"
+      }
+    },
+    "veebirakendused": {
+      "seo": {
+        "title": "Web Application Development for Business",
+        "description": "Web application development for businesses: client portals, booking systems, and internal tools. Next.js, TypeScript, Supabase."
+      },
+      "hero": {
+        "badge": "(SERVICE)",
+        "heading": "WEB APPLICATION DEVELOPMENT",
+        "sub": "Software that does real work for your business — not just a site that displays information."
+      },
+      "intro": "A web application differs from a regular website in that users can actually do something in it: log in, submit data, make bookings. I build applications that are fast, secure, and built to grow alongside your business.",
+      "sections": [
+        {
+          "heading": "Web application vs. website",
+          "body": "A website provides information. A web application lets a user take action — log in, submit data, manage their account. If your business needs more than a static information page, a web application is the right fit."
+        },
+        {
+          "heading": "What I've built",
+          "body": "Client portals where customers can see their orders and documents. Booking systems that handle scheduling automatically. Internal tools that replace spreadsheets and manual work."
+        },
+        {
+          "heading": "Technology you can rely on",
+          "body": "I build with Next.js and TypeScript, which means speed and fewer bugs. For the database and authentication, I use Supabase, with security rules configured per table. The code is clean and maintainable, not rushed together."
+        },
+        {
+          "heading": "Process and support after launch",
+          "body": "I start by understanding your workflow and build the application in stages, with regular check-ins. After launch, I monitor how the system performs and am ready to keep building as your needs change."
+        }
+      ],
+      "priceNote": "The price for a web application depends on scope and complexity. A smaller internal tool costs less than a full-featured client portal — we'll talk through your needs and I'll put together an exact quote.",
+      "faq": [
+        {
+          "q": "How long does web application development take?",
+          "a": "A smaller tool can be ready in a couple of weeks. A larger client portal or multi-feature system typically takes several months, depending on scope."
+        },
+        {
+          "q": "How much does a web application cost?",
+          "a": "Price depends on functionality and complexity. We'll talk through your needs and I'll put together a quote that matches the actual scope, not a rough estimate."
+        },
+        {
+          "q": "Can you build on top of an existing system?",
+          "a": "Yes. If you already have software or a database in place, I can integrate with it or extend it rather than necessarily starting from scratch."
+        },
+        {
+          "q": "Who hosts and maintains the application after launch?",
+          "a": "I use reliable cloud platforms (like Vercel and Supabase) that provide speed and reliability. I also offer ongoing maintenance if you want it."
+        },
+        {
+          "q": "Is my data and my clients' data secure?",
+          "a": "Yes. I use row-level security (RLS) in the database and follow GDPR requirements for handling personal data. Security is built in from the start, not added afterward."
+        }
+      ],
+      "cta": {
+        "heading": "NEED A WEB APPLICATION?",
+        "button": "ASK FOR A QUOTE"
+      }
+    },
+    "mobiilirakendused": {
+      "seo": {
+        "title": "Mobile App Development — iOS & Android",
+        "description": "Mobile app development with React Native — one codebase, iOS and Android together, published to the App Store and Google Play."
+      },
+      "hero": {
+        "badge": "(SERVICE)",
+        "heading": "MOBILE APP DEVELOPMENT",
+        "sub": "iOS and Android from one codebase, with a native feel and smooth animations."
+      },
+      "intro": "A mobile app is the right choice when your users need something that works offline, sends notifications, or needs phone features like the camera or location. I build with React Native, meaning one codebase for both platforms.",
+      "sections": [
+        {
+          "heading": "One codebase, two platforms",
+          "body": "React Native lets me build an iOS and Android app together, sharing most of the code. That means faster development and a lower cost than building two separate native apps, without sacrificing quality."
+        },
+        {
+          "heading": "When you need an app — and when you don't",
+          "body": "An app pays off when you need offline functionality, push notifications, or phone features. If information and forms are enough, a mobile-friendly website is often the faster, cheaper option. I'll tell you honestly which fits your case."
+        },
+        {
+          "heading": "Publishing to the App Store and Google Play",
+          "body": "I help get the app into the stores too — from account setup through passing review. This process is often more involved than developers expect, and I've been through it many times."
+        },
+        {
+          "heading": "Process and ongoing development",
+          "body": "Like other projects, work starts with planning and design before any code is written. After launch, the app can keep evolving — new features, fixes, and improvements based on user feedback."
+        }
+      ],
+      "priceNote": "The price for a mobile app depends on functionality and platform scope. A simpler app costs less than one with complex integrations — an exact quote follows a conversation about your needs.",
+      "faq": [
+        {
+          "q": "Do you build for iOS and Android together?",
+          "a": "Yes. I use React Native, which gives both platforms a native feel from one codebase. That's faster and cheaper than two separate apps."
+        },
+        {
+          "q": "How much does a mobile app cost?",
+          "a": "Price depends on functionality — a simpler app costs less than one with complex integrations or real-time data. We'll talk through your needs and I'll put together a firm quote."
+        },
+        {
+          "q": "How long does app development take?",
+          "a": "A simpler app can be ready in a few weeks. A more complex, multi-feature app typically takes several months."
+        },
+        {
+          "q": "Who publishes the app to the App Store and Google Play?",
+          "a": "I handle the entire publishing process — from setting up accounts through passing store review."
+        },
+        {
+          "q": "Can the app be developed further later?",
+          "a": "Yes. The app is built to be extensible from the start. New features can be added and existing ones improved as your business grows."
+        }
+      ],
+      "cta": {
+        "heading": "NEED A MOBILE APP?",
+        "button": "ASK FOR A QUOTE"
+      }
+    },
+    "ai-arendus": {
+      "seo": {
+        "title": "AI Development for Business",
+        "description": "AI solutions for business: document processing, automated workflows, and customer support assistants. Production-grade AI development in Estonia."
+      },
+      "hero": {
+        "badge": "(SERVICE)",
+        "heading": "AI DEVELOPMENT",
+        "sub": "AI that does real work in your business — not just a trendy add-on."
+      },
+      "intro": "There's a lot of talk about AI, but most businesses don't need an AI strategy — they need one automated process that's currently eating hours. I integrate language models and AI directly into your existing software, so the result is measurable, not a demo.",
+      "sections": [
+        {
+          "heading": "What AI actually does",
+          "body": "Automated document processing and data extraction. Customer support assistants that answer common questions. Workflows that automate repetitive manual work. No hype — just what actually saves time and money."
+        },
+        {
+          "heading": "Where to start",
+          "body": "If you're not sure where AI would help most in your business, start with the free tools: the AI readiness assessment shows where your organization stands today, and the ROI calculator helps estimate whether the investment pays off."
+        },
+        {
+          "heading": "Technology that's production-ready",
+          "body": "I work with Claude, OpenAI, and Gemini language models, RAG pipelines for more accurate answers, and integrate directly into your existing software. Every AI feature is built to be observable and maintainable, not a quick experiment."
+        },
+        {
+          "heading": "Rollout and measuring results",
+          "body": "AI solutions launch in stages, tested with real data before full rollout. After launch, I track results to see whether the solution delivers the expected value, and adjust accordingly."
+        }
+      ],
+      "priceNote": "The price for an AI project depends on complexity and the number of integrations. A smaller automated workflow costs less than a full-featured system — start with the free assessment to get clarity on your needs.",
+      "faq": [
+        {
+          "q": "Where should I start with AI adoption?",
+          "a": "Start with the free AI readiness assessment, which shows where your organization stands today and where AI would help most. It gives you a concrete starting point rather than a vague direction."
+        },
+        {
+          "q": "How much does an AI project cost?",
+          "a": "Price depends on complexity — one automated workflow costs less than a system with multiple integrations. The ROI calculator helps estimate whether the investment pays off before you commit."
+        },
+        {
+          "q": "Is my data protected in an AI solution?",
+          "a": "Yes. Every solution is built with data protection in mind — data doesn't move uncontrolled to third parties, and GDPR requirements are considered from the start."
+        },
+        {
+          "q": "Will AI replace my employees?",
+          "a": "The goal is to automate repetitive and time-consuming tasks, not replace people. AI handles the routine work so your team can focus on what actually matters."
+        },
+        {
+          "q": "How quickly will I see results?",
+          "a": "Depends on project scope. A smaller automated workflow can show measurable results within a few weeks. Larger systems need more thorough testing before full rollout."
+        }
+      ],
+      "cta": {
+        "heading": "READY TO TRY AI IN YOUR BUSINESS?",
+        "button": "ASK FOR A QUOTE"
+      }
+    }
   }
 }

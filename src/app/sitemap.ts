@@ -3,11 +3,27 @@ import { locales } from "@/i18n/config";
 import { languageAlternates, localeUrl } from "@/lib/site";
 import { getAllPostSlugs } from "@/lib/blog";
 
-const routes = ["", "/about", "/services", "/portfolio", "/tools", "/roi-calculator", "/ai-assessment", "/contact", "/privacy", "/blog"];
+const routes = [
+  "",
+  "/about",
+  "/services",
+  "/services/kodulehe-tegemine",
+  "/services/veebirakendused",
+  "/services/mobiilirakendused",
+  "/services/ai-arendus",
+  "/portfolio",
+  "/tools",
+  "/roi-calculator",
+  "/ai-assessment",
+  "/contact",
+  "/privacy",
+  "/blog",
+];
 
 function priorityFor(route: string): number {
   if (route === "") return 1;
   if (route === "/privacy") return 0.3;
+  if (route.startsWith("/services/")) return 0.8;
   return 0.7;
 }
 

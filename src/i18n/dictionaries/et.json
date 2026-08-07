@@ -73,7 +73,14 @@
   },
   "footer": {
     "copyright": "© 2026 JANAR KUUSK. EHITATUD TÄPSUSEGA.",
-    "privacyLink": "PRIVAATSUS"
+    "privacyLink": "PRIVAATSUS",
+    "serviceLinks": {
+      "kodulehed": "KODULEHED",
+      "veebirakendused": "VEEBIRAKENDUSED",
+      "mobiilirakendused": "MOBIILIRAKENDUSED",
+      "aiArendus": "AI ARENDUS",
+      "allServices": "KÕIK TEENUSED"
+    }
   },
   "marquee": {
     "items": [
@@ -322,7 +329,7 @@
           "THREE.JS",
           "FRAMER"
         ],
-        "cta": "VAATA JUHTUMIUURINGUT"
+        "cta": "LOE LÄHEMALT"
       },
       {
         "n": "(02)",
@@ -337,7 +344,7 @@
           "POSTGRESQL",
           "SUPABASE"
         ],
-        "cta": "TEHNILISED ANDMED"
+        "cta": "LOE LÄHEMALT"
       },
       {
         "n": "(03)",
@@ -351,7 +358,7 @@
           "SWIFTUI",
           "FIREBASE"
         ],
-        "cta": null
+        "cta": "LOE LÄHEMALT"
       },
       {
         "n": "(04)",
@@ -369,7 +376,7 @@
           "RAG",
           "SUPABASE VECTOR"
         ],
-        "cta": "ARUTAME PROJEKTI"
+        "cta": "LOE LÄHEMALT"
       }
     ],
     "cta": {
@@ -860,5 +867,235 @@
     "readMore": "LOE EDASI",
     "backToBlog": "← TAGASI BLOGI JUURDE",
     "publishedOn": "AVALDATUD"
+  },
+  "servicePages": {
+    "kodulehe-tegemine": {
+      "seo": {
+        "title": "Kodulehe tegemine — alates 500 €",
+        "description": "Kodulehe tegemine Tartus ja üle Eesti. Eritellimusel disain ja arendus, hind alates 500 €. Kiire, mobiilisõbralik ja otsingumootoritele valmis koduleht."
+      },
+      "hero": {
+        "badge": "(TEENUS)",
+        "heading": "KODULEHE TEGEMINE",
+        "sub": "Eritellimusel koduleht, mis on ehitatud sinu ettevõtte jaoks — mitte kohandatud mallist."
+      },
+      "intro": "Koduleht on tihti esimene kokkupuude sinu ettevõttega. Ehitan lehe, mis laadib kiiresti, näeb hea välja igas suuruses ekraanil ja on üles ehitatud nii, et Google selle üles leiaks. Sina keskendud oma äriile, mina hoolitsen tehnilise poole eest.",
+      "sections": [
+        {
+          "heading": "Eritellimusel, mitte mall",
+          "body": "Iga koduleht ehitatakse sinu ettevõtte, sisu ja eesmärkide järgi. Disain algab tühjalt lehelt, mitte valmis teemast, mida tuleb sobitada. Tulemus näeb välja nagu sinu bränd, mitte tuhande teise ettevõtte oma."
+        },
+        {
+          "heading": "Selge protsess algusest lõpuni",
+          "body": "Alustan sinu eesmärkide ja sihtrühma mõistmisest, siis panen paika struktuuri ja disaini enne esimese koodirea kirjutamist. Ehitan lehe etapiviisiliselt ja hoian sind kursis. Enne käivitust testin kõike ja lihvin viimased detailid."
+        },
+        {
+          "heading": "Mis mõjutab hinda",
+          "body": "Hind sõltub lehekülgede arvust, funktsionaalsusest ja sellest, kas on vaja ka sisu või piltide tegemist. Lihtne esitluslehekülg jääb hinnaskaala alumisse otsa, mitme alamlehe ja erifunktsioonidega ärileht ülemisse. Alati saad täpse pakkumise enne töö algust."
+        },
+        {
+          "heading": "Ehitatud kiiruse ja leitavuse peale",
+          "body": "Kasutan Next.js raamistikku, mis annab kiire laadimise ja hea põhja otsingumootorite jaoks. Leht töötab sujuvalt nii telefonis kui arvutis ning on algusest peale ehitatud SEO põhimõtteid järgides, mitte lisatud tagantjärele."
+        }
+      ],
+      "priceNote": "Kodulehe hind algab 500 eurost. Lõplik hind sõltub lehekülgede arvust ja funktsionaalsusest — täpse pakkumise saad pärast lühikest vestlust sinu vajadustest.",
+      "faq": [
+        {
+          "q": "Kui palju koduleht maksab?",
+          "a": "Hind algab 500 eurost lihtsama esitluslehe puhul. Mitme alamlehe, e-poe funktsionaalsuse või erilahendustega leht maksab rohkem. Saad alati täpse pakkumise enne töö algust."
+        },
+        {
+          "q": "Kui kaua kodulehe tegemine aega võtab?",
+          "a": "Lihtsam leht valmib paari nädalaga. Suurema mahuga projekt võtab kuu või rohkem, sõltuvalt sisust ja funktsionaalsusest."
+        },
+        {
+          "q": "Kas saan hiljem ise sisu muuta?",
+          "a": "Jah. Enamik kodulehti ehitan nii, et põhilist teksti ja pilte saab hiljem ise muuta ilma minu abita. Suuremate muudatuste jaoks olen alati abiks."
+        },
+        {
+          "q": "Mis saab pärast lehe valmimist?",
+          "a": "Käivitus on alles algus. Pakun järelvalvet ja hooldust, et leht püsiks kiire, turvaline ja ajakohane ka pärast avaldamist."
+        },
+        {
+          "q": "Kas leht töötab hästi ka telefonis?",
+          "a": "Jah. Iga koduleht on ehitatud mobiilisõbralikuna algusest peale, mitte kohandatud tagantjärele. Testin kõike reaalsetel seadmetel enne käivitust."
+        }
+      ],
+      "cta": {
+        "heading": "VALMIS OMA KODULEHT TELLIMA?",
+        "button": "KÜSI PAKKUMIST"
+      }
+    },
+    "veebirakendused": {
+      "seo": {
+        "title": "Veebirakenduse arendus ettevõttele",
+        "description": "Veebirakenduste arendus ettevõtetele: kliendiportaalid, broneerimissüsteemid ja sisemised tööriistad. Next.js, TypeScript, Supabase. Tartus ja üle Eesti."
+      },
+      "hero": {
+        "badge": "(TEENUS)",
+        "heading": "VEEBIRAKENDUSTE ARENDUS",
+        "sub": "Tarkvara, mis teeb sinu ettevõtte jaoks päris tööd — mitte lihtsalt infot näitav koduleht."
+      },
+      "intro": "Veebirakendus erineb tavalisest kodulehest selle poolest, et kasutajad saavad selles päriselt midagi teha: sisse logida, andmeid sisestada, broneeringuid teha. Ehitan rakendusi, mis on kiired, turvalised ja kasvavad koos sinu ettevõttega.",
+      "sections": [
+        {
+          "heading": "Veebirakendus vs koduleht",
+          "body": "Koduleht annab infot. Veebirakendus lubab kasutajal midagi teha — logida sisse, esitada andmeid, hallata oma kontot. Kui su ettevõte vajab midagi enamat kui staatiline infoleht, on veebirakendus õige lahendus."
+        },
+        {
+          "heading": "Mida olen ehitanud",
+          "body": "Kliendiportaalid, kus kliendid näevad oma tellimusi ja dokumente. Broneerimissüsteemid, mis haldavad ajagraafikuid automaatselt. Sisemised tööriistad, mis asendavad Exceli tabeleid ja käsitsi tehtavat tööd."
+        },
+        {
+          "heading": "Tehnoloogia, millele saab kindel olla",
+          "body": "Ehitan Next.js ja TypeScriptiga, mis annab kiiruse ja vähem vigu. Andmebaasi ja autentimise jaoks kasutan Supabase't, kus turvareeglid on paigas iga tabeli kohta eraldi. Kood on puhas ja hooldatav, mitte kiirustades kokku pandud."
+        },
+        {
+          "heading": "Protsess ja hooldus pärast käivitust",
+          "body": "Alustan sinu töövoo mõistmisest ja ehitan rakenduse etapiviisiliselt, regulaarsete vahekohtumistega. Pärast käivitust jälgin süsteemi toimimist ja olen valmis edasi arendama, kui vajadused muutuvad."
+        }
+      ],
+      "priceNote": "Veebirakenduse hind sõltub mahust ja keerukusest. Väiksem sisemine tööriist maksab vähem kui täisfunktsionaalne kliendiportaal — arutame sinu vajadused läbi ja koostan täpse pakkumise.",
+      "faq": [
+        {
+          "q": "Kui kaua veebirakenduse arendus kestab?",
+          "a": "Väiksem tööriist võib valmida paari nädalaga. Suurem kliendiportaal või mitme funktsiooniga süsteem võtab tavaliselt mitu kuud, sõltuvalt mahust."
+        },
+        {
+          "q": "Kui palju veebirakendus maksab?",
+          "a": "Hind sõltub funktsionaalsusest ja keerukusest. Räägime läbi sinu vajadused ja koostan täpse pakkumise, mis vastab tegelikule mahule, mitte hinnangulisele."
+        },
+        {
+          "q": "Kas saad ehitada olemasoleva süsteemi peale?",
+          "a": "Jah. Kui sul on juba olemas mingi tarkvara või andmebaas, saan sellega liidestuda või seda edasi arendada, mitte tingimata nullist alustada."
+        },
+        {
+          "q": "Kes majutab ja hooldab rakendust pärast valmimist?",
+          "a": "Kasutan usaldusväärseid pilveplatvorme (nagu Vercel ja Supabase), mis tagavad kiiruse ja töökindluse. Pakun ka jooksvat hooldust, kui seda soovid."
+        },
+        {
+          "q": "Kas minu ja klientide andmed on turvalised?",
+          "a": "Jah. Kasutan rea tasemel turvareegleid (RLS) andmebaasis ja järgin GDPR nõudeid isikuandmete töötlemisel. Turvalisus on osa arendusest algusest peale, mitte lisand."
+        }
+      ],
+      "cta": {
+        "heading": "VAJAD VEEBIRAKENDUST?",
+        "button": "KÜSI PAKKUMIST"
+      }
+    },
+    "mobiilirakendused": {
+      "seo": {
+        "title": "Mobiilirakenduse arendus — iOS ja Android",
+        "description": "Mobiilirakenduse arendus React Native'iga — üks koodibaas, iOS ja Android korraga. Avaldamine App Store'i ja Google Play'sse. Tartus ja üle Eesti."
+      },
+      "hero": {
+        "badge": "(TEENUS)",
+        "heading": "MOBIILIRAKENDUSTE ARENDUS",
+        "sub": "iOS ja Android ühest koodibaasist, natiivse tunnetusega ja sujuvate animatsioonidega."
+      },
+      "intro": "Mobiilirakendus on õige valik, kui su kasutajad vajavad midagi, mis töötab ka võrguühenduseta, saadab teavitusi või vajab telefoni funktsioone nagu kaamera või asukoht. Ehitan React Native'iga, mis tähendab üht koodibaasi mõlema platvormi jaoks.",
+      "sections": [
+        {
+          "heading": "Üks koodibaas, kaks platvormi",
+          "body": "React Native võimaldab ehitada iOS-i ja Androidi rakenduse korraga, jagades enamiku koodist. See tähendab kiiremat arendust ja madalamat hinda võrreldes kahe eraldi natiivrakenduse ehitamisega, ilma et kvaliteet kannataks."
+        },
+        {
+          "heading": "Millal on äppi vaja — ja millal mitte",
+          "body": "Rakendus tasub end ära, kui vajad võrguühenduseta tööd, push-teavitusi või telefoni funktsioone. Kui piisab lihtsalt infost ja vormidest, on tihti mobiilisõbralik koduleht kiirem ja odavam lahendus. Ütlen ausalt, kumb sinu jaoks sobib."
+        },
+        {
+          "heading": "Avaldamine App Store'i ja Google Play'sse",
+          "body": "Aitan rakenduse ka poodidesse üles panna — konto seadistusest kuni ülevaatuse läbimiseni. See protsess on tihti keerulisem kui arendajad ootavad, ja olen selle mitmeid kordi läbinud."
+        },
+        {
+          "heading": "Protsess ja edasine areng",
+          "body": "Sarnaselt teistele projektidele algab töö planeerimisest ja disainist enne kirjutamist. Pärast käivitust saab rakendust edasi arendada — uued funktsioonid, parandused ja täiendused vastavalt kasutajate tagasisidele."
+        }
+      ],
+      "priceNote": "Mobiilirakenduse hind sõltub funktsionaalsusest ja platvormide arvust. Lihtsam rakendus maksab vähem kui keerukate integratsioonidega süsteem — täpne pakkumine tuleb pärast vajaduste läbirääkimist.",
+      "faq": [
+        {
+          "q": "Kas ehitad iOS-i ja Androidi jaoks korraga?",
+          "a": "Jah. Kasutan React Native't, mis annab mõlemale platvormile natiivse tunnetuse ühest koodibaasist. See on kiirem ja odavam kui kaks eraldi rakendust."
+        },
+        {
+          "q": "Kui palju mobiilirakendus maksab?",
+          "a": "Hind sõltub funktsionaalsusest — lihtsam rakendus maksab vähem kui keerukate integratsioonide või reaalajas andmetega süsteem. Räägime vajadused läbi ja koostan täpse pakkumise."
+        },
+        {
+          "q": "Kui kaua rakenduse arendus aega võtab?",
+          "a": "Lihtsam rakendus võib valmida mõne nädalaga. Keerukam, mitme funktsiooniga rakendus võtab tavaliselt mitu kuud."
+        },
+        {
+          "q": "Kes avaldab rakenduse App Store'i ja Google Play'sse?",
+          "a": "Aitan kogu avaldamisprotsessi läbida — kontode seadistamisest kuni poe ülevaatuse läbimiseni välja."
+        },
+        {
+          "q": "Kas rakendust saab hiljem edasi arendada?",
+          "a": "Jah. Rakendus ehitatakse laiendatavana algusest peale. Uusi funktsioone saab lisada ja olemasolevaid täiendada vastavalt sellele, kuidas su äri kasvab."
+        }
+      ],
+      "cta": {
+        "heading": "VAJAD MOBIILIRAKENDUST?",
+        "button": "KÜSI PAKKUMIST"
+      }
+    },
+    "ai-arendus": {
+      "seo": {
+        "title": "AI lahendused ettevõttele",
+        "description": "AI lahendused ettevõttele: dokumenditöötlus, automatiseeritud töövood ja klienditoe abistajad. Tootmisvalmis tehisintellekti arendus Tartus ja üle Eesti."
+      },
+      "hero": {
+        "badge": "(TEENUS)",
+        "heading": "AI ARENDUS",
+        "sub": "Tehisintellekt, mis teeb päris tööd sinu ettevõttes — mitte lihtsalt trendikas lisand."
+      },
+      "intro": "AI-st räägitakse palju, aga enamik ettevõtteid ei vaja AI strateegiat — nad vajavad üht konkreetset automatiseeritud protsessi, mis praegu sööb tunde. Integreerin keelemudeleid ja tehisintellekti otse su olemasolevasse tarkvarasse, nii et tulemus on mõõdetav, mitte demo.",
+      "sections": [
+        {
+          "heading": "Mida AI päriselt teeb",
+          "body": "Dokumentide automaatne töötlemine ja andmete väljavõtmine. Klienditoe abistajad, mis vastavad korduma kippuvatele küsimustele. Töövood, mis automatiseerivad käsitsi tehtavat korduvat tööd. Ei mingit hüpet — ainult see, mis päriselt aega ja raha kokku hoiab."
+        },
+        {
+          "heading": "Kust alustada",
+          "body": "Kui sa ei tea, kus AI sinu ettevõttes kõige rohkem aitaks, alusta tasuta tööriistadest: AI valmiduse hindamine näitab, kus su organisatsioon praegu seisab, ja ROI kalkulaator aitab hinnata, kas investeering end ära tasub."
+        },
+        {
+          "heading": "Tehnoloogia, mis on tootmisvalmis",
+          "body": "Kasutan Claude, OpenAI ja Gemini keelemudeleid, RAG-torujuhtmeid täpsemate vastuste jaoks ning integreerin otse olemasolevasse tarkvarasse. Iga AI-funktsioon on ehitatud jälgitavana ja hooldatavana, mitte kiire katsetusena."
+        },
+        {
+          "heading": "Juurutamine ja tulemuste mõõtmine",
+          "body": "AI lahendus käivitatakse etapiviisiliselt, testides reaalsete andmetega enne täielikku kasutuselevõttu. Pärast käivitust jälgin tulemusi, et näha, kas lahendus annab oodatud kasu, ja kohandan vastavalt."
+        }
+      ],
+      "priceNote": "AI projekti hind sõltub keerukusest ja integratsioonide arvust. Väiksem automatiseeritud töövoog maksab vähem kui täisfunktsionaalne süsteem — alusta tasuta hindamisest, et saada selgust oma vajadustest.",
+      "faq": [
+        {
+          "q": "Kust peaksin AI kasutuselevõtuga alustama?",
+          "a": "Alusta tasuta AI valmiduse hindamisest, mis näitab, kus su organisatsioon praegu seisab ja kus AI kõige rohkem aitaks. See annab konkreetse lähtepunkti, mitte üldise suuna."
+        },
+        {
+          "q": "Kui palju AI projekt maksab?",
+          "a": "Hind sõltub keerukusest — üks automatiseeritud töövoog maksab vähem kui mitme integratsiooniga süsteem. ROI kalkulaator aitab hinnata, kas investeering end ära tasub, enne kui otsustad."
+        },
+        {
+          "q": "Kas minu andmed on AI lahenduses kaitstud?",
+          "a": "Jah. Iga lahendus ehitatakse andmekaitse põhimõtteid järgides — andmed ei liigu kontrollimatult kolmandate osapoolte kätte ja GDPR nõuded on arvesse võetud algusest peale."
+        },
+        {
+          "q": "Kas AI asendab minu töötajaid?",
+          "a": "Eesmärk on automatiseerida korduvad ja aeganõudvad ülesanded, mitte asendada inimesi. AI teeb rutiinse töö ära, et su meeskond saaks keskenduda sellele, mis päriselt tähtis on."
+        },
+        {
+          "q": "Kui kiiresti näen tulemust?",
+          "a": "Sõltub projekti mahust. Väiksem automatiseeritud töövoog võib anda mõõdetavat tulemust juba mõne nädalaga. Suuremad süsteemid vajavad põhjalikumat testimist enne täit kasutuselevõttu."
+        }
+      ],
+      "cta": {
+        "heading": "VALMIS AI-D OMA ETTEVÕTTES PROOVIMA?",
+        "button": "KÜSI PAKKUMIST"
+      }
+    }
   }
 }
