@@ -354,6 +354,27 @@ body {
 }
 
 /* ─────────────────────────────────────────
+   LaserFlow — volumetric light shaft (src/components/LaserFlow.tsx)
+───────────────────────────────────────── */
+.laser-flow {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* Decorative only — it must never intercept clicks meant for the CTA
+     sitting above it. The component reads pointer position from the window,
+     so tilt still works with events passing through. */
+  pointer-events: none;
+}
+.laser-flow canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ─────────────────────────────────────────
    Reduced motion — fewer and gentler, not broken
 ───────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {

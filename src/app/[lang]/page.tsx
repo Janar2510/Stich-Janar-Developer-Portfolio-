@@ -6,6 +6,7 @@ import Reveal, { StaggerReveal, StaggerItem, ClipReveal } from "@/components/Rev
 import StatsSection from "@/components/StatsCounter";
 import HeroSection from "@/components/HeroSection";
 import Testimonials from "@/components/Testimonials";
+import CtaBeam from "@/components/CtaBeam";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
 import { localeUrl, languageAlternates } from "@/lib/site";
@@ -189,12 +190,18 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
       {/* ── CTA ───────────────────────────────── */}
       <section className="py-60 px-8 bg-black relative overflow-hidden">
+        <CtaBeam />
         <Reveal className="max-w-[1440px] mx-auto text-center relative z-10">
-          <div className="lbl text-zinc-700 mb-8">{t.cta.badge}</div>
+          <div className="lbl text-zinc-400 mb-8">{t.cta.badge}</div>
           <h2 className="font-manrope font-black text-4xl md:text-6xl uppercase tracking-tight text-white mb-6">
             {t.cta.heading}
           </h2>
-          <p className="text-zinc-500 text-lg max-w-md mx-auto mb-14">
+          {/* White, and the eyebrow above is zinc-400 rather than the zinc-500 /
+              zinc-600 used elsewhere: both sit over the CTA light beam. zinc-500
+              measures 4.32:1 even on pure black, under the 4.5 floor before any
+              beam is involved, and over the lit shaft only near-white clears it.
+              Hierarchy here comes from size, not from dimming the copy. */}
+          <p className="text-white text-lg max-w-md mx-auto mb-14">
             {t.cta.bodyLine1}<br />{t.cta.bodyLine2}
           </p>
           <Link
