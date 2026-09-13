@@ -17,8 +17,12 @@ export function proxy(request: NextRequest) {
   );
 
   if (pathnameIsMissingLocale) {
+    // 308, not the 307 default. The locale-less URL is never the canonical
+    // one, and a temporary redirect keeps Google re-crawling it and listing
+    // it under "Page with redirect" instead of consolidating onto /et.
     return NextResponse.redirect(
-      new URL(`/${defaultLocale}${pathname === "/" ? "" : pathname}`, request.url)
+      new URL(`/${defaultLocale}${pathname === "/" ? "" : pathname}`, request.url),
+      308
     );
   }
 
