@@ -189,7 +189,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       />
 
       {/* ── CTA ───────────────────────────────── */}
-      <section className="py-60 px-8 bg-black relative overflow-hidden">
+      {/* py-60 on a phone made this ~1000px tall and pushed the beam's pool a full
+          screen below the button — behind the copy all you saw was a faint line. */}
+      <section className="py-32 md:py-60 px-8 bg-black relative overflow-hidden">
         <CtaBeam />
         <Reveal className="max-w-[1440px] mx-auto text-center relative z-10">
           <div className="lbl text-zinc-400 mb-8">{t.cta.badge}</div>
