@@ -69,7 +69,7 @@
     "tools": "AI TOOLS",
     "contact": "CONTACT",
     "consultation": "CONSULTATION",
-    "getInTouch": "GET IN TOUCH ↗",
+    "getInTouch": "GET IN TOUCH ↗︎",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -486,7 +486,7 @@
       "label": "READY TO BUILD?",
       "headingLine1": "LET'S START A",
       "headingAccent": "CONVERSATION.",
-      "button": "START PROJECT ↗"
+      "button": "START PROJECT ↗︎"
     }
   },
   "tools": {
@@ -607,7 +607,7 @@
     "priorityFocusAreas": "PRIORITY FOCUS AREAS",
     "aiActionPlan": "AI ACTION PLAN",
     "generating": "GENERATING…",
-    "getAiActionPlan": "GET AI ACTION PLAN ↗",
+    "getAiActionPlan": "GET AI ACTION PLAN ↗︎",
     "errorSuffix": ". AI plan needs GEMINI_API_KEY set on the server.",
     "emptyState": "Turn this score into a prioritized 90-day plan tailored to your weakest areas.",
     "retake": "↺ RETAKE ASSESSMENT",
@@ -697,8 +697,8 @@
     "aiAnalysis": {
       "title": "AI ANALYSIS",
       "analysing": "ANALYSING…",
-      "rerun": "RE-RUN ANALYSIS ↗",
-      "getAnalysis": "GET AI ANALYSIS ↗",
+      "rerun": "RE-RUN ANALYSIS ↗︎",
+      "getAnalysis": "GET AI ANALYSIS ↗︎",
       "errorSuffix": " AI analysis needs GEMINI_API_KEY set on the server.",
       "emptyState": "Generate a structured, four-perspective read of your numbers — financial, operational, growth and risk — with a verdict, risks and a recommended next step.",
       "confidence": "CONFIDENCE"
@@ -716,7 +716,7 @@
     },
     "risksMitigations": "RISKS & MITIGATIONS",
     "strategicRecommendations": "STRATEGIC RECOMMENDATIONS",
-    "bookConsultation": "BOOK A CONSULTATION ↗",
+    "bookConsultation": "BOOK A CONSULTATION ↗︎",
     "pdfReport": {
       "title": "BRANDED PDF REPORT",
       "body": "Full analysis, charts and recommendations as a shareable PDF — hand it to a co-founder or CFO.",
