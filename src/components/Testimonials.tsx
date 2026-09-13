@@ -31,7 +31,7 @@ export default function Testimonials({ badge, heading, items }: TestimonialsProp
         : "md:grid-cols-2 lg:grid-cols-3";
 
   return (
-    <section className="py-40 px-8 bg-zinc-950">
+    <section id="testimonials" className="py-40 px-8 bg-zinc-950">
       <div className="max-w-[1440px] mx-auto">
         <div className="lbl text-accent mb-4">{badge}</div>
         <h2 className="font-manrope font-bold text-4xl md:text-5xl uppercase tracking-tight text-white mb-20">
